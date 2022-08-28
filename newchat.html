@@ -7,8 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="images/whatsapp.png" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
-    <title>Whatsapp Web Clone</title>
-
+    <!-- <title>New chat</title> -->
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,80 +21,24 @@
 
     <!-- Bootstrap Icon -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-
 </head>
 
 <body class="body">
-    <div class="container" style="width: 1600px">
+    <div class="container">
         <div class="leftSide">
             <!-- Header -->
-            <div class="header">
-                <!-- Profile Picture -->
-                <div class="userImg">
-                    <img src="images/img10.jpg" alt="" class="cover">
-                </div>
-
-                <!-- Dropdown -->
-                <div tabindex="-1" class="dropLeft" id="dropLeft">
-                    <ul class="_1HnQz">
-                        <li tabindex="0" class="" data-animate-dropdown-item="true">
-                            <div class="listItem" role="button" aria-label="New group">New group</div>
-                            <div></div>
-                        </li>
-                        <li tabindex="0" class="" data-animate-dropdown-item="true">
-                            <div class="listItem" role="button" aria-label="Starred messages">Starred messages</div>
-                            <div></div>
-                        </li>
-                        <li tabindex="0" class="" data-animate-dropdown-item="true">
-                            <div class="listItem" role="button" aria-label="Settings">Settings</div>
-                            <div></div>
-                        </li>
-                        <li tabindex="0" class="" data-animate-dropdown-item="true">
-                            <div class="listItem" role="button" aria-label="Log out">Log out</div>
-                            <div></div>
-                        </li>
-                    </ul>
-                </div>
-
+            <div class="header-Chat">
                 <!-- Icons -->
                 <div class="ICON">
-                    <img src="images/Sun-1.png" alt="" id="moon" class="icons pUP" title="Light Mode"
-                        aria-label="Light Mode">
-                    <div aria-disabled="false" role="button" tabindex="0" class="icons pUP" data-tab="2" title="Status"
-                        aria-label="Status">
-                        <span data-testid="status-v3-read" data-icon="status-v3-read" class="">
-                            <svg version="1.1" id="df9d3429-f0ef-48b5-b5eb-f9d27b2deba6" x="0" y="0" viewBox="0 0 24 24"
-                                width="24" height="24" class="">
-                                <path fill="currentColor"
-                                    d="M12.072 1.761a10.05 10.05 0 0 0-9.303 5.65.977.977 0 0 0 1.756.855 8.098 8.098 0 0 1 7.496-4.553.977.977 0 1 0 .051-1.952zM1.926 13.64a10.052 10.052 0 0 0 7.461 7.925.977.977 0 0 0 .471-1.895 8.097 8.097 0 0 1-6.012-6.386.977.977 0 0 0-1.92.356zm13.729 7.454a10.053 10.053 0 0 0 6.201-8.946.976.976 0 1 0-1.951-.081v.014a8.097 8.097 0 0 1-4.997 7.209.977.977 0 0 0 .727 1.813l.02-.009z">
-                                </path>
-                                <path fill="#009588" d="M19 1.5a3 3 0 1 1 0 6 3 3 0 0 1 0-6z">
-                                </path>
-                            </svg>
-                        </span>
-                    </div>
-
                     <div aria-disabled="false" role="button" tabindex="0" class="icons pUP" data-tab="2"
                         title="New chat" aria-label="New chat">
                         <span data-testid="chat" data-icon="chat" class="">
-                            <a href="newchat.html">
+                            <a href="index.html">
                                 <svg viewBox="0 0 24 24" width="24" height="24" class="">
-                                    <path fill="currentColor"
-                                        d="M19.005 3.175H4.674C3.642 3.175 3 3.789 3 4.821V21.02l3.544-3.514h12.461c1.033 0 2.064-1.06 2.064-2.093V4.821c-.001-1.032-1.032-1.646-2.064-1.646zm-4.989 9.869H7.041V11.1h6.975v1.944zm3-4H7.041V7.1h9.975v1.944z">
+                                    <path fill="currentColor" d="m12 4 1.4 1.4L7.8 11H20v2H7.8l5.6 5.6L12 20l-8-8 8-8z">
                                     </path>
                                 </svg>
                             </a>
-                        </span>
-                    </div>
-
-                    <div aria-disabled="false" role="button" tabindex="0" class="icons pUP" data-tab="2" title="Menu"
-                        aria-label="Menu" onclick="myDropLeft()">
-                        <span data-testid="menu" data-icon="menu" class="">
-                            <svg viewBox="0 0 24 24" width="24" height="24" class="">
-                                <path fill="currentColor"
-                                    d="M12 7a2 2 0 1 0-.001-4.001A2 2 0 0 0 12 7zm0 2a2 2 0 1 0-.001 3.999A2 2 0 0 0 12 9zm0 6a2 2 0 1 0-.001 3.999A2 2 0 0 0 12 15z">
-                                </path>
-                            </svg>
                         </span>
                     </div>
                 </div>
@@ -109,9 +52,9 @@
                 </div>
             </div>
             <!-- Chats -->
-            <div class="chats">
+            <div class="chats-new">
                 <!-- Chats 1 -->
-                <div class="block active untick">
+                <div class="block active">
                     <!-- Img -->
                     <div class="imgBox">
                         <img src="images/img1.jpg" class="cover">
@@ -120,20 +63,16 @@
                     <div class="h-text">
                         <div class="head">
                             <h4 title="Muhammad Shayan" aria-label="Muhammad Shayan">Muhammad Shayan</h4>
-                            <p class="time">12:44 AM</p>
                         </div>
-                        <div class="untick">
-                            <i class="bi bi-check2-all"></i>
-                            <p title="ok thanks for your help i really appreciate"
-                                aria-label="ok thanks for your help i really appreciate">
-                                ok thanks for your help i really appreciate
+                        <div class="message">
+                            <p title="" aria-label="">
                             </p>
                         </div>
                     </div>
                 </div>
 
                 <!-- Chats 2 -->
-                <div class="block tick">
+                <div class="block">
                     <!-- Img -->
                     <div class="imgBox">
                         <img src="images/img2.jpg" class="cover">
@@ -142,17 +81,15 @@
                     <div class="h-text">
                         <div class="head">
                             <h4 title="Ashlar" aria-label="Ashlar">Ashlar</h4>
-                            <p class="time">7:30 PM</p>
                         </div>
-                        <div class="tick">
-                            <i class="bi bi-check2-all"></i>
+                        <div class="message">
                             <p title="Thank you." aria-label="Thank you.">Thank you.</p>
                         </div>
                     </div>
                 </div>
 
                 <!-- Chats 3 -->
-                <div class="block unread">
+                <div class="block">
                     <!-- Img -->
                     <div class="imgBox">
                         <img src="images/img3.jpg" class="cover">
@@ -161,18 +98,16 @@
                     <div class="h-text">
                         <div class="head">
                             <h4 title="Olivia" aria-label="Olivia">Olivia</h4>
-                            <p class="time">yesterday</p>
                         </div>
                         <div class="message">
-                            <p title="Hi, i found you on github" aria-label="Hi, i found you on github">Hi, i found you
-                                on github</p>
-                            <b>1</b>
+                            <p title="Hi, i found you on github" aria-label="Hi, i found you on github">Hi, i found
+                                you on github</p>
                         </div>
                     </div>
                 </div>
 
                 <!-- Chats 4 -->
-                <div class="block unread">
+                <div class="block">
                     <!-- Img -->
                     <div class="imgBox">
                         <img src="images/img4.jpg" class="cover">
@@ -181,17 +116,15 @@
                     <div class="h-text">
                         <div class="head">
                             <h4 title="Amelia" aria-label="Amelia">Amelia</h4>
-                            <p class="time">yesterday</p>
                         </div>
                         <div class="message">
                             <p title="Hello..." aria-label="Hello...">Hello...</p>
-                            <b>2</b>
                         </div>
                     </div>
                 </div>
 
                 <!-- Chats 5 -->
-                <div class="block tick">
+                <div class="block">
                     <!-- Img -->
                     <div class="imgBox">
                         <img src="images/img5.jpg" class="cover">
@@ -200,17 +133,15 @@
                     <div class="h-text">
                         <div class="head">
                             <h4 title="Raoul Kumar" aria-label="Raoul Kumar">Raoul Kumar</h4>
-                            <p class="time">yesterday</p>
                         </div>
-                        <div class="tick">
-                            <i class="bi bi-check2-all"></i>
+                        <div class="message">
                             <p title="oh okay." aria-label="oh okay.">oh okay.</p>
                         </div>
                     </div>
                 </div>
 
                 <!-- Chats 6 -->
-                <div class="block tick">
+                <div class="block">
                     <!-- Img -->
                     <div class="imgBox">
                         <img src="images/img6.jpg" class="cover">
@@ -219,10 +150,8 @@
                     <div class="h-text">
                         <div class="head">
                             <h4 title="Joseph" aria-label="Joseph">Joseph</h4>
-                            <p class="time">8/12/2022</p>
                         </div>
-                        <div class="tick">
-                            <i class="bi bi-check2-all"></i>
+                        <div class="message">
                             <p title="we are done with the project" aria-label="we are done with the project">we are
                                 done with the project</p>
                         </div>
@@ -239,7 +168,6 @@
                     <div class="h-text">
                         <div class="head">
                             <h4 title="Diana" aria-label="Diana">Diana</h4>
-                            <p class="time">8/8/2022</p>
                         </div>
                         <div class="message">
                             <p title="please wait.." aria-label="please wait..">please wait..</p>
@@ -248,7 +176,7 @@
                 </div>
 
                 <!-- Chats 8 -->
-                <div class="block untick">
+                <div class="block">
                     <!-- Img -->
                     <div class="imgBox">
                         <img src="images/img8.jpg" class="cover">
@@ -257,17 +185,15 @@
                     <div class="h-text">
                         <div class="head">
                             <h4 title="Kabir" aria-label="Kabir">Kabir</h4>
-                            <p class="time">8/6/2022</p>
                         </div>
-                        <div class="untick">
-                            <i class="bi bi-check2-all"></i>
+                        <div class="message">
                             <p title="Happy Birthday" aria-label="Happy Birthday">Happy Birthday</p>
                         </div>
                     </div>
                 </div>
 
                 <!-- Chats 9 -->
-                <div class="block untick">
+                <div class="block">
                     <!-- Img -->
                     <div class="imgBox">
                         <img src="images/img9.jpg" class="cover">
@@ -276,12 +202,10 @@
                     <div class="h-text">
                         <div class="head">
                             <h4 title="Alha Smith" aria-label="Alha Smith">Alha Smith</h4>
-                            <p class="time">3/4/2022</p>
                         </div>
-                        <div class="untick">
-                            <i class="bi bi-check2"></i>
-                            <p title="Thank you for your help." aria-label="Thank you for your help.">Thank you for your
-                                help.</p>
+                        <div class="message">
+                            <p title="Thank you for your help." aria-label="Thank you for your help.">Thank you for
+                                your help.</p>
                         </div>
                     </div>
                 </div>
@@ -296,14 +220,12 @@
                     <div class="h-text">
                         <div class="head">
                             <h4 title="Adeboye Adesina" aria-label="Adeboye Adesina">Adeboye Adesina</h4>
-                            <p class="time">29/5/2022</p>
                         </div>
                         <div class="message">
                             <p title="Messages are end-to-end encrypted. No one outside of this chat, not even WhatsApp, can read or listen to them. Click to learn more."
                                 aria-label="Messages are end-to-end encrypted. No one outside of this chat, not even WhatsApp, can read or listen to them. Click to learn more.">
-                                Messages are end-to-end encrypted. No one outside of this chat, not even WhatsApp, can
-                                read or listen to
-                                them. Click to learn more.
+                                Messages are end-to-end encrypted. No one outside of this chat, not even WhatsApp,
+                                can read or listen to them. Click to learn more.
                             </p>
                         </div>
                     </div>
@@ -324,9 +246,8 @@
                         <div class="message">
                             <p title="Messages are end-to-end encrypted. No one outside of this chat, not even WhatsApp, can read or listen to them. Click to learn more."
                                 aria-label="Messages are end-to-end encrypted. No one outside of this chat, not even WhatsApp, can read or listen to them. Click to learn more.">
-                                Messages are end-to-end encrypted. No one outside of this chat, not even WhatsApp, can
-                                read or listen to
-                                them. Click to learn more.
+                                Messages are end-to-end encrypted. No one outside of this chat, not even WhatsApp,
+                                can read or listen to them. Click to learn more.
                             </p>
                         </div>
                     </div>
@@ -347,7 +268,8 @@
                         <div class="message">
                             <p title="Messages are end-to-end encrypted. No one outside of this chat, not even WhatsApp, can read or listen to them. Click to learn more."
                                 aria-label="Messages are end-to-end encrypted. No one outside of this chat, not even WhatsApp, can read or listen to them. Click to learn more.">
-                                Messages are end-to-end encrypted. No one outside of this chat, not even WhatsApp, can
+                                Messages are end-to-end encrypted. No one outside of this chat, not even WhatsApp,
+                                can
                                 read or listen to
                                 them. Click to learn more.
                             </p>
@@ -370,7 +292,8 @@
                         <div class="message">
                             <p title="Messages are end-to-end encrypted. No one outside of this chat, not even WhatsApp, can read or listen to them. Click to learn more."
                                 aria-label="Messages are end-to-end encrypted. No one outside of this chat, not even WhatsApp, can read or listen to them. Click to learn more.">
-                                Messages are end-to-end encrypted. No one outside of this chat, not even WhatsApp, can
+                                Messages are end-to-end encrypted. No one outside of this chat, not even WhatsApp,
+                                can
                                 read or listen to
                                 them. Click to learn more.
                             </p>
@@ -393,7 +316,8 @@
                         <div class="message">
                             <p title="Messages are end-to-end encrypted. No one outside of this chat, not even WhatsApp, can read or listen to them. Click to learn more."
                                 aria-label="Messages are end-to-end encrypted. No one outside of this chat, not even WhatsApp, can read or listen to them. Click to learn more.">
-                                Messages are end-to-end encrypted. No one outside of this chat, not even WhatsApp, can
+                                Messages are end-to-end encrypted. No one outside of this chat, not even WhatsApp,
+                                can
                                 read or listen to
                                 them. Click to learn more.
                             </p>
@@ -416,7 +340,8 @@
                         <div class="message">
                             <p title="Messages are end-to-end encrypted. No one outside of this chat, not even WhatsApp, can read or listen to them. Click to learn more."
                                 aria-label="Messages are end-to-end encrypted. No one outside of this chat, not even WhatsApp, can read or listen to them. Click to learn more.">
-                                Messages are end-to-end encrypted. No one outside of this chat, not even WhatsApp, can
+                                Messages are end-to-end encrypted. No one outside of this chat, not even WhatsApp,
+                                can
                                 read or listen to
                                 them. Click to learn more.
                             </p>
@@ -439,7 +364,8 @@
                         <div class="message">
                             <p title="Messages are end-to-end encrypted. No one outside of this chat, not even WhatsApp, can read or listen to them. Click to learn more."
                                 aria-label="Messages are end-to-end encrypted. No one outside of this chat, not even WhatsApp, can read or listen to them. Click to learn more.">
-                                Messages are end-to-end encrypted. No one outside of this chat, not even WhatsApp, can
+                                Messages are end-to-end encrypted. No one outside of this chat, not even WhatsApp,
+                                can
                                 read or listen to
                                 them. Click to learn more.
                             </p>
@@ -462,7 +388,8 @@
                         <div class="message">
                             <p title="Messages are end-to-end encrypted. No one outside of this chat, not even WhatsApp, can read or listen to them. Click to learn more."
                                 aria-label="Messages are end-to-end encrypted. No one outside of this chat, not even WhatsApp, can read or listen to them. Click to learn more.">
-                                Messages are end-to-end encrypted. No one outside of this chat, not even WhatsApp, can
+                                Messages are end-to-end encrypted. No one outside of this chat, not even WhatsApp,
+                                can
                                 read or listen to
                                 them. Click to learn more.
                             </p>
@@ -485,7 +412,8 @@
                         <div class="message">
                             <p title="Messages are end-to-end encrypted. No one outside of this chat, not even WhatsApp, can read or listen to them. Click to learn more."
                                 aria-label="Messages are end-to-end encrypted. No one outside of this chat, not even WhatsApp, can read or listen to them. Click to learn more.">
-                                Messages are end-to-end encrypted. No one outside of this chat, not even WhatsApp, can
+                                Messages are end-to-end encrypted. No one outside of this chat, not even WhatsApp,
+                                can
                                 read or listen to
                                 them. Click to learn more.
                             </p>
@@ -811,14 +739,8 @@
                     </span>
                 </div>
             </div>
-        </div>
+        </div>v>
     </div>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
-        crossorigin="anonymous"></script>
-
-    <script src="js/app.js"></script>
 </body>
 
 </html>
