@@ -21,14 +21,19 @@
         integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
 
     <!-- Bootstrap Icon -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
 
 </head>
 
 <body class="body">
-    <div class="container" style="width: 1600px">
-        <div class="leftSide">
+    <div class="container" style="width: 1620px">
+
+
+        <div class="leftSide animate__animated animate__fadeInRight" id="leftSid">
             <!-- Header -->
+
             <div class="header">
                 <!-- Profile Picture -->
                 <div class="userImg">
@@ -38,7 +43,7 @@
                 <!-- Dropdown -->
                 <div tabindex="-1" class="dropLeft" id="dropLeft">
                     <ul class="_1HnQz">
-                        <li tabindex="0" class="" data-animate-dropdown-item="true">
+                        <li tabindex="0" class="" data-animate-dropdown-item="true" onclick="openGrp()">
                             <div class="listItem" role="button" aria-label="New group">New group</div>
                             <div></div>
                         </li>
@@ -46,7 +51,7 @@
                             <div class="listItem" role="button" aria-label="Starred messages">Starred messages</div>
                             <div></div>
                         </li>
-                        <li tabindex="0" class="" data-animate-dropdown-item="true">
+                        <li tabindex="0" class="" data-animate-dropdown-item="true" onclick="openSettings()">
                             <div class="listItem" role="button" aria-label="Settings">Settings</div>
                             <div></div>
                         </li>
@@ -76,15 +81,15 @@
                     </div>
 
                     <div aria-disabled="false" role="button" tabindex="0" class="icons pUP" data-tab="2"
-                        title="New chat" aria-label="New chat">
+                        title="New chat" aria-label="New chat" onclick="openForm()">
                         <span data-testid="chat" data-icon="chat" class="">
-                            <a href="newchat.html">
-                                <svg viewBox="0 0 24 24" width="24" height="24" class="">
-                                    <path fill="currentColor"
-                                        d="M19.005 3.175H4.674C3.642 3.175 3 3.789 3 4.821V21.02l3.544-3.514h12.461c1.033 0 2.064-1.06 2.064-2.093V4.821c-.001-1.032-1.032-1.646-2.064-1.646zm-4.989 9.869H7.041V11.1h6.975v1.944zm3-4H7.041V7.1h9.975v1.944z">
-                                    </path>
-                                </svg>
-                            </a>
+                            <!-- <a href="newchat.html"> -->
+                            <svg viewBox="0 0 24 24" width="24" height="24" class="">
+                                <path fill="currentColor"
+                                    d="M19.005 3.175H4.674C3.642 3.175 3 3.789 3 4.821V21.02l3.544-3.514h12.461c1.033 0 2.064-1.06 2.064-2.093V4.821c-.001-1.032-1.032-1.646-2.064-1.646zm-4.989 9.869H7.041V11.1h6.975v1.944zm3-4H7.041V7.1h9.975v1.944z">
+                                </path>
+                            </svg>
+                            <!-- </a> -->
                         </span>
                     </div>
 
@@ -123,11 +128,12 @@
                             <p class="time">12:44 AM</p>
                         </div>
                         <div class="untick">
-                            <i class="bi bi-check2-all"></i>
+                            <i class="bi bi-check2-all blue-t"></i>
                             <p title="ok thanks for your help i really appreciate"
                                 aria-label="ok thanks for your help i really appreciate">
                                 ok thanks for your help i really appreciate
                             </p>
+                            <i class="bi bi-chevron-down hide animate__animated animate__fadeInRight"></i>
                         </div>
                     </div>
                 </div>
@@ -145,8 +151,9 @@
                             <p class="time">7:30 PM</p>
                         </div>
                         <div class="tick">
-                            <i class="bi bi-check2-all"></i>
+                            <i class="bi bi-check2-all blue-t"></i>
                             <p title="Thank you." aria-label="Thank you.">Thank you.</p>
+                            <i class="bi bi-chevron-down hide animate__animated animate__fadeInRight"></i>
                         </div>
                     </div>
                 </div>
@@ -167,6 +174,7 @@
                             <p title="Hi, i found you on github" aria-label="Hi, i found you on github">Hi, i found you
                                 on github</p>
                             <b>1</b>
+                            <i class="bi bi-chevron-down hide animate__animated animate__fadeInRight"></i>
                         </div>
                     </div>
                 </div>
@@ -186,6 +194,7 @@
                         <div class="message">
                             <p title="Hello..." aria-label="Hello...">Hello...</p>
                             <b>2</b>
+                            <i class="bi bi-chevron-down hide animate__animated animate__fadeInRight"></i>
                         </div>
                     </div>
                 </div>
@@ -203,8 +212,9 @@
                             <p class="time">yesterday</p>
                         </div>
                         <div class="tick">
-                            <i class="bi bi-check2-all"></i>
+                            <i class="bi bi-check2-all blue-t"></i>
                             <p title="oh okay." aria-label="oh okay.">oh okay.</p>
+                            <i class="bi bi-chevron-down hide animate__animated animate__fadeInRight"></i>
                         </div>
                     </div>
                 </div>
@@ -222,9 +232,10 @@
                             <p class="time">8/12/2022</p>
                         </div>
                         <div class="tick">
-                            <i class="bi bi-check2-all"></i>
+                            <i class="bi bi-check2-all blue-t"></i>
                             <p title="we are done with the project" aria-label="we are done with the project">we are
                                 done with the project</p>
+                            <i class="bi bi-chevron-down hide animate__animated animate__fadeInRight"></i>
                         </div>
                     </div>
                 </div>
@@ -243,6 +254,7 @@
                         </div>
                         <div class="message">
                             <p title="please wait.." aria-label="please wait..">please wait..</p>
+                            <i class="bi bi-chevron-down hide animate__animated animate__fadeInRight"></i>
                         </div>
                     </div>
                 </div>
@@ -260,8 +272,9 @@
                             <p class="time">8/6/2022</p>
                         </div>
                         <div class="untick">
-                            <i class="bi bi-check2-all"></i>
+                            <i class="bi bi-check2-all blue-t"></i>
                             <p title="Happy Birthday" aria-label="Happy Birthday">Happy Birthday</p>
+                            <i class="bi bi-chevron-down hide animate__animated animate__fadeInRight"></i>
                         </div>
                     </div>
                 </div>
@@ -279,9 +292,10 @@
                             <p class="time">3/4/2022</p>
                         </div>
                         <div class="untick">
-                            <i class="bi bi-check2"></i>
+                            <i class="bi bi-check2 blue-t"></i>
                             <p title="Thank you for your help." aria-label="Thank you for your help.">Thank you for your
                                 help.</p>
+                            <i class="bi bi-chevron-down hide animate__animated animate__fadeInRight"></i>
                         </div>
                     </div>
                 </div>
@@ -305,6 +319,7 @@
                                 read or listen to
                                 them. Click to learn more.
                             </p>
+                            <i class="bi bi-chevron-down hide animate__animated animate__fadeInRight"></i>
                         </div>
                     </div>
                 </div>
@@ -328,6 +343,7 @@
                                 read or listen to
                                 them. Click to learn more.
                             </p>
+                            <i class="bi bi-chevron-down hide animate__animated animate__fadeInRight"></i>
                         </div>
                     </div>
                 </div>
@@ -351,6 +367,7 @@
                                 read or listen to
                                 them. Click to learn more.
                             </p>
+                            <i class="bi bi-chevron-down hide animate__animated animate__fadeInRight"></i>
                         </div>
                     </div>
                 </div>
@@ -374,6 +391,7 @@
                                 read or listen to
                                 them. Click to learn more.
                             </p>
+                            <i class="bi bi-chevron-down hide animate__animated animate__fadeInRight"></i>
                         </div>
                     </div>
                 </div>
@@ -397,6 +415,7 @@
                                 read or listen to
                                 them. Click to learn more.
                             </p>
+                            <i class="bi bi-chevron-down hide animate__animated animate__fadeInRight"></i>
                         </div>
                     </div>
                 </div>
@@ -420,6 +439,7 @@
                                 read or listen to
                                 them. Click to learn more.
                             </p>
+                            <i class="bi bi-chevron-down hide animate__animated animate__fadeInRight"></i>
                         </div>
                     </div>
                 </div>
@@ -443,6 +463,7 @@
                                 read or listen to
                                 them. Click to learn more.
                             </p>
+                            <i class="bi bi-chevron-down hide animate__animated animate__fadeInRight"></i>
                         </div>
                     </div>
                 </div>
@@ -466,6 +487,7 @@
                                 read or listen to
                                 them. Click to learn more.
                             </p>
+                            <i class="bi bi-chevron-down hide animate__animated animate__fadeInRight"></i>
                         </div>
                     </div>
                 </div>
@@ -489,11 +511,1102 @@
                                 read or listen to
                                 them. Click to learn more.
                             </p>
+                            <i class="bi bi-chevron-down hide animate__animated animate__fadeInRight"></i>
                         </div>
                     </div>
                 </div>
 
             </div>
+        </div>
+
+
+        <div class="Newchat animate__animated animate__fadeInLeft" id="Newchat">
+            <!-- Header -->
+            <div class="header-Chat">
+
+                <!-- Icons -->
+                <div class="ICON">
+                    <div aria-disabled="false" role="button" tabindex="0" class="icons" data-tab="2" title="New chat"
+                        aria-label="New chat" onclick="closeForm()">
+                        <span data-testid="chat" data-icon="chat" class="">
+                            <!-- <a href="index.html"> -->
+                            <svg viewBox="0 0 24 24" width="24" height="24" class="">
+                                <path fill="currentColor" d="m12 4 1.4 1.4L7.8 11H20v2H7.8l5.6 5.6L12 20l-8-8 8-8z">
+                                </path>
+                            </svg>
+                            <!-- </a> -->
+                        </span>
+                    </div>
+                </div>
+
+                <div class="newText">
+                    <h2>New Chat</h2>
+                </div>
+
+            </div>
+            <!-- Search Bar -->
+            <div class="search-bar">
+                <div>
+                    <i class="bi bi-search"></i>
+                    <input type="text" title="Search contacts" aria-label="Search contacts"
+                        placeholder="Search contacts">
+                </div>
+            </div>
+            <!-- Chats -->
+            <div class="chats-new">
+                <!-- Chats 1 -->
+                <div class="block group" onclick="openGroup()">
+                    <!-- Img -->
+                    <div class="iconBox">
+                        <i class="bi bi-people-fill"></i>
+                    </div>
+
+                    <div class="head">
+                        <h4 title="New group" aria-label="New group">New group</h4>
+                    </div>
+
+                </div>
+
+                <div class="a">
+                    <h3>A</h3>
+                </div>
+
+                <!-- Chats 1 -->
+                <div class="block top">
+                    <!-- Img -->
+                    <div class="imgBox">
+                        <img src="images/img1.jpg" class="cover">
+                    </div>
+                    <!-- Text -->
+                    <div class="h-text">
+                        <div class="head">
+                            <h4 title="A B" aria-label="A B">A B</h4>
+                        </div>
+                        <div class="message">
+                            <p title="Free." aria-label="Free.">
+                                Free.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Chats 2 -->
+                <div class="block">
+                    <!-- Img -->
+                    <div class="imgBox">
+                        <img src="images/img3.jpg" class="cover">
+                    </div>
+                    <!-- Text -->
+                    <div class="h-text">
+                        <div class="head">
+                            <h4 title="Abdul" aria-label="Abdul">Abdul</h4>
+                        </div>
+                        <div class="message">
+                            <p title="Allah is sufficient for me." aria-label="Allah is sufficient for me.">Allah is
+                                sufficient for me.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Chats 3 -->
+                <div class="block">
+                    <!-- Img -->
+                    <div class="imgBox">
+                        <img src="images/img8.jpg" class="cover">
+                    </div>
+                    <!-- Text -->
+                    <div class="h-text">
+                        <div class="head">
+                            <h4 title="Adeboye" aria-label="Adeboye">Adeboye</h4>
+                        </div>
+                        <div class="message">
+                            <p title="Hey there! I am using WhatsApp." aria-label="Hey there! I am using WhatsApp.">Hey
+                                there! I am using WhatsApp.</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Chats 4 -->
+                <div class="block">
+                    <!-- Img -->
+                    <div class="imgBox">
+                        <img src="images/img4.jpg" class="cover">
+                    </div>
+                    <!-- Text -->
+                    <div class="h-text">
+                        <div class="head">
+                            <h4 title="Amelia" aria-label="Amelia">Amelia</h4>
+                        </div>
+                        <div class="message">
+                            <p title="God daughter" aria-label="God daughter">God daughter</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Chats 5 -->
+                <div class="block">
+                    <!-- Img -->
+                    <div class="imgBox">
+                        <img src="images/img5.jpg" class="cover">
+                    </div>
+                    <!-- Text -->
+                    <div class="h-text">
+                        <div class="head">
+                            <h4 title="Abdul F5" aria-label="Abdul F5">Abdul F5</h4>
+                        </div>
+                        <div class="message">
+                            <p title="Hey there! I am using WhatsApp." aria-label="Hey there! I am using WhatsApp.">Hey
+                                there! I am using WhatsApp.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Chats 6 -->
+                <div class="block">
+                    <!-- Img -->
+                    <div class="imgBox">
+                        <img src="images/img6.jpg" class="cover">
+                    </div>
+                    <!-- Text -->
+                    <div class="h-text">
+                        <div class="head">
+                            <h4 title="Ade" aria-label="Ade">Ade</h4>
+                        </div>
+                        <div class="message">
+                            <p title="Hey there! I am using WhatsApp." aria-label="Hey there! I am using WhatsApp.">Hey
+                                there! I am using WhatsApp.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Chats 7 -->
+                <div class="block">
+                    <!-- Img -->
+                    <div class="imgBox">
+                        <img src="images/img7.jpg" class="cover">
+                    </div>
+                    <!-- Text -->
+                    <div class="h-text">
+                        <div class="head">
+                            <h4 title="Adanma" aria-label="Adanma">Adanma</h4>
+                        </div>
+                        <div class="message">
+                            <p title="Hey there! I am using WhatsApp." aria-label="Hey there! I am using WhatsApp.">Hey
+                                there! I am using WhatsApp.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Chats 8 -->
+                <div class="block">
+                    <!-- Img -->
+                    <div class="imgBox">
+                        <img src="images/img2.jpg" class="cover">
+                    </div>
+                    <!-- Text -->
+                    <div class="h-text">
+                        <div class="head">
+                            <h4 title="Ashlar" aria-label="Ashlar">Ashlar</h4>
+                        </div>
+                        <div class="message">
+                            <p title="Always Busy.." aria-label="Always Busy..">Always Busy..</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Chats 9 -->
+                <div class="block">
+                    <!-- Img -->
+                    <div class="imgBox">
+                        <img src="images/img9.jpg" class="cover">
+                    </div>
+                    <!-- Text -->
+                    <div class="h-text">
+                        <div class="head">
+                            <h4 title="Alha" aria-label="Alha">Alha</h4>
+                        </div>
+                        <div class="message">
+                            <p title="Hey there! I am using WhatsApp." aria-label="Hey there! I am using WhatsApp.">Hey
+                                there! I am using WhatsApp.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Chats 10 -->
+                <div class="block">
+                    <!-- Img -->
+                    <div class="imgBox">
+                        <img src="images/img10.jpg" class="cover">
+                    </div>
+                    <!-- Text -->
+                    <div class="h-text">
+                        <div class="head">
+                            <h4 title="Adeboye" aria-label="Adeboye">Adeboye</h4>
+                        </div>
+                        <div class="message">
+                            <p title="Hey there! I am using WhatsApp." aria-label="Hey there! I am using WhatsApp.">Hey
+                                there! I am using WhatsApp.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Chats 11 -->
+                <div class="block">
+                    <!-- Img -->
+                    <div class="imgBox">
+                        <img src="images/img11.jpg" class="cover">
+                    </div>
+                    <!-- Text -->
+                    <div class="h-text">
+                        <div class="head">
+                            <h4 title="Adesinar" aria-label="Adesinar">Adesinar</h4>
+                        </div>
+                        <div class="message">
+                            <p title="Hey there! I am using WhatsApp." aria-label="Hey there! I am using WhatsApp.">Hey
+                                there! I am using WhatsApp.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Chats 12 -->
+                <div class="block">
+                    <!-- Img -->
+                    <div class="imgBox">
+                        <img src="images/img12.jpg" class="cover">
+                    </div>
+                    <!-- Text -->
+                    <div class="h-text">
+                        <div class="head">
+                            <h4 title="Adebisi" aria-label="Adebisi">Adebisi</h4>
+                        </div>
+                        <div class="message">
+                            <p title="Hey there! I am using WhatsApp." aria-label="Hey there! I am using WhatsApp.">Hey
+                                there! I am using WhatsApp.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Chats 13 -->
+                <div class="block">
+                    <!-- Img -->
+                    <div class="imgBox">
+                        <img src="images/img13.jpg" class="cover">
+                    </div>
+                    <!-- Text -->
+                    <div class="h-text">
+                        <div class="head">
+                            <h4 title="Akunna" aria-label="Akunna">Akunna</h4>
+                        </div>
+                        <div class="message">
+                            <p title="Hey there! I am using WhatsApp." aria-label="Hey there! I am using WhatsApp.">Hey
+                                there! I am using WhatsApp.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Chats 14 -->
+                <div class="block">
+                    <!-- Img -->
+                    <div class="imgBox">
+                        <img src="images/img14.jpg" class="cover">
+                    </div>
+                    <!-- Text -->
+                    <div class="h-text">
+                        <div class="head">
+                            <h4 title="Alihu" aria-label="Alihu">Alihu</h4>
+                        </div>
+                        <div class="message">
+                            <p title="Hey there! I am using WhatsApp." aria-label="Hey there! I am using WhatsApp.">Hey
+                                there! I am using WhatsApp.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Chats 15 -->
+                <div class="block">
+                    <!-- Img -->
+                    <div class="imgBox">
+                        <img src="images/img15.jpg" class="cover">
+                    </div>
+                    <!-- Text -->
+                    <div class="h-text">
+                        <div class="head">
+                            <h4 title="Adejoke" aria-label="Adejoke">Adejoke</h4>
+                        </div>
+                        <div class="message">
+                            <p title="Hey there! I am using WhatsApp." aria-label="Hey there! I am using WhatsApp.">Hey
+                                there! I am using WhatsApp.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Chats 16 -->
+                <div class="block">
+                    <!-- Img -->
+                    <div class="imgBox">
+                        <img src="images/img16.jpg" class="cover">
+                    </div>
+                    <!-- Text -->
+                    <div class="h-text">
+                        <div class="head">
+                            <h4 title="Adunola" aria-label="Adunola">Adunola</h4>
+                        </div>
+                        <div class="message">
+                            <p title="Hey there! I am using WhatsApp." aria-label="Hey there! I am using WhatsApp.">Hey
+                                there! I am using WhatsApp.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Chats 17 -->
+                <div class="block">
+                    <!-- Img -->
+                    <div class="imgBox">
+                        <img src="images/img17.jpg" class="cover">
+                    </div>
+                    <!-- Text -->
+                    <div class="h-text">
+                        <div class="head">
+                            <h4 title="Akolade" aria-label="Akolade">Akolade</h4>
+                        </div>
+                        <div class="message">
+                            <p title="Hey there! I am using WhatsApp." aria-label="Hey there! I am using WhatsApp.">Hey
+                                there! I am using WhatsApp.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Chats 18 -->
+                <div class="block">
+                    <!-- Img -->
+                    <div class="imgBox">
+                        <img src="images/img18.jpg" class="cover">
+                    </div>
+                    <!-- Text -->
+                    <div class="h-text">
+                        <div class="head">
+                            <h4 title="Anikaede" aria-label="Anikaede">Anikaede</h4>
+                        </div>
+                        <div class="message">
+                            <p title="Hey there! I am using WhatsApp." aria-label="Hey there! I am using WhatsApp.">Hey
+                                there! I am using WhatsApp.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="group animate__animated animate__fadeInLeft" id="group">
+            <!-- Header -->
+            <div class="header-Chat">
+
+                <!-- Icons -->
+                <div class="ICON">
+                    <div aria-disabled="false" role="button" tabindex="0" class="icons" data-tab="2" title="New chat"
+                        aria-label="New chat" onclick="closeGroup()">
+                        <span data-testid="chat" data-icon="chat" class="">
+                            <!-- <a href="index.html"> -->
+                            <svg viewBox="0 0 24 24" width="24" height="24" class="">
+                                <path fill="currentColor" d="m12 4 1.4 1.4L7.8 11H20v2H7.8l5.6 5.6L12 20l-8-8 8-8z">
+                                </path>
+                            </svg>
+                            <!-- </a> -->
+                        </span>
+                    </div>
+                </div>
+
+                <div class="newText">
+                    <h2>Add group participants</h2>
+                </div>
+
+            </div>
+            <!-- Search Bar -->
+            <div class="search-bar">
+                <div>
+                    <i class="bi bi-search"></i>
+                    <input type="text" title="Type contact name" aria-label="Type contact name"
+                        placeholder="Type contact name">
+                </div>
+            </div>
+            <!-- Chats -->
+            <div class="chats-group">
+
+                <div class="a">
+                    <h3>A</h3>
+                </div>
+
+
+                <!-- Chats 1 -->
+                <div class="block top">
+                    <!-- Img -->
+                    <div class="imgBox">
+                        <img src="images/img1.jpg" class="cover">
+                    </div>
+                    <!-- Text -->
+                    <div class="h-text">
+                        <div class="head">
+                            <h4 title="A B" aria-label="A B">A B</h4>
+                        </div>
+                        <div class="message">
+                            <p title="Free." aria-label="Free.">
+                                Free.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Chats 2 -->
+                <div class="block">
+                    <!-- Img -->
+                    <div class="imgBox">
+                        <img src="images/img3.jpg" class="cover">
+                    </div>
+                    <!-- Text -->
+                    <div class="h-text">
+                        <div class="head">
+                            <h4 title="Abdul" aria-label="Abdul">Abdul</h4>
+                        </div>
+                        <div class="message">
+                            <p title="Allah is sufficient for me." aria-label="Allah is sufficient for me.">Allah is
+                                sufficient for me.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Chats 3 -->
+                <div class="block">
+                    <!-- Img -->
+                    <div class="imgBox">
+                        <img src="images/img8.jpg" class="cover">
+                    </div>
+                    <!-- Text -->
+                    <div class="h-text">
+                        <div class="head">
+                            <h4 title="Adeboye" aria-label="Adeboye">Adeboye</h4>
+                        </div>
+                        <div class="message">
+                            <p title="Hey there! I am using WhatsApp." aria-label="Hey there! I am using WhatsApp.">Hey
+                                there! I am using WhatsApp.</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Chats 4 -->
+                <div class="block">
+                    <!-- Img -->
+                    <div class="imgBox">
+                        <img src="images/img4.jpg" class="cover">
+                    </div>
+                    <!-- Text -->
+                    <div class="h-text">
+                        <div class="head">
+                            <h4 title="Amelia" aria-label="Amelia">Amelia</h4>
+                        </div>
+                        <div class="message">
+                            <p title="God daughter" aria-label="God daughter">God daughter</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Chats 5 -->
+                <div class="block">
+                    <!-- Img -->
+                    <div class="imgBox">
+                        <img src="images/img5.jpg" class="cover">
+                    </div>
+                    <!-- Text -->
+                    <div class="h-text">
+                        <div class="head">
+                            <h4 title="Abdul F5" aria-label="Abdul F5">Abdul F5</h4>
+                        </div>
+                        <div class="message">
+                            <p title="Hey there! I am using WhatsApp." aria-label="Hey there! I am using WhatsApp.">Hey
+                                there! I am using WhatsApp.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Chats 6 -->
+                <div class="block">
+                    <!-- Img -->
+                    <div class="imgBox">
+                        <img src="images/img6.jpg" class="cover">
+                    </div>
+                    <!-- Text -->
+                    <div class="h-text">
+                        <div class="head">
+                            <h4 title="Ade" aria-label="Ade">Ade</h4>
+                        </div>
+                        <div class="message">
+                            <p title="Hey there! I am using WhatsApp." aria-label="Hey there! I am using WhatsApp.">Hey
+                                there! I am using WhatsApp.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Chats 7 -->
+                <div class="block">
+                    <!-- Img -->
+                    <div class="imgBox">
+                        <img src="images/img7.jpg" class="cover">
+                    </div>
+                    <!-- Text -->
+                    <div class="h-text">
+                        <div class="head">
+                            <h4 title="Adanma" aria-label="Adanma">Adanma</h4>
+                        </div>
+                        <div class="message">
+                            <p title="Hey there! I am using WhatsApp." aria-label="Hey there! I am using WhatsApp.">Hey
+                                there! I am using WhatsApp.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Chats 8 -->
+                <div class="block">
+                    <!-- Img -->
+                    <div class="imgBox">
+                        <img src="images/img2.jpg" class="cover">
+                    </div>
+                    <!-- Text -->
+                    <div class="h-text">
+                        <div class="head">
+                            <h4 title="Ashlar" aria-label="Ashlar">Ashlar</h4>
+                        </div>
+                        <div class="message">
+                            <p title="Always Busy.." aria-label="Always Busy..">Always Busy..</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Chats 9 -->
+                <div class="block">
+                    <!-- Img -->
+                    <div class="imgBox">
+                        <img src="images/img9.jpg" class="cover">
+                    </div>
+                    <!-- Text -->
+                    <div class="h-text">
+                        <div class="head">
+                            <h4 title="Alha" aria-label="Alha">Alha</h4>
+                        </div>
+                        <div class="message">
+                            <p title="Hey there! I am using WhatsApp." aria-label="Hey there! I am using WhatsApp.">Hey
+                                there! I am using WhatsApp.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Chats 10 -->
+                <div class="block">
+                    <!-- Img -->
+                    <div class="imgBox">
+                        <img src="images/img10.jpg" class="cover">
+                    </div>
+                    <!-- Text -->
+                    <div class="h-text">
+                        <div class="head">
+                            <h4 title="Adeboye" aria-label="Adeboye">Adeboye</h4>
+                        </div>
+                        <div class="message">
+                            <p title="Hey there! I am using WhatsApp." aria-label="Hey there! I am using WhatsApp.">Hey
+                                there! I am using WhatsApp.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Chats 11 -->
+                <div class="block">
+                    <!-- Img -->
+                    <div class="imgBox">
+                        <img src="images/img11.jpg" class="cover">
+                    </div>
+                    <!-- Text -->
+                    <div class="h-text">
+                        <div class="head">
+                            <h4 title="Adesinar" aria-label="Adesinar">Adesinar</h4>
+                        </div>
+                        <div class="message">
+                            <p title="Hey there! I am using WhatsApp." aria-label="Hey there! I am using WhatsApp.">Hey
+                                there! I am using WhatsApp.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Chats 12 -->
+                <div class="block">
+                    <!-- Img -->
+                    <div class="imgBox">
+                        <img src="images/img12.jpg" class="cover">
+                    </div>
+                    <!-- Text -->
+                    <div class="h-text">
+                        <div class="head">
+                            <h4 title="Adebisi" aria-label="Adebisi">Adebisi</h4>
+                        </div>
+                        <div class="message">
+                            <p title="Hey there! I am using WhatsApp." aria-label="Hey there! I am using WhatsApp.">Hey
+                                there! I am using WhatsApp.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Chats 13 -->
+                <div class="block">
+                    <!-- Img -->
+                    <div class="imgBox">
+                        <img src="images/img13.jpg" class="cover">
+                    </div>
+                    <!-- Text -->
+                    <div class="h-text">
+                        <div class="head">
+                            <h4 title="Akunna" aria-label="Akunna">Akunna</h4>
+                        </div>
+                        <div class="message">
+                            <p title="Hey there! I am using WhatsApp." aria-label="Hey there! I am using WhatsApp.">Hey
+                                there! I am using WhatsApp.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Chats 14 -->
+                <div class="block">
+                    <!-- Img -->
+                    <div class="imgBox">
+                        <img src="images/img14.jpg" class="cover">
+                    </div>
+                    <!-- Text -->
+                    <div class="h-text">
+                        <div class="head">
+                            <h4 title="Alihu" aria-label="Alihu">Alihu</h4>
+                        </div>
+                        <div class="message">
+                            <p title="Hey there! I am using WhatsApp." aria-label="Hey there! I am using WhatsApp.">Hey
+                                there! I am using WhatsApp.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Chats 15 -->
+                <div class="block">
+                    <!-- Img -->
+                    <div class="imgBox">
+                        <img src="images/img15.jpg" class="cover">
+                    </div>
+                    <!-- Text -->
+                    <div class="h-text">
+                        <div class="head">
+                            <h4 title="Adejoke" aria-label="Adejoke">Adejoke</h4>
+                        </div>
+                        <div class="message">
+                            <p title="Hey there! I am using WhatsApp." aria-label="Hey there! I am using WhatsApp.">Hey
+                                there! I am using WhatsApp.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Chats 16 -->
+                <div class="block">
+                    <!-- Img -->
+                    <div class="imgBox">
+                        <img src="images/img16.jpg" class="cover">
+                    </div>
+                    <!-- Text -->
+                    <div class="h-text">
+                        <div class="head">
+                            <h4 title="Adunola" aria-label="Adunola">Adunola</h4>
+                        </div>
+                        <div class="message">
+                            <p title="Hey there! I am using WhatsApp." aria-label="Hey there! I am using WhatsApp.">Hey
+                                there! I am using WhatsApp.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Chats 17 -->
+                <div class="block">
+                    <!-- Img -->
+                    <div class="imgBox">
+                        <img src="images/img17.jpg" class="cover">
+                    </div>
+                    <!-- Text -->
+                    <div class="h-text">
+                        <div class="head">
+                            <h4 title="Akolade" aria-label="Akolade">Akolade</h4>
+                        </div>
+                        <div class="message">
+                            <p title="Hey there! I am using WhatsApp." aria-label="Hey there! I am using WhatsApp.">Hey
+                                there! I am using WhatsApp.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Chats 18 -->
+                <div class="block">
+                    <!-- Img -->
+                    <div class="imgBox">
+                        <img src="images/img18.jpg" class="cover">
+                    </div>
+                    <!-- Text -->
+                    <div class="h-text">
+                        <div class="head">
+                            <h4 title="Anikaede" aria-label="Anikaede">Anikaede</h4>
+                        </div>
+                        <div class="message">
+                            <p title="Hey there! I am using WhatsApp." aria-label="Hey there! I am using WhatsApp.">Hey
+                                there! I am using WhatsApp.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="settings animate__animated animate__fadeInLeft" id="settings">
+            <!-- Header -->
+            <div class="header-Chat">
+
+                <!-- Icons -->
+                <div class="ICON">
+                    <div aria-disabled="false" role="button" tabindex="0" class="icons" data-tab="2" title="New chat"
+                        aria-label="New chat" onclick="closeSettings()">
+                        <span data-testid="chat" data-icon="chat" class="">
+                            <svg viewBox="0 0 24 24" width="24" height="24" class="">
+                                <path fill="currentColor" d="m12 4 1.4 1.4L7.8 11H20v2H7.8l5.6 5.6L12 20l-8-8 8-8z">
+                                </path>
+                            </svg>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="newText">
+                    <h2>Settings</h2>
+                </div>
+
+            </div>
+            <!-- Chats -->
+            <div class="chats-settings">
+                <!-- Profile -->
+                <div class="top" onclick="openProfile()">
+                    <!-- Img -->
+                    <div class="imgBox">
+                        <img src="images/img10.jpg" alt="" class="cover">
+                    </div>
+                    <!-- Text -->
+                    <div class="h-text">
+                        <div class="head">
+                            <h4 title="🛐❣️ Úyï Øsa ❣️🛐" aria-label="🛐❣️ Úyï Øsa ❣️🛐">🛐❣️ Úyï Øsa ❣️🛐</h4>
+                        </div>
+                        <div class="message">
+                            <p title="Perfect has seven letter💫💥💦and so does meeeeee🛐💦☦️"
+                                aria-label="Perfect has seven letter💫💥💦and so does meeeeee🛐💦☦️">
+                                Perfect has seven letter💫💥💦and so does meeeeee🛐💦☦️
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Chats 1 -->
+                <div class="block">
+                    <!-- Img -->
+                    <div class="icon-Box">
+                        <div aria-disabled="false" role="button" tabindex="0" class="icons-setings" data-tab="2"
+                            title="Notifications" aria-label="Notifications">
+                            <span data-testid="settings-notifications" data-icon="settings-notifications" class="">
+                                <svg viewBox="0 0 24 24" width="24" height="24" class="">
+                                    <path fill="currentColor"
+                                        d="M12 21.7c.9 0 1.7-.8 1.7-1.7h-3.4c0 .9.8 1.7 1.7 1.7zm5.6-5.2v-4.7c0-2.7-1.8-4.8-4.3-5.4v-.6c0-.7-.6-1.3-1.3-1.3s-1.3.6-1.3 1.3v.6c-2.5.6-4.3 2.7-4.3 5.4v4.7l-1.7 1.7v.9h14.6v-.9l-1.7-1.7z">
+                                    </path>
+                                </svg>
+                            </span>
+                        </div>
+                    </div>
+                    <!-- Text -->
+                    <div class="h-text">
+                        <div class="head">
+                            <h4 title="Notifications" aria-label="Notifications">Notifications</h4>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Chats 2 -->
+                <div class="block">
+                    <!-- Img -->
+                    <div class="icon-Box">
+                        <div aria-disabled="false" role="button" tabindex="0" class="icons-setings" data-tab="2"
+                            title="Privacy" aria-label="Privacy">
+                            <span data-testid="security-lock" data-icon="security-lock" class="">
+                                <svg width="21" height="21" viewBox="0 0 28 35" class="">
+                                    <path
+                                        d="M14 1.102a8.273 8.273 0 0 1 8.273 8.273l-.001 2.804.084.003A4.86 4.86 0 0 1 27 17.037v12.43a4.86 4.86 0 0 1-4.86 4.86H5.86A4.86 4.86 0 0 1 1 29.467v-12.43a4.86 4.86 0 0 1 4.727-4.858V9.375A8.273 8.273 0 0 1 14 1.102Zm0 18.458c-1.958 0-3.545 1.653-3.545 3.692s1.587 3.691 3.545 3.691 3.545-1.652 3.545-3.691c0-2.04-1.587-3.692-3.545-3.692Zm0-14.766c-2.538 0-4.61 2-4.722 4.51l-.005.217-.001 2.655h9.455V9.521A4.727 4.727 0 0 0 14 4.794Z"
+                                        fill="currentColor">
+                                    </path>
+                                </svg>
+                            </span>
+                        </div>
+                    </div>
+                    <!-- Text -->
+                    <div class="h-text">
+                        <div class="head">
+                            <h4 title="Privacy" aria-label="Privacy">Privacy</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Chats 3 -->
+                <div class="block">
+                    <!-- Img -->
+                    <div class="icon-Box">
+                        <div aria-disabled="false" role="button" tabindex="0" class="icons-setings" data-tab="2"
+                            title="Security" aria-label="Security">
+                            <span data-testid="settings-security" data-icon="settings-security" class="">
+                                <svg width="24" height="24" viewBox="0 0 24 24" class="">
+                                    <path
+                                        d="M12.027 2 4 5.568v5.35c0 4.95 3.425 9.58 8.027 10.704 4.602-1.124 8.027-5.753 8.027-10.703V5.568L12.027 2Zm0 9.802h6.243c-.472 3.674-2.925 6.948-6.243 7.973v-7.964H5.784V6.727l6.243-2.774v7.849Z"
+                                        fill="currentColor">
+                                    </path>
+                                </svg>
+                            </span>
+                        </div>
+                    </div>
+                    <!-- Text -->
+                    <div class="h-text">
+                        <div class="head">
+                            <h4 title="Security" aria-label="Security">Security</h4>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Chats 4 -->
+                <div class="block">
+                    <!-- Img -->
+                    <div class="icon-Box">
+                        <div aria-disabled="false" role="button" tabindex="0" class="icons-setings" data-tab="2"
+                            title="Theme" aria-label="Theme">
+                            <span data-testid="settings-theme" data-icon="settings-theme" class="">
+                                <svg width="24" height="24" viewBox="0 0 24 24" class="">
+                                    <path
+                                        d="m12 1 3.22 3.22h4.56v4.56L23 12l-3.22 3.22v4.56h-4.56L12 23l-3.22-3.22H4.22v-4.56L1 12l3.22-3.22V4.22h4.56L12 1Zm0 5v12c3.31 0 6-2.69 6-6a6.005 6.005 0 0 0-5.775-5.996L12 6Z"
+                                        fill="currentColor">
+                                    </path>
+                                </svg>
+                            </span>
+                        </div>
+                    </div>
+                    <!-- Text -->
+                    <div class="h-text">
+                        <div class="head">
+                            <h4 title="Theme" aria-label="Theme">Theme</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Chats 5 -->
+                <div class="block">
+                    <!-- Img -->
+                    <div class="icon-Box">
+                        <div aria-disabled="false" role="button" tabindex="0" class="icons-setings" data-tab="2"
+                            title="Chat wallpaper" aria-label="Chat wallpaper">
+                            <span data-testid="settings-wallpaper" data-icon="settings-wallpaper" class="">
+                                <svg viewBox="0 0 24 24" width="24" height="24" class="">
+                                    <path fill="currentColor"
+                                        d="M4.9 5.9h6.4V4.1H4.9c-1 0-1.8.8-1.8 1.8v6.4h1.8V5.9zm5.3 8-3.6 4.4h10.7l-2.7-3.6-1.8 2.4-2.6-3.2zm6.2-4c0-.7-.6-1.3-1.3-1.3s-1.3.6-1.3 1.3.6 1.3 1.3 1.3 1.3-.6 1.3-1.3zm2.7-5.8h-6.4v1.8h6.4v6.4h1.8V5.9c0-1-.8-1.8-1.8-1.8zm0 16h-6.4v1.8h6.4c1 0 1.8-.8 1.8-1.8v-6.4h-1.8v6.4zM4.9 13.7H3.1v6.4c0 1 .8 1.8 1.8 1.8h6.4v-1.8H4.9v-6.4z">
+                                    </path>
+                                </svg>
+                            </span>
+                        </div>
+                    </div>
+                    <!-- Text -->
+                    <div class="h-text">
+                        <div class="head">
+                            <h4 title="Chat wallpaper" aria-label="Chat wallpaper">Chat wallpaper</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Chats 6 -->
+                <div class="block">
+                    <!-- Img -->
+                    <div class="icon-Box">
+                        <div aria-disabled="false" role="button" tabindex="0" class="icons-setings" data-tab="2"
+                            title="Request Account Info" aria-label="Request Account Info">
+                            <span data-testid="settings-document" data-icon="settings-document" class="">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" class="">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M6 2c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8.83c0-.53-.21-1.04-.59-1.41l-4.83-4.83c-.37-.38-.88-.59-1.41-.59H6Zm7 6V3.5L18.5 9H14c-.55 0-1-.45-1-1Zm-5 4a1 1 0 1 0 0 2h8a1 1 0 1 0 0-2H8Zm6 5a1 1 0 0 0-1-1H8a1 1 0 1 0 0 2h5a1 1 0 0 0 1-1Z"
+                                        fill="currentColor">
+                                    </path>
+                                </svg>
+                            </span>
+                        </div>
+                    </div>
+                    <!-- Text -->
+                    <div class="h-text">
+                        <div class="head">
+                            <h4 title="Request Account Info" aria-label="Request Account Info">Request Account Info</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Chats 7 -->
+                <div class="block">
+                    <!-- Img -->
+                    <div class="icon-Box">
+                        <div aria-disabled="false" role="button" tabindex="0" class="icons-setings" data-tab="2"
+                            title="Keyboard shortcuts aria-label=" Keyboard shortcuts>
+                            <span data-testid="settings-keyboard" data-icon="settings-keyboard" class="">
+                                <svg width="24" height="24" viewBox="0 0 24 24" class="">
+                                    <path fill="currentColor"
+                                        d="M10.852 12.648h2.296L12 9ZM20 8.691V6c0-1.102-.898-2-2-2h-2.691L13.41 2.102a2 2 0 0 0-2.828 0L8.692 4H6c-1.102 0-2 .898-2 2v2.691L2.102 10.59a2.004 2.004 0 0 0 0 2.832L4 15.32V18c0 1.102.898 2 2 2h2.691l1.899 1.898c.781.782 2.05.782 2.832 0L15.32 20H18c1.102 0 2-.898 2-2v-2.691l1.898-1.899a2.004 2.004 0 0 0 0-2.832Zm-5.91 6.707L13.602 14h-3.204l-.488 1.398a.89.89 0 0 1-.84.602.888.888 0 0 1-.84-1.191l2.442-6.86C10.872 7.38 11.398 7 12 7c.602 0 1.129.379 1.34.941l2.441 6.86a.89.89 0 0 1-.84 1.187.868.868 0 0 1-.851-.59Zm0 0">
+                                    </path>
+                                </svg>
+                            </span>
+                        </div>
+                    </div>
+                    <!-- Text -->
+                    <div class="h-text">
+                        <div class="head">
+                            <h4 title="Keyboard shortcuts" aria-label="Keyboard shortcuts">Keyboard shortcuts</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Chats 8 -->
+                <div class="block bottom">
+                    <!-- Img -->
+                    <div class="icon-Box">
+                        <div aria-disabled="false" role="button" tabindex="0" class="icons-setings" data-tab="2"
+                            title="Help" aria-label="Help">
+                            <span data-testid="settings-help" data-icon="settings-help" class="">
+                                <svg viewBox="0 0 24 24" width="24" height="24" class="">
+                                    <path fill="currentColor"
+                                        d="M12 4.7c-4.5 0-8.2 3.7-8.2 8.2s3.7 8.2 8.2 8.2 8.2-3.7 8.2-8.2-3.7-8.2-8.2-8.2zm.8 13.9h-1.6V17h1.6v1.6zm1.7-6.3-.7.7c-.7.6-1 1.1-1 2.3h-1.6v-.4c0-.9.3-1.7 1-2.3l1-1.1c.3-.2.5-.7.5-1.1 0-.9-.7-1.6-1.6-1.6s-1.6.7-1.6 1.6H8.7c0-1.8 1.5-3.3 3.3-3.3s3.3 1.5 3.3 3.3c0 .8-.4 1.4-.8 1.9z">
+                                    </path>
+                                </svg>
+                            </span>
+                        </div>
+                    </div>
+                    <!-- Text -->
+                    <div class="h-text">
+                        <div class="head">
+                            <h4 title="Help" aria-label="Help">Help</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="profile animate__animated animate__fadeInLeft" id="profile">
+            <!-- Header -->
+            <div class="header-Chat">
+
+                <!-- Icons -->
+                <div class="ICON">
+                    <div aria-disabled="false" role="button" tabindex="0" class="icons" data-tab="2" title="New chat"
+                        aria-label="New chat" onclick="closeProfile()">
+                        <span data-testid="chat" data-icon="chat" class="">
+                            <svg viewBox="0 0 24 24" width="24" height="24" class="">
+                                <path fill="currentColor" d="m12 4 1.4 1.4L7.8 11H20v2H7.8l5.6 5.6L12 20l-8-8 8-8z">
+                                </path>
+                            </svg>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="newText">
+                    <h2>Profile</h2>
+                </div>
+
+            </div>
+            <!-- Chats -->
+            <div class="chats-profile">
+                <!-- Profile -->
+                <div class="top">
+                    <div class="imgBox">
+                        <img src="images/img10.jpg" alt="" class="cover animate__animated animate__fadeIn">
+                        <div class="middle">
+                            <div aria-disabled="false" role="button" tabindex="0" class="icons-profile" data-tab="2"
+                                title="Camera" aria-label="Camera">
+                                <span data-testid="camera" data-icon="camera" class="">
+                                    <svg viewBox="0 0 24 24" width="24" height="24" class="">
+                                        <path fill="currentColor"
+                                            d="M21.317 4.381H10.971L9.078 2.45c-.246-.251-.736-.457-1.089-.457H4.905c-.352 0-.837.211-1.078.468L1.201 5.272C.96 5.529.763 6.028.763 6.38v1.878l-.002.01v11.189a1.92 1.92 0 0 0 1.921 1.921h18.634a1.92 1.92 0 0 0 1.921-1.921V6.302a1.92 1.92 0 0 0-1.92-1.921zM12.076 18.51a5.577 5.577 0 1 1 0-11.154 5.577 5.577 0 0 1 0 11.154zm0-9.506a3.929 3.929 0 1 0 0 7.858 3.929 3.929 0 0 0 0-7.858z">
+                                        </path>
+                                    </svg>
+                                </span>
+                            </div>
+                            <div class="text">CHANGE PROFILE PHOTO</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Chats 1 -->
+                <div class="block">
+                    <!-- Text -->
+                    <div class="h-text">
+                        <div class="titlePro">
+                            <p>Your name</p>
+                        </div>
+
+                        <div class="head">
+                            <h4>🛐❣️ Úyï Øsa ❣️🛐</h4>
+                            <div aria-disabled="false" role="button" tabindex="0" class="icons-prof" data-tab="2"
+                                title="Camera" aria-label="Camera">
+                                <span data-testid="pencil" data-icon="pencil" class="">
+                                    <svg viewBox="0 0 24 24" width="24" height="24" class="">
+                                        <path fill="currentColor"
+                                            d="M3.95 16.7v3.4h3.4l9.8-9.9-3.4-3.4-9.8 9.9zm15.8-9.1c.4-.4.4-.9 0-1.3l-2.1-2.1c-.4-.4-.9-.4-1.3 0l-1.6 1.6 3.4 3.4 1.6-1.6z">
+                                        </path>
+                                    </svg>
+                                </span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="warning">
+                    <div class="warn-text">
+                        <h4>This is not your username or pin. This name will be visible to your WhatsApp contacts.</h4>
+                    </div>
+                </div>
+
+                <!-- Chats 2 -->
+                <div class="block">
+                    <!-- Text -->
+                    <div class="h-text">
+                        <div class="titlePro">
+                            <p>About</p>
+                        </div>
+
+                        <div class="head">
+                            <h4>Perfect has seven letter💫💥💦and so does meeeeee🛐💦☦️</h4>
+                            <div aria-disabled="false" role="button" tabindex="0" class="icons-prof" data-tab="2"
+                                title="Camera" aria-label="Camera">
+                                <span data-testid="pencil" data-icon="pencil" class="">
+                                    <svg viewBox="0 0 24 24" width="24" height="24" class="">
+                                        <path fill="currentColor"
+                                            d="M3.95 16.7v3.4h3.4l9.8-9.9-3.4-3.4-9.8 9.9zm15.8-9.1c.4-.4.4-.9 0-1.3l-2.1-2.1c-.4-.4-.9-.4-1.3 0l-1.6 1.6 3.4 3.4 1.6-1.6z">
+                                        </path>
+                                    </svg>
+                                </span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
         </div>
 
 
@@ -594,7 +1707,8 @@
                 </div>
                 <div class="chatMessage my-chat">
                     <p class="textChat">ok wat about your siblings <span>12:44 AM </span><i
-                            class="bi bi-check2-all"></i></p>
+                            class="bi bi-check2-all"></i>
+                    </p>
                 </div>
                 <div class="chatMessage frnd-chat">
                     <p class="textChat">they are fine and yours <span>12:44 AM </span></p>
@@ -619,7 +1733,7 @@
             </div>
 
             <div class="chat-footer">
-                <div aria-disabled="false" role="button" tabindex="0" class="icons pUP" data-tab="2" title="Emoji"
+                <div aria-disabled="false" role="button" tabindex="0" class="icons Mar" data-tab="2" title="Emoji"
                     aria-label="Emoji">
                     <span data-testid="smiley" data-icon="smiley" class="">
                         <svg viewBox="0 0 24 24" width="24" height="24" class="">
@@ -630,7 +1744,7 @@
                     </span>
                 </div>
 
-                <div aria-disabled="false" role="button" tabindex="0" class="icons pUP" data-tab="2" title="Attach"
+                <div aria-disabled="false" role="button" tabindex="0" class="icons pUP Marg" data-tab="2" title="Attach"
                     aria-label="Attach" onclick="myFunction()">
                     <span data-testid="clip" data-icon="clip" class="">
                         <svg viewBox="0 0 24 24" width="24" height="24" class="">
@@ -813,6 +1927,7 @@
             </div>
         </div>
     </div>
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
