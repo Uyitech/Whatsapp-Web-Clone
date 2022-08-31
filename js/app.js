@@ -98,3 +98,74 @@ function closeProfile() {
     document.getElementById("settings").style.display = "block";
     document.getElementById("profile").style.display = "none";
 }
+
+
+// Open notifications from settings
+function openNotifications() {
+    document.getElementById("notifications").style.display = "block";
+    document.getElementById("settings").style.display = "none";
+}
+
+function closeNotifications() {
+    document.getElementById("settings").style.display = "block";
+    document.getElementById("notifications").style.display = "none";
+}
+
+
+// Open privacy from settings
+function openPrivacy() {
+    document.getElementById("privacy").style.display = "block";
+    document.getElementById("settings").style.display = "none";
+}
+
+function closePrivacy() {
+    document.getElementById("settings").style.display = "block";
+    document.getElementById("privacy").style.display = "none";
+}
+
+
+// Open Last seen from privacy
+function openLast() {
+    document.getElementById("last-seen").style.display = "block";
+    document.getElementById("privacy").style.display = "none";
+}
+
+function closeLast() {
+    document.getElementById("privacy").style.display = "block";
+    document.getElementById("last-seen").style.display = "none";
+}
+
+// Open Profile photo from privacy
+function openPhoto() {
+    document.getElementById("p-photo").style.display = "block";
+    document.getElementById("privacy").style.display = "none";
+}
+
+function closePhoto() {
+    document.getElementById("privacy").style.display = "block";
+    document.getElementById("p-photo").style.display = "none";
+}
+
+
+// Open About from privacy
+function openAbout() {
+    document.getElementById("about").style.display = "block";
+    document.getElementById("privacy").style.display = "none";
+}
+
+function closeAbout() {
+    document.getElementById("privacy").style.display = "block";
+    document.getElementById("about").style.display = "none";
+}
+
+
+// Open About from privacy
+function openDmessage() {
+    document.getElementById("D-message").style.display = "block";
+    document.getElementById("privacy").style.display = "none";
+}
+
+function closeDmessage() {
+    document.getElementById("privacy").style.display = "block";
+    document.getElementById("D-message").style.display = "none";
+}
