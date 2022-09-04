@@ -159,7 +159,7 @@ function closeAbout() {
 }
 
 
-// Open About from privacy
+// Open D-message from privacy
 function openDmessage() {
     document.getElementById("D-message").style.display = "block";
     document.getElementById("privacy").style.display = "none";
@@ -168,4 +168,64 @@ function openDmessage() {
 function closeDmessage() {
     document.getElementById("privacy").style.display = "block";
     document.getElementById("D-message").style.display = "none";
+}
+
+
+// Open groups from privacy
+function openGroups() {
+    document.getElementById("groups").style.display = "block";
+    document.getElementById("privacy").style.display = "none";
+}
+
+function closeGroups() {
+    document.getElementById("privacy").style.display = "block";
+    document.getElementById("groups").style.display = "none";
+}
+
+
+// Open blocked from privacy
+function openBlock() {
+    document.getElementById("blocks").style.display = "block";
+    document.getElementById("privacy").style.display = "none";
+}
+
+function closeBlock() {
+    document.getElementById("privacy").style.display = "block";
+    document.getElementById("blocks").style.display = "none";
+}
+
+
+// Open Security from settings
+function openSecurity() {
+    document.getElementById("security").style.display = "block";
+    document.getElementById("settings").style.display = "none";
+}
+
+function closeSecurity() {
+    document.getElementById("settings").style.display = "block";
+    document.getElementById("security").style.display = "none";
+}
+
+
+// Open Chat Wallpaper from settings
+function openWallpaper() {
+    document.getElementById("wallpaper").style.display = "block";
+    document.getElementById("settings").style.display = "none";
+}
+
+function closeWallpaper() {
+    document.getElementById("settings").style.display = "block";
+    document.getElementById("wallpaper").style.display = "none";
+}
+
+
+// Open Request Account Info from settings
+function openRequest() {
+    document.getElementById("request").style.display = "block";
+    document.getElementById("settings").style.display = "none";
+}
+
+function closeRequest() {
+    document.getElementById("settings").style.display = "block";
+    document.getElementById("request").style.display = "none";
 }

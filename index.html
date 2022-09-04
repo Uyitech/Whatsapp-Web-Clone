@@ -1400,7 +1400,7 @@
                 </div>
 
                 <!-- Chats 3 -->
-                <div class="block">
+                <div class="block" onclick="openSecurity()">
                     <!-- Img -->
                     <div class="icon-Box">
                         <div aria-disabled="false" role="button" tabindex="0" class="icons-setings" data-tab="2"
@@ -1425,7 +1425,7 @@
 
 
                 <!-- Chats 4 -->
-                <div class="block">
+                <div class="block" role="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
                     <!-- Img -->
                     <div class="icon-Box">
                         <div aria-disabled="false" role="button" tabindex="0" class="icons-setings" data-tab="2"
@@ -1449,7 +1449,7 @@
                 </div>
 
                 <!-- Chats 5 -->
-                <div class="block">
+                <div class="block" onclick="openWallpaper()">
                     <!-- Img -->
                     <div class="icon-Box">
                         <div aria-disabled="false" role="button" tabindex="0" class="icons-setings" data-tab="2"
@@ -1472,7 +1472,7 @@
                 </div>
 
                 <!-- Chats 6 -->
-                <div class="block">
+                <div class="block" onclick="openRequest()">
                     <!-- Img -->
                     <div class="icon-Box">
                         <div aria-disabled="false" role="button" tabindex="0" class="icons-setings" data-tab="2"
@@ -1794,7 +1794,7 @@
                                         sent for group chats.</p>
                                 </label>
                             </div>
-                            <input class="form-check-input" type="checkbox" value="" id="CheckRead">
+                            <input class="form-check-input" type="checkbox" value="" id="CheckRead" checked>
                         </div>
 
                     </div>
@@ -1824,7 +1824,7 @@
                 <!-- Chats 2 -->
                 <div class="block">
                     <div class="h-text">
-                        <div class="G-head">
+                        <div class="G-head" onclick="openGroups()">
                             <div class="text-inner">
                                 <h4>Groups</h4>
                                 <p>My contacts</p>
@@ -1834,10 +1834,10 @@
                             </span>
                         </div>
 
-                        <div class="R-head">
+                        <div class="R-head" onclick="openBlock()">
                             <div class="text-inner">
                                 <h4>Blocked contacts</h4>
-                                <p>2</p>
+                                <p>1</p>
                             </div>
                             <span class="material-symbols-outlined">
                                 chevron_right
@@ -2163,6 +2163,528 @@
             </div>
         </div>
 
+
+        <div class="groups animate__animated animate__fadeInLeft" id="groups">
+            <!-- Header -->
+            <div class="header-Chat">
+
+                <!-- Icons -->
+                <div class="ICON">
+                    <div aria-disabled="false" role="button" tabindex="0" class="icons" data-tab="2" title="New chat"
+                        aria-label="New chat" onclick="closeGroups()">
+                        <span data-testid="chat" data-icon="chat" class="">
+                            <svg viewBox="0 0 24 24" width="24" height="24" class="">
+                                <path fill="currentColor" d="m12 4 1.4 1.4L7.8 11H20v2H7.8l5.6 5.6L12 20l-8-8 8-8z">
+                                </path>
+                            </svg>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="newText">
+                    <h2>Groups</h2>
+                </div>
+
+            </div>
+            <!-- Chats -->
+            <div class="chats-groups">
+                <!-- Chats 1 -->
+                <div class="block">
+                    <!-- Text -->
+                    <div class="h-text">
+                        <div class="titlePro">
+                            <p>Who can add me to groups</p>
+                        </div>
+
+                        <div class="head">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="groupsRadios" value="" id="G-first">
+                                <label class="form-check-label" for="G-first">
+                                    <h4>Everyone</h4>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="head">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="groupsRadios" value="" id="G-second"
+                                    checked>
+                                <label class="form-check-label" for="G-second">
+                                    <h4>My contacts</h4>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="head">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="groupsRadios" value="" id="G-third">
+                                <label class="form-check-label" for="G-third">
+                                    <h4>My contacts except...</h4>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="admins">
+                            <p>Admins who can't add you to a group will have the option of inviting you privately
+                                instead.</p>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="blocks animate__animated animate__fadeInLeft" id="blocks">
+            <!-- Header -->
+            <div class="header-Chat">
+
+                <!-- Icons -->
+                <div class="ICON">
+                    <div aria-disabled="false" role="button" tabindex="0" class="icons" data-tab="2" title="New chat"
+                        aria-label="New chat" onclick="closeBlock()">
+                        <span data-testid="chat" data-icon="chat" class="">
+                            <svg viewBox="0 0 24 24" width="24" height="24" class="">
+                                <path fill="currentColor" d="m12 4 1.4 1.4L7.8 11H20v2H7.8l5.6 5.6L12 20l-8-8 8-8z">
+                                </path>
+                            </svg>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="newText">
+                    <h2>Blocked contacts</h2>
+                </div>
+
+            </div>
+            <div class="chats-block">
+                <!-- Chats 1 -->
+                <div class="block">
+                    <!-- Img -->
+                    <div class="iconBox">
+                        <div aria-disabled="false" role="button" tabindex="0" class="icons" data-tab="2"
+                            title="Add blocked contact">
+                            <span data-testid="add-user" data-icon="add-user" class="">
+                                <svg viewBox="0 0 24 24" width="24" height="24" class="">
+                                    <path fill="currentColor"
+                                        d="M14.7 12c2 0 3.6-1.6 3.6-3.6s-1.6-3.6-3.6-3.6-3.6 1.6-3.6 3.6 1.6 3.6 3.6 3.6zm-8.1-1.8V7.5H4.8v2.7H2.1V12h2.7v2.7h1.8V12h2.7v-1.8H6.6zm8.1 3.6c-2.4 0-7.2 1.2-7.2 3.6v1.8H22v-1.8c-.1-2.4-4.9-3.6-7.3-3.6z">
+                                    </path>
+                                </svg>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="Add-text">
+                        <div class="head">
+                            <h4>Add blocked contact</h4>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Chats 1 -->
+                <div class="block top">
+                    <!-- Img -->
+                    <div class="imgBox">
+                        <img src="images/img1.jpg" class="cover">
+                    </div>
+                    <!-- Text -->
+                    <div class="h-text">
+                        <div class="head">
+                            <h4 title="A B" aria-label="A B">A B</h4>
+                        </div>
+                        <div class="message">
+                            <p title="Fun to chat with." aria-label="Fun to chat with.">
+                                Fun to chat with.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="iconBox">
+                        <div data-testid="chat-controls" class="icons" role="button">
+                            <span data-testid="x-alt" data-icon="x-alt" class="">
+                                <svg viewBox="0 0 24 24" width="24" height="24" class="">
+                                    <path fill="currentColor"
+                                        d="M17.25 7.8 16.2 6.75l-4.2 4.2-4.2-4.2L6.75 7.8l4.2 4.2-4.2 4.2 1.05 1.05 4.2-4.2 4.2 4.2 1.05-1.05-4.2-4.2 4.2-4.2z">
+                                    </path>
+                                </svg>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="b-con">
+                    <p>Blocked contacts will no longer be able to call you or send you messages</p>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="security animate__animated animate__fadeInLeft" id="security">
+            <!-- Header -->
+            <div class="header-Chat">
+
+                <!-- Icons -->
+                <div class="ICON">
+                    <div aria-disabled="false" role="button" tabindex="0" class="icons" data-tab="2" title="New chat"
+                        aria-label="New chat" onclick="closeSecurity()">
+                        <span data-testid="chat" data-icon="chat" class="">
+                            <svg viewBox="0 0 24 24" width="24" height="24" class="">
+                                <path fill="currentColor" d="m12 4 1.4 1.4L7.8 11H20v2H7.8l5.6 5.6L12 20l-8-8 8-8z">
+                                </path>
+                            </svg>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="newText">
+                    <h2>Security</h2>
+                </div>
+
+            </div>
+            <!-- Chats -->
+            <div class="chats-security">
+
+                <div class="top-pad">
+                    <div class="icons-pad">
+                        <div aria-disabled="false" tabindex="0" class="icons" data-tab="2">
+                            <span data-testid="security-drawer-lock" data-icon="security-drawer-lock" class="">
+                                <svg width="84" viewBox="0 0 84 84" fill="none" preserveAspectRatio="xMidYMid meet"
+                                    class="">
+                                    <circle cx="42" cy="42" r="42" fill="#07CD9E"></circle>
+                                    <path
+                                        d="M53.241 33.432c0-2.079-.508-3.988-1.523-5.728a11.102 11.102 0 0 0-4.092-4.157C45.914 22.516 44.042 22 42.013 22c-2.046 0-3.934.516-5.662 1.547-1.713 1.015-3.077 2.4-4.092 4.157-1 1.74-1.5 3.65-1.5 5.728v4.375a5.657 5.657 0 0 0-2.925 2.658 6.438 6.438 0 0 0-.643 1.861c-.127.677-.19 1.684-.19 3.021v8.532c0 1.338.063 2.345.19 3.021a6.44 6.44 0 0 0 .643 1.861 5.668 5.668 0 0 0 2.355 2.393 5.91 5.91 0 0 0 1.808.653c.682.129 1.673.193 2.974.193h14.06c1.3 0 2.284-.064 2.95-.193a5.904 5.904 0 0 0 1.832-.653 5.668 5.668 0 0 0 2.355-2.393 6.44 6.44 0 0 0 .643-1.86c.127-.677.19-1.684.19-3.022v-8.532c0-1.337-.063-2.344-.19-3.02a6.438 6.438 0 0 0-.643-1.862 5.667 5.667 0 0 0-2.926-2.658v-4.375Zm-17.986 0c0-1.24.302-2.385.904-3.432a6.725 6.725 0 0 1 2.45-2.514 6.621 6.621 0 0 1 3.403-.918c1.221 0 2.347.306 3.378.918A6.725 6.725 0 0 1 47.84 30a6.76 6.76 0 0 1 .905 3.432v3.795h-13.49v-3.795Z"
+                                        fill="#fff">
+                                    </path>
+                                </svg>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Chats 1 -->
+                <div class="block">
+                    <!-- Text -->
+                    <div class="h-text">
+                        <div class="text-yur">
+                            <h3>Your chats and calls are private</h3>
+                            <p>End-to-end encryption keeps your personal messages and calls between you and the people
+                                you choose. Not even WhatsApp can read or listen to them. This includes your:
+                            </p>
+                            <ul>
+                                <li>
+                                    <span data-testid="e2e-message" data-icon="e2e-message" class="t-v">
+                                        <svg width="25" height="25" viewBox="0 0 24 24" fill="none"
+                                            preserveAspectRatio="xMidYMid meet" class="">
+                                            <path clip-rule="evenodd"
+                                                d="M13.147 3H5.192A3.203 3.203 0 0 0 2 6.192v4.044a3.203 3.203 0 0 0 3.192 3.193h.719v2.607l3.476-2.607h3.76a3.203 3.203 0 0 0 3.192-3.193V6.192A3.203 3.203 0 0 0 13.147 3Z"
+                                                stroke="#8696A0" stroke-width="1.2" stroke-linejoin="round">
+                                            </path>
+                                            <path
+                                                d="M7.214 15.058v.393a3.203 3.203 0 0 0 3.193 3.192h3.76l3.476 2.607v-2.607h.718a3.203 3.203 0 0 0 3.193-3.193v-4.043a3.203 3.203 0 0 0-3.193-3.193H16.34"
+                                                stroke="#8696A0" stroke-width="1.2" stroke-linejoin="round">
+                                            </path>
+                                        </svg>
+                                    </span>
+                                    Text and voice messages
+                                </li>
+                                <li>
+                                    <span data-testid="e2e-contact-info-call" data-icon="e2e-contact-info-call"
+                                        class="t-v">
+                                        <svg width="25" height="25" viewBox="0 0 24 24" fill="none"
+                                            preserveAspectRatio="xMidYMid meet" class="">
+                                            <path
+                                                d="M15.951 20.15c1.453 0 2.407-.39 3.246-1.336.066-.067.133-.142.19-.208.499-.556.731-1.104.731-1.627 0-.598-.348-1.154-1.087-1.668l-2.416-1.677c-.747-.515-1.618-.573-2.316.116l-.639.64c-.19.19-.357.198-.54.082-.448-.282-1.352-1.07-1.967-1.685-.647-.64-1.27-1.353-1.602-1.876-.108-.19-.1-.348.092-.54l.63-.639c.698-.697.64-1.577.125-2.315L8.72 5c-.514-.739-1.07-1.08-1.668-1.087-.523-.009-1.071.232-1.627.73l-.208.183c-.946.846-1.336 1.8-1.336 3.237 0 2.374 1.46 5.263 4.142 7.944 2.665 2.664 5.561 4.142 7.927 4.142Zm.008-1.278c-2.116.041-4.83-1.586-6.98-3.727-2.167-2.159-3.869-4.964-3.827-7.081.016-.913.34-1.702.988-2.266.058-.05.1-.091.157-.133.25-.216.515-.332.756-.332.24 0 .456.091.614.34l1.61 2.416c.175.257.191.548-.066.805l-.73.73c-.573.573-.532 1.27-.117 1.827.473.639 1.295 1.569 1.934 2.2.631.639 1.636 1.535 2.283 2.017.556.415 1.254.456 1.826-.117l.73-.73c.258-.258.54-.24.806-.075l2.415 1.61c.25.166.34.374.34.623 0 .24-.116.506-.331.755l-.133.158c-.565.648-1.353.963-2.275.98Z"
+                                                fill="#8696A0">
+                                            </path>
+                                        </svg>
+                                    </span>
+                                    Audio and video calls
+                                </li>
+                                <li>
+                                    <span data-testid="e2e-attachment" data-icon="e2e-attachment" class="t-v">
+                                        <svg width="25" height="25" viewBox="0 0 24 24" fill="none"
+                                            preserveAspectRatio="xMidYMid meet" class="">
+                                            <path
+                                                d="m10.064 6.341 7.462 6.26c1.474 1.236 1.88 3.416.79 5.001a3.676 3.676 0 0 1-5.403.741l-8.718-7.312c-.924-.775-1.207-2.142-.53-3.136a2.302 2.302 0 0 1 3.39-.473l7.405 6.212c.388.325.44.909.114 1.297a.923.923 0 0 1-1.297.113L7.105 9.868a.695.695 0 0 0-.972.085.695.695 0 0 0 .085.973l6.073 5.094c.924.774 2.319.816 3.18-.024.993-.97.913-2.55-.123-3.42L8.062 6.464c-1.474-1.236-3.691-1.258-5.063.091a3.68 3.68 0 0 0 .21 5.451l8.654 7.26c2.024 1.697 5.08 1.737 6.962-.12a5.068 5.068 0 0 0-.292-7.503l-7.582-6.36a.696.696 0 0 0-.973.085.695.695 0 0 0 .086.973Z"
+                                                fill="#8696A0">
+                                            </path>
+                                        </svg>
+                                    </span>
+                                    Photos, videos and documents
+                                </li>
+                                <li>
+                                    <span data-testid="e2e-location" data-icon="e2e-location" class="t-v">
+                                        <svg width="25" height="25" viewBox="0 0 24 24" fill="none"
+                                            preserveAspectRatio="xMidYMid meet" class="">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M12 3.85c3.263 0 5.9 2.637 5.9 5.9 0 1.45-.666 3.164-1.73 4.923-1.046 1.725-2.367 3.32-3.44 4.491a.962.962 0 0 1-1.46 0c-1.072-1.171-2.394-2.766-3.44-4.491C6.767 12.914 6.1 11.2 6.1 9.75c0-3.263 2.637-5.9 5.9-5.9Zm0-1.6c4.146 0 7.5 3.354 7.5 7.5 0 3.77-3.369 8.07-5.59 10.495a2.561 2.561 0 0 1-3.82 0C7.87 17.819 4.5 13.52 4.5 9.75c0-4.146 3.354-7.5 7.5-7.5Zm0 11.35a3.475 3.475 0 1 0 0-6.95 3.475 3.475 0 0 0 0 6.95Zm1.875-3.475a1.875 1.875 0 1 1-3.75 0 1.875 1.875 0 0 1 3.75 0Z"
+                                                fill="#8696A0">
+                                            </path>
+                                        </svg>
+                                    </span>
+                                    Location sharing
+                                </li>
+                                <li>
+                                    <span data-testid="e2e-status" data-icon="e2e-status" class="t-v">
+                                        <svg width="25" height="25" viewBox="0 0 24 24" fill="none"
+                                            preserveAspectRatio="xMidYMid meet" class="">
+                                            <path
+                                                d="M20.335 11.583a8.408 8.408 0 0 1-6.763 8.598M5.614 6.4a8.367 8.367 0 0 1 3.498-2.377 8.389 8.389 0 0 1 7.296.799M10.304 20.182a8.4 8.4 0 0 1-6.281-5.42A8.367 8.367 0 0 1 3.98 9.23"
+                                                stroke="#8696A0" stroke-width="1.4" stroke-linecap="round"
+                                                stroke-linejoin="round"></path>
+                                            <path d="M17.277 11.937a5.34 5.34 0 1 1-2.512-4.53" stroke="#8696A0"
+                                                stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+                                            </path>
+                                        </svg>
+                                    </span>
+                                    Status updates
+                                </li>
+                            </ul>
+                            <div class="Learn-more">
+                                <a href="">Learn more</a>
+                            </div>
+                        </div>
+
+
+                        <div class="F-head">
+                            <input class="form-check-input" type="checkbox" value="" id="show">
+                            <div class="text-inner">
+                                <label class="form-check-label" for="show">
+                                    <h4>Show security notifications on this computer</h4>
+                                </label>
+                                <p>Get notified when your security code changes for a contact's <br> phone. If you have
+                                    multiple devices, this setting must be <br> enabled on each device where you want to
+                                    get notifications.
+                                </p>
+                                <a href="">Learn more</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="modal fade" id="exampleModal" data-bs-backdrop="static" tabindex="-1"
+            aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <h5 class="m-title">Choose theme</h5>
+                    <ul>
+                        <li>
+                            <div class="m-list">
+                                <label class="form-check-label" for="light">
+                                    <input class="form-check-input" type="radio" name="groupsRadios" value=""
+                                        id="light">
+                                    <h4>Light</h4>
+                                </label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="m-list">
+                                <label class="form-check-label" for="dark">
+                                    <input class="form-check-input" type="radio" name="groupsRadios" value="" id="dark"
+                                        checked>
+                                    <h4>Dark</h4>
+                                </label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="m-list">
+                                <label class="form-check-label" for="system-default">
+                                    <input class="form-check-input" type="radio" name="groupsRadios" value=""
+                                        id="system-default">
+                                    <h4>System default</h4>
+                                </label>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <div class="m-btn">
+                        <button type="button" class="btn1" data-bs-dismiss="modal">Cancel</button>
+                        <button type="button" class="btn2" data-bs-dismiss="modal">Ok</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="wallpaper animate__animated animate__fadeInLeft" id="wallpaper">
+            <!-- Header -->
+            <div class="header-Chat">
+
+                <!-- Icons -->
+                <div class="ICON">
+                    <div aria-disabled="false" role="button" tabindex="0" class="icons" data-tab="2" title="New chat"
+                        aria-label="New chat" onclick="closeWallpaper()">
+                        <span data-testid="chat" data-icon="chat" class="">
+                            <svg viewBox="0 0 24 24" width="24" height="24" class="">
+                                <path fill="currentColor" d="m12 4 1.4 1.4L7.8 11H20v2H7.8l5.6 5.6L12 20l-8-8 8-8z">
+                                </path>
+                            </svg>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="newText">
+                    <h2>Set Chat Wallpaper</h2>
+                </div>
+
+            </div>
+            <!-- Chats -->
+            <div class="chats-wallpaper">
+                <!-- Chats 1 -->
+                <div class="block">
+                    <!-- Text -->
+                    <div class="h-text">
+                        <div class="head">
+                            <div class="doodles" for="doodles">
+                                <input class="form-check-input" type="checkbox" value="" id="doodles" checked>
+                                <h4>Add Whatsapp Doodles</h4>
+                            </div>
+                        </div>
+                        <div class="BOX">
+                            <span class="boxes active" style="background-color: #0b141a;">Default</span>
+                            <span class="boxes" style="background-color: rgb(15, 36, 36);"></span>
+                            <span class="boxes" style="background-color: rgb(18, 38, 31);"></span>
+                            <span class="boxes" style="background-color: rgb(17, 36, 28);"></span>
+                            <span class="boxes" style="background-color: rgb(17, 30, 39);"></span>
+                            <span class="boxes" style="background-color: rgb(15, 34, 36);"></span>
+                            <span class="boxes" style="background-color: rgb(14, 33, 37);"></span>
+                            <span class="boxes" style="background-color: rgb(31, 29, 37);"></span>
+                            <span class="boxes" style="background-color: rgb(33, 33, 33);"></span>
+                            <span class="boxes" style="background-color: rgb(31, 33, 28);"></span>
+                            <span class="boxes" style="background-color: rgb(35, 35, 27);"></span>
+                            <span class="boxes" style="background-color: rgb(38, 36, 25);"></span>
+                            <span class="boxes" style="background-color: rgb(38, 31, 23);"></span>
+                            <span class="boxes" style="background-color: rgb(38, 23, 23);"></span>
+                            <span class="boxes" style="background-color: rgb(38, 15, 16);"></span>
+                            <span class="boxes" style="background-color: rgb(38, 10, 16);"></span>
+                            <span class="boxes" style="background-color: rgb(25, 5, 11);"></span>
+                            <span class="boxes" style="background-color: rgb(33, 16, 12);"></span>
+                            <span class="boxes" style="background-color: rgb(15, 12, 12);"></span>
+                            <span class="boxes" style="background-color: rgb(16, 25, 25);"></span>
+                            <span class="boxes" style="background-color: rgb(10, 29, 37);"></span>
+                            <span class="boxes" style="background-color: rgb(13, 21, 35);"></span>
+                            <span class="boxes" style="background-color: rgb(13, 15, 17);"></span>
+                            <span class="boxes" style="background-color: rgb(10, 12, 13);"></span>
+                            <span class="boxes" style="background-color: rgb(17, 11, 18);"></span>
+                            <span class="boxes" style="background-color: rgb(30, 31, 31);"></span>
+                            <span class="boxes" style="background-color: rgb(38, 38, 24);"></span>
+                            <span class="boxes" style="background-color: rgb(35, 35, 31);"></span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <div class="request animate__animated animate__fadeInLeft" id="request">
+            <!-- Header -->
+            <div class="header-Chat">
+
+                <!-- Icons -->
+                <div class="ICON">
+                    <div aria-disabled="false" role="button" tabindex="0" class="icons" data-tab="2" title="New chat"
+                        aria-label="New chat" onclick="closeRequest()">
+                        <span data-testid="chat" data-icon="chat" class="">
+                            <svg viewBox="0 0 24 24" width="24" height="24" class="">
+                                <path fill="currentColor" d="m12 4 1.4 1.4L7.8 11H20v2H7.8l5.6 5.6L12 20l-8-8 8-8z">
+                                </path>
+                            </svg>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="newText">
+                    <h2>Request Account Info</h2>
+                </div>
+
+            </div>
+            <!-- Chats -->
+            <div class="chats-request">
+
+                <div class="top-pad">
+                    <div class="icons-pad">
+                        <div aria-disabled="false" tabindex="0" class="icons" data-tab="2">
+                            <span data-testid="document" data-icon="document" class="">
+                                <svg width="112" height="112" viewBox="0 0 112 112" fill="none" class="">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M112 56c0 30.928-25.072 56-56 56S0 86.928 0 56 25.072 0 56 0s56 25.072 56 56Zm-70.06-7.334h28a2 2 0 0 1 0 4h-28a2 2 0 1 1 0-4Zm0 10h28a2 2 0 0 1 0 4h-28a2 2 0 1 1 0-4Zm12 10h-12a2 2 0 1 0 0 4h12a2 2 0 1 0 0-4Z"
+                                        fill="#06CF9C" fill-opacity=".15">
+                                    </path>
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M68 19H34a6 6 0 0 0-6 6v62a6 6 0 0 0 6 6h44a6 6 0 0 0 6-6V35L68 19ZM42 49h28a2 2 0 1 1 0 4H42a2 2 0 1 1 0-4Zm0 10h28a2 2 0 1 1 0 4H42a2 2 0 1 1 0-4Zm12 10H42a2 2 0 1 0 0 4h12a2 2 0 1 0 0-4Z"
+                                        fill="#06CF9C">
+                                    </path>
+                                    <path d="M84 35 68 19v10a6 6 0 0 0 6 6h10Z" fill="#00A884"></path>
+                                </svg>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Chats 1 -->
+                <div class="block">
+                    <!-- Text -->
+                    <div class="h-text">
+                        <div class="text-yur">
+                            <p>Create a report of your WhatsApp account information and settings, which you can access
+                                or port to another app. This
+                                report does not include your messages.</p>
+                                <a href="">Learn more</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Chats 2 -->
+                <div class="block top">
+                    <!-- Icon -->
+                    <div aria-disabled="false" tabindex="0" class="icons-R" data-tab="2">
+                        <span data-testid="business-hours" data-icon="business-hours" class="">
+                            <svg viewBox="0 0 24 24" width="24" height="24" class="">
+                                <path fill="currentColor"
+                                    d="M12.514 6.858h-1.543v6.172l5.349 3.29.821-1.336-4.628-2.777V6.858zM12 1.714C6.342 1.714 1.714 6.344 1.714 12c0 5.658 4.628 10.287 10.286 10.287S22.286 17.658 22.286 12c0-5.656-4.628-10.286-10.286-10.286zm0 18.516c-4.526 0-8.23-3.703-8.23-8.23 0-4.525 3.703-8.228 8.23-8.228S20.23 7.475 20.23 12c0 4.526-3.704 8.23-8.23 8.23z">
+                                </path>
+                            </svg>
+                        </span>
+                    </div>
+                    <!-- Text -->
+                    <div class="R-text">
+                        <div class="head">
+                            <h4 title="Request sent" aria-label="Request sent">Request sent</h4>
+                        </div>
+                        <div class="message">
+                            <p title="Ready by September 6, 20222" aria-label="Ready by September 6, 20222">
+                                Ready by September 6, 20222
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="block">
+                    <div class="F-head">
+                        <!-- Text -->
+                        <div class="text-inner">
+                            <p class="F-p">Your report will be ready in about 3 days. You'll have a few weeks to
+                                download your report after it's available.
+                            </p>
+
+                            <p class="S-p">Your request will be canceled if you make changes to your account such as
+                                changing your number or deleting your account.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
 
 
         <div class="rightSide">
