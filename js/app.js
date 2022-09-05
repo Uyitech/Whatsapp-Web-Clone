@@ -27,7 +27,6 @@ function myDropLeft() {
     }
 }
 
-
 const moon = document.getElementById("moon")
 
 moon.onclick = function () {
@@ -73,6 +72,18 @@ function openGrp() {
 function closeGroup() {
     document.getElementById("leftSid").style.display = "block";
     document.getElementById("group").style.display = "none";
+}
+
+
+// Open Group from list item
+function openStarred() {
+    document.getElementById("starred").style.display = "block";
+    document.getElementById("leftSid").style.display = "none";
+}
+
+function closeStarred() {
+    document.getElementById("leftSid").style.display = "block";
+    document.getElementById("starred").style.display = "none";
 }
 
 
@@ -228,4 +239,16 @@ function openRequest() {
 function closeRequest() {
     document.getElementById("settings").style.display = "block";
     document.getElementById("request").style.display = "none";
+}
+
+
+// Open Help from settings
+function openHelp() {
+    document.getElementById("help").style.display = "block";
+    document.getElementById("settings").style.display = "none";
+}
+
+function closeHelp() {
+    document.getElementById("settings").style.display = "block";
+    document.getElementById("help").style.display = "none";
 }

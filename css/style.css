@@ -2626,7 +2626,6 @@ body .container {
 }
 
 
-
 /* Modal Theme */
 .modal {
     background: var(--modal-bg);
@@ -3025,4 +3024,314 @@ body .container {
 
 .chats-request .block .F-head .text-inner {
     width: 100%;
+}
+
+
+
+/* Help SCREEN */
+.help {
+    display: none;
+    position: relative;
+    flex: 30%;
+    background-color: var(--profile-BGG);
+    border-right: 1px solid var(--border-right);
+}
+
+.header-Chat {
+    position: relative;
+    width: 100%;
+    height: 110px;
+    background: var(--header-bg);
+    display: flex;
+    padding: 0 15px;
+    padding-top: 65px;
+}
+
+.help .icons {
+    flex: none;
+    color: var(--head-title);
+    padding: 0 7px;
+    margin-left: 3px;
+    display: inline-table;
+}
+
+.chats-help {
+    position: relative;
+    height: calc(100% - 110px);
+    overflow-y: auto;
+}
+
+.chats-help .img-animated {
+    background-image: url("../images/animated-doodle.png");
+    animation: _1-zyO 1s steps(15) infinite;
+    background-repeat: no-repeat;
+    background-size: 1600% auto;
+    flex: none;
+    width: 258px;
+    height: 258px;
+    overflow: hidden;
+}
+
+@-webkit-keyframes _1-zyO {
+    to {
+        background-position-x: 100%
+    }
+}
+
+@keyframes _1-zyO {
+    to {
+        background-position-x: 100%
+    }
+}
+
+.chats-help .img-Ani {
+    padding-bottom: 30px;
+    padding-top: 30px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background: var(--profile-bg);
+}
+
+.chats-help .text-Ani {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding-bottom: 25px;
+    background: var(--profile-bg);
+}
+
+.chats-help .text-Ani p {
+    font-size: 13px;
+    font-weight: 400;
+    color: var(--primary);
+    display: -webkit-box;
+    margin-bottom: 0rem;
+}
+
+.chats-help .block.top {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 15px 15px 15px 30px;
+    background: var(--profile-bg);
+    margin-bottom: 0;
+    cursor: pointer;
+}
+
+.chats-help .block.top .icons-R {
+    flex: none;
+    margin-right: 18px;
+    display: inline-table;
+    color: var(--settings-icon);
+}
+
+.chats-help .block.top .R-text {
+    position: relative;
+    width: 100%;
+}
+
+.chats-help .block.top:hover {
+    background: var(--secondary);
+}
+
+.chats-help .block.top .R-text .head {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: -6px;
+}
+
+.chats-help .block.top .R-text .head h4 {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--h4);
+    letter-spacing: 0.4px;
+    margin-bottom: 5px;
+}
+
+/* Blocked */
+.chats-help .blocked {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 15px 15px 15px 30px;
+    margin-bottom: 0;
+    border-top: 0.7px solid var(--block);
+    border-bottom: 0.7px solid var(--block);
+    background: var(--profile-bg);
+    cursor: pointer;
+}
+
+.chats-help .blocked .icons-R {
+    flex: none;
+    margin-right: 18px;
+    display: inline-table;
+    color: var(--settings-icon);
+}
+
+.chats-help .blocked .R-text {
+    position: relative;
+    width: 100%;
+}
+
+.chats-help .blocked:hover {
+    background: var(--secondary);
+}
+
+.chats-help .blocked .R-text .head {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: -6px;
+}
+
+.chats-help .blocked .R-text .head h4 {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--h4);
+    letter-spacing: 0.4px;
+    margin-bottom: 5px;
+}
+
+
+/* Starred SCREEN */
+.starred {
+    display: none;
+    position: relative;
+    flex: 30%;
+    background-color: var(--profile-BGG);
+    border-right: 1px solid var(--border-right);
+}
+
+.header-Chat {
+    position: relative;
+    width: 100%;
+    height: 110px;
+    background: var(--header-bg);
+    display: flex;
+    padding: 0 15px;
+    padding-top: 65px;
+}
+
+.starred .icons {
+    flex: none;
+    color: var(--head-title);
+    padding: 0 7px;
+    margin-left: 3px;
+    display: inline-table;
+}
+
+.chats-star {
+    position: relative;
+    height: calc(100% - 110px);
+    overflow-y: auto;
+}
+
+.chats-star .text-Ani {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    height: calc(100% - 60px);
+    background: var(--profile-bg);
+}
+
+.chats-star .text-Ani p {
+    font-size: 13px;
+    font-weight: 400;
+    color: var(--primary);
+    display: -webkit-box;
+    margin-bottom: 0rem;
+}
+
+
+.chats-star .block {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    height: 60px;
+    border-top: 0.7px solid var(--block);
+    background: var(--profile-bg);
+}
+
+.chats-star .text-sec p {
+    font-size: 13px;
+    font-weight: 400;
+    color: var(--primary);
+    display: -webkit-box;
+    margin-bottom: 0rem;
+}
+
+
+/* Modal Log Out */
+.modal {
+    background: var(--modal-bg);
+}
+
+.modal .modal-dialog .modal-content {
+    padding: 22px 24px 20px;
+    background-color: var(--modal-content-bg);
+    box-shadow: 0 17px 50px 0 rgba(var(--modal-shadow), .19), 0 12px 15px 0 rgba(var(--modal-shadow), .24);
+    border-radius: 3px;
+    border: none;
+}
+
+.modal .modal-dialog .modal-content .m-title {
+    font-size: 20px;
+    color: var(--modal-text);
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.modal .modal-dialog .modal-content h4 {
+    font-size: 12.7px;
+    color: var(--modal-text);
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.modal .modal-dialog .modal-content .m-btn {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.modal .modal-dialog .modal-content .m-btn .btn1 {
+    background: transparent;
+    border: 1.5px solid var(--modal-btn);
+    color: var(--modal-btn2);
+    font-size: 14px;
+    font-weight: 600;
+    transition: 0.4s linear;
+    text-transform: uppercase;
+    border-radius: 3px;
+    padding: 7px 22px;
+}
+
+.modal .modal-dialog .modal-content .m-btn .btn2 {
+    background: var(--modal-btn2);
+    border: 1.5px solid var(--modal-btn2);
+    margin-left: 8px;
+    color: var(--modal-btn-text);
+    font-size: 14px;
+    font-weight: 600;
+    transition: 0.4s linear;
+    text-transform: uppercase;
+    border-radius: 3px;
+    padding: 7px 22px;
+}
+
+.modal .modal-dialog .modal-content .m-btn .btn1:hover {
+    background: var(--modal-btn);
+    transition: 0.4s linear;
+}
+
+.modal .modal-dialog .modal-content .m-btn .btn2:hover {
+    background: var(--modal-btn-hover);
+    border-color: var(--modal-btn-hover);
+    transition: 0.4s linear;
 }
