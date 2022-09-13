@@ -1,0 +1,216 @@
+.container .status {
+    position: relative;
+    margin-left: 100px;
+    flex: 30%;
+    background-color: #1e262c;
+    /* border-right: 1px solid var(--border-right); */
+}
+
+.status {
+    display: none;
+}
+
+.status .header {
+    position: relative;
+    width: 100%;
+    height: 69px;
+    background: #1e262c;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+    margin-top: 35px;
+}
+
+.status .imgText {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.status .imgText h4 {
+    font-weight: 400;
+    font-size: 15.5px;
+    line-height: 1.3em;
+    margin-left: 15px;
+    color: var(--h4);
+    margin-top: 10px;
+}
+
+.status .imgText h4 span {
+    font-weight: 400;
+    color: var(--primary);
+    font-size: 12.5px;
+}
+
+.status .userImg {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.status .cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.chats-status {
+    position: relative;
+    overflow-y: auto;
+    height: calc(100% - 104px);
+    background: #1e262c;
+}
+
+.chats-status .recent {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 10px 15px 8px 15px;
+}
+
+.chats-status .recent .h-text {
+    width: 100%;
+    border-top: 0.7px solid var(--block);
+}
+
+.chats-status .recent .h-text .head h4 {
+    width: 100%;
+    font-size: 13.5px;
+    margin-top: 7px;
+    font-weight: 400;
+    color: var(--primary);
+    margin-bottom: 0;
+    text-transform: uppercase;
+}
+
+.chats-status .block {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 10px 15px 10px 15px;
+    cursor: pointer;
+}
+
+.chats-status .block:hover {
+    background: #2c353a;
+}
+
+.chats-status .block .imgBox {
+    position: relative;
+    min-width: 40px;
+    height: 40px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.circle {
+    position: absolute;
+    display: block;
+    margin-left: -3.6px;
+    margin-top: 0.7px;
+}
+
+.stroke {
+    stroke: #008069;
+}
+
+.Stroke2 {
+    stroke: #bbbec4;
+}
+
+.chats-status .block .h-text {
+    position: relative;
+    width: 100%;
+}
+
+.chats-status .block .h-text .head {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: -6px;
+}
+
+.chats-status .block .h-text .head h4 {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--h4);
+    letter-spacing: 0.4px;
+}
+
+.message {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.message p {
+    font-size: 13px;
+    font-weight: 400;
+    color: var(--primary);
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    margin-bottom: 0rem;
+}
+
+
+/* Right Side */
+.container .rightStatus {
+    position: relative;
+    margin-right: 100px;
+    flex: 70%;
+    background: none;
+}
+
+.rightStatus {
+    display: none;
+}
+
+.rightStatus .ICON {
+    position: absolute;
+    right: 1px;
+    padding: 15px;
+}
+
+.rightStatus ._shbxn {
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: absolute;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.rightStatus ._13bjQ {
+    display: flex;
+    max-height: 100%;
+    flex-direction: column;
+}
+
+.rightStatus ._13bjQ .status-placeholder {
+    display: flex;
+    color: #6d7276;
+    margin-bottom: 40px;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.rightStatus .status-text {
+    font-size: 15.5px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+    color: #9494A1;
+}

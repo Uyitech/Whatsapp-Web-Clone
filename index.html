@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="images/whatsapp.png" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/status.css">
     <title>Whatsapp Web Clone</title>
 
     <!-- Google Fonts -->
@@ -31,7 +32,6 @@
 
 <body class="body">
     <div class="container" style="width: 1620px">
-
 
         <div class="leftSide animate__animated animate__fadeInRight" id="leftSid">
             <!-- Header -->
@@ -67,10 +67,10 @@
 
                 <!-- Icons -->
                 <div class="ICON">
-                    <img src="images/Sun-1.png" alt="" id="moon" class="icons pUP" title="Light Mode"
+                    <img src="images/Sun-1.png" alt="" id="moon" class="icons" title="Light Mode"
                         aria-label="Light Mode">
                     <div aria-disabled="false" role="button" tabindex="0" class="icons pUP" data-tab="2" title="Status"
-                        aria-label="Status">
+                        aria-label="Status" onclick="openStatus()">
                         <span data-testid="status-v3-read" data-icon="status-v3-read" class="">
                             <svg version="1.1" id="df9d3429-f0ef-48b5-b5eb-f9d27b2deba6" x="0" y="0" viewBox="0 0 24 24"
                                 width="24" height="24" class="">
@@ -2847,8 +2847,490 @@
             </div>
         </div>
 
+        <div class="status animate__animated animate__fadeInLeft" id="status">
+            <!-- Header -->
 
-        <div class="rightSide">
+            <div class="header">
+                <!-- Profile Picture -->
+                <div class="imgText">
+                    <div class="userImg">
+                        <img src="images/img10.jpg" alt="" class="cover">
+                    </div>
+                    <h4 title="My Status" aria-label="My Status">My Status<br><span aria-label="No Updates">No
+                            updates</span>
+                    </h4>
+                </div>
+
+            </div>
+            <!-- Chats -->
+            <div class="chats-status">
+                <div class="recent">
+                    <!-- Text -->
+                    <div class="h-text">
+                        <div class="head">
+                            <h4>Recent</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Chats 1 -->
+                <div class="block" onclick="openViewedStatus()">
+                    <!-- Img -->
+                    <svg class="circle" width="48" height="48" viewBox="0 0 104 104">
+                        <circle cx="52" cy="52" r="50" fill="none" stroke-linecap="round" class="stroke"
+                            stroke-dashoffset="387.69908169872417"
+                            stroke-dasharray="34.87989505128276 10 34.87989505128276 10 34.87989505128276 10 34.87989505128276 10 34.87989505128276 10 34.87989505128276 10 34.87989505128276 10"
+                            stroke-width="4"></circle>
+                    </svg>
+                    <div class="imgBox">
+                        <img src="images/img1.jpg" class="cover">
+                    </div>
+                    <!-- Text -->
+                    <div class="h-text">
+                        <div class="head">
+                            <h4 title="Shayan" aria-label="Shayan">Shayan</h4>
+                        </div>
+                        <div class="message">
+                            <p>today at 5:19 PM</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Chats 2 -->
+                <div class="block">
+                    <!-- Img -->
+                    <svg class="circle" width="48" height="48" viewBox="0 0 104 104">
+                        <circle cx="52" cy="52" r="50" fill="none" stroke-linecap="round" class="stroke"
+                            stroke-dashoffset="387.69908169872417"
+                            stroke-dasharray="94.71975511965978 219.43951023931953" stroke-width="4">
+                        </circle>
+                        <circle cx="52" cy="52" r="50" fill="none" stroke-linecap="round" class="Stroke2"
+                            stroke-dashoffset="282.9793265790644"
+                            stroke-dasharray="94.71975511965978 10 94.71975511965978 114.71975511965977"
+                            stroke-width="4">
+                        </circle>
+                    </svg>
+                    <div class="imgBox">
+                        <img src="images/img2.jpg" class="cover">
+                    </div>
+                    <!-- Text -->
+                    <div class="h-text">
+                        <div class="head">
+                            <h4 title="Ashlar" aria-label="Ashlar">Ashlar</h4>
+                        </div>
+                        <div class="message">
+                            <p>today at 5:19 PM</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Chats 3 -->
+                <div class="block">
+                    <!-- Img -->
+                    <svg class="circle" width="48" height="48" viewBox="0 0 104 104">
+                        <circle cx="52" cy="52" r="50" fill="none" stroke-linecap="round" class="stroke"
+                            stroke-dashoffset="387.69908169872417"
+                            stroke-dasharray="5.7079632679489665 10 5.7079632679489665 10 5.7079632679489665 10 5.7079632679489665 10 5.7079632679489665 10 5.7079632679489665 10 5.7079632679489665 10 5.7079632679489665 10 5.7079632679489665 10 5.7079632679489665 10 5.7079632679489665 10 5.7079632679489665 10 5.7079632679489665 10 5.7079632679489665 10 5.7079632679489665 10 5.7079632679489665 10 5.7079632679489665 10 5.7079632679489665 10 5.7079632679489665 10 5.7079632679489665 10"
+                            stroke-width="4"></circle>
+                    </svg>
+                    <div class="imgBox">
+                        <img src="images/img3.jpg" class="cover">
+                    </div>
+                    <!-- Text -->
+                    <div class="h-text">
+                        <div class="head">
+                            <h4 title="Olivia" aria-label="Olivia">Olivia</h4>
+                        </div>
+                        <div class="message">
+                            <p>today at 5:19 PM</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Chats 4 -->
+                <div class="block">
+                    <!-- Img -->
+                    <svg class="circle" width="48" height="48" viewBox="0 0 104 104">
+                        <circle cx="52" cy="52" r="50" fill="none" stroke-linecap="round" class="stroke"
+                            stroke-width="4">
+                        </circle>
+                    </svg>
+                    <div class="imgBox">
+                        <img src="images/img4.jpg" class="cover">
+                    </div>
+                    <!-- Text -->
+                    <div class="h-text">
+                        <div class="head">
+                            <h4 title="Amelia" aria-label="Amelia">Amelia</h4>
+                        </div>
+                        <div class="message">
+                            <p>today at 5:19 PM</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Chats 5 -->
+                <div class="block">
+                    <!-- Img -->
+                    <svg class="circle" width="48" height="48" viewBox="0 0 104 104">
+                        <circle cx="52" cy="52" r="50" fill="none" stroke-linecap="round" class="stroke"
+                            stroke-dashoffset="387.69908169872417"
+                            stroke-dasharray="34.87989505128276 10 34.87989505128276 10 34.87989505128276 10 34.87989505128276 10 34.87989505128276 10 34.87989505128276 10 34.87989505128276 10"
+                            stroke-width="4"></circle>
+                    </svg>
+                    <div class="imgBox">
+                        <img src="images/img5.jpg" class="cover">
+                    </div>
+                    <!-- Text -->
+                    <div class="h-text">
+                        <div class="head">
+                            <h4 title="Raoul Kumar" aria-label="Raoul Kumar">Raoul Kumar</h4>
+                        </div>
+                        <div class="message">
+                            <p>today at 5:19 PM</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Chats 6 -->
+                <div class="block">
+                    <!-- Img -->
+                    <svg class="circle" width="48" height="48" viewBox="0 0 104 104">
+                        <circle cx="52" cy="52" r="50" fill="none" stroke-linecap="round" class="stroke"
+                            stroke-dashoffset="387.69908169872417"
+                            stroke-dasharray="34.87989505128276 10 34.87989505128276 10 34.87989505128276 10 34.87989505128276 10 34.87989505128276 10 34.87989505128276 10 34.87989505128276 10"
+                            stroke-width="4"></circle>
+                    </svg>
+                    <div class="imgBox">
+                        <img src="images/img6.jpg" class="cover">
+                    </div>
+                    <!-- Text -->
+                    <div class="h-text">
+                        <div class="head">
+                            <h4 title="Joseph" aria-label="Joseph">Joseph</h4>
+                        </div>
+                        <div class="message">
+                            <p>today at 5:19 PM</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Chats 7 -->
+                <div class="block">
+                    <!-- Img -->
+                    <svg class="circle" width="48" height="48" viewBox="0 0 104 104">
+                        <circle cx="52" cy="52" r="50" fill="none" stroke-linecap="round" class="stroke"
+                            stroke-dashoffset="387.69908169872417"
+                            stroke-dasharray="68.53981633974483 10 68.53981633974483 10 68.53981633974483 10 68.53981633974483 10"
+                            stroke-width="4">
+                        </circle>
+                    </svg>
+                    <div class="imgBox">
+                        <img src="images/img7.jpg" class="cover">
+                    </div>
+                    <!-- Text -->
+                    <div class="h-text">
+                        <div class="head">
+                            <h4 title="Diana" aria-label="Diana">Diana</h4>
+                        </div>
+                        <div class="message">
+                            <p>today at 5:19 PM</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Chats 8 -->
+                <div class="block">
+                    <!-- Img -->
+                    <svg class="circle" width="48" height="48" viewBox="0 0 104 104">
+                        <circle cx="52" cy="52" r="50" fill="none" stroke-linecap="round" class="stroke"
+                            stroke-dashoffset="387.69908169872417"
+                            stroke-dasharray="34.87989505128276 10 34.87989505128276 10 34.87989505128276 10 34.87989505128276 10 34.87989505128276 10 34.87989505128276 10 34.87989505128276 10"
+                            stroke-width="4">
+                        </circle>
+                    </svg>
+                    <div class="imgBox">
+                        <img src="images/img8.jpg" class="cover">
+                    </div>
+                    <!-- Text -->
+                    <div class="h-text">
+                        <div class="head">
+                            <h4 title="Kabir" aria-label="Kabir">Kabir</h4>
+                        </div>
+                        <div class="message">
+                            <p>today at 5:19 PM</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Chats 9 -->
+                <div class="block">
+                    <!-- Img -->
+                    <svg class="circle" width="48" height="48" viewBox="0 0 104 104">
+                        <circle cx="52" cy="52" r="50" fill="none" stroke-linecap="round" class="stroke"
+                            stroke-dashoffset="387.69908169872417"
+                            stroke-dasharray="34.87989505128276 10 34.87989505128276 10 34.87989505128276 10 34.87989505128276 10 34.87989505128276 10 34.87989505128276 10 34.87989505128276 10"
+                            stroke-width="4"></circle>
+                    </svg>
+                    <div class="imgBox">
+                        <img src="images/img9.jpg" class="cover">
+                    </div>
+                    <!-- Text -->
+                    <div class="h-text">
+                        <div class="head">
+                            <h4 title="Alha Smith" aria-label="Alha Smith">Alha Smith</h4>
+                        </div>
+                        <div class="message">
+                            <p>today at 5:19 PM</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Chats 10 -->
+                <div class="block">
+                    <!-- Img -->
+                    <svg class="circle" width="48" height="48" viewBox="0 0 104 104">
+                        <circle cx="52" cy="52" r="50" fill="none" stroke-linecap="round" class="stroke"
+                            stroke-dashoffset="387.69908169872417"
+                            stroke-dasharray="34.87989505128276 10 34.87989505128276 10 34.87989505128276 10 34.87989505128276 10 34.87989505128276 10 34.87989505128276 10 34.87989505128276 10"
+                            stroke-width="4"></circle>
+                    </svg>
+                    <div class="imgBox">
+                        <img src="images/img10.jpg" class="cover">
+                    </div>
+                    <!-- Text -->
+                    <div class="h-text">
+                        <div class="head">
+                            <h4 title="Adeboye Adesina" aria-label="Adeboye Adesina">Adeboye Adesina</h4>
+                        </div>
+                        <div class="message">
+                            <p>today at 5:19 PM</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Chats 11 -->
+                <div class="block">
+                    <!-- Img -->
+                    <svg class="circle" width="48" height="48" viewBox="0 0 104 104">
+                        <circle cx="52" cy="52" r="50" fill="none" stroke-linecap="round" class="stroke"
+                            stroke-dashoffset="387.69908169872417"
+                            stroke-dasharray="34.87989505128276 10 34.87989505128276 10 34.87989505128276 10 34.87989505128276 10 34.87989505128276 10 34.87989505128276 10 34.87989505128276 10"
+                            stroke-width="4"></circle>
+                    </svg>
+                    <div class="imgBox">
+                        <img src="images/img11.jpg" class="cover">
+                    </div>
+                    <!-- Text -->
+                    <div class="h-text">
+                        <div class="head">
+                            <h4 title="Danjuma Nwuzor" aria-label="Danjuma Nwuzor">Danjuma Nwuzor</h4>
+                        </div>
+                        <div class="message">
+                            <p>today at 5:19 PM</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Chats 12 -->
+                <div class="block">
+                    <!-- Img -->
+                    <svg class="circle" width="48" height="48" viewBox="0 0 104 104">
+                        <circle cx="52" cy="52" r="50" fill="none" stroke-linecap="round" class="stroke"
+                            stroke-dashoffset="387.69908169872417"
+                            stroke-dasharray="34.87989505128276 10 34.87989505128276 10 34.87989505128276 10 34.87989505128276 10 34.87989505128276 10 34.87989505128276 10 34.87989505128276 10"
+                            stroke-width="4"></circle>
+                    </svg>
+                    <div class="imgBox">
+                        <img src="images/img12.jpg" class="cover">
+                    </div>
+                    <!-- Text -->
+                    <div class="h-text">
+                        <div class="head">
+                            <h4 title="Bankole Elebiyo" aria-label="Bankole Elebiyo">Bankole Elebiyo</h4>
+                        </div>
+                        <div class="message">
+                            <p>today at 5:19 PM</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Chats 13 -->
+                <div class="block">
+                    <!-- Img -->
+                    <svg class="circle" width="48" height="48" viewBox="0 0 104 104">
+                        <circle cx="52" cy="52" r="50" fill="none" stroke-linecap="round" class="stroke"
+                            stroke-dashoffset="387.69908169872417"
+                            stroke-dasharray="34.87989505128276 10 34.87989505128276 10 34.87989505128276 10 34.87989505128276 10 34.87989505128276 10 34.87989505128276 10 34.87989505128276 10"
+                            stroke-width="4"></circle>
+                    </svg>
+                    <div class="imgBox">
+                        <img src="images/img13.jpg" class="cover">
+                    </div>
+                    <!-- Text -->
+                    <div class="h-text">
+                        <div class="head">
+                            <h4 title="Akunna Mutiat" aria-label="Akunna Mutiat">Akunna Mutiat</h4>
+                        </div>
+                        <div class="message">
+                            <p>today at 5:19 PM</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Chats 14 -->
+                <div class="block">
+                    <!-- Img -->
+                    <svg class="circle" width="48" height="48" viewBox="0 0 104 104">
+                        <circle cx="52" cy="52" r="50" fill="none" stroke-linecap="round" class="stroke"
+                            stroke-dashoffset="387.69908169872417"
+                            stroke-dasharray="34.87989505128276 10 34.87989505128276 10 34.87989505128276 10 34.87989505128276 10 34.87989505128276 10 34.87989505128276 10 34.87989505128276 10"
+                            stroke-width="4"></circle>
+                    </svg>
+                    <div class="imgBox">
+                        <img src="images/img14.jpg" class="cover">
+                    </div>
+                    <!-- Text -->
+                    <div class="h-text">
+                        <div class="head">
+                            <h4 title="Muhammad Alihu" aria-label="Muhammad Alihu">Muhammad Alihu</h4>
+                        </div>
+                        <div class="message">
+                            <p>today at 5:19 PM</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Chats 15 -->
+                <div class="block">
+                    <!-- Img -->
+                    <svg class="circle" width="48" height="48" viewBox="0 0 104 104">
+                        <circle cx="52" cy="52" r="50" fill="none" stroke-linecap="round" class="stroke"
+                            stroke-dashoffset="387.69908169872417"
+                            stroke-dasharray="34.87989505128276 10 34.87989505128276 10 34.87989505128276 10 34.87989505128276 10 34.87989505128276 10 34.87989505128276 10 34.87989505128276 10"
+                            stroke-width="4"></circle>
+                    </svg>
+                    <div class="imgBox">
+                        <img src="images/img15.jpg" class="cover">
+                    </div>
+                    <!-- Text -->
+                    <div class="h-text">
+                        <div class="head">
+                            <h4 title="Muhammad Shayan" aria-label="Muhammad Shayan">Muhammad Shayan</h4>
+                        </div>
+                        <div class="message">
+                            <p>today at 5:19 PM</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Chats 16 -->
+                <div class="block">
+                    <!-- Img -->
+                    <svg class="circle" width="48" height="48" viewBox="0 0 104 104">
+                        <circle cx="52" cy="52" r="50" fill="none" stroke-linecap="round" class="stroke"
+                            stroke-dashoffset="387.69908169872417"
+                            stroke-dasharray="34.87989505128276 10 34.87989505128276 10 34.87989505128276 10 34.87989505128276 10 34.87989505128276 10 34.87989505128276 10 34.87989505128276 10"
+                            stroke-width="4"></circle>
+                    </svg>
+                    <div class="imgBox">
+                        <img src="images/img16.jpg" class="cover">
+                    </div>
+                    <!-- Text -->
+                    <div class="h-text">
+                        <div class="head">
+                            <h4 title="Muhammad Shayan" aria-label="Muhammad Shayan">Muhammad Shayan</h4>
+                        </div>
+                        <div class="message">
+                            <p>today at 5:19 PM</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Chats 17 -->
+                <div class="block">
+                    <!-- Img -->
+                    <svg class="circle" width="48" height="48" viewBox="0 0 104 104">
+                        <circle cx="52" cy="52" r="50" fill="none" stroke-linecap="round" class="stroke"
+                            stroke-dashoffset="387.69908169872417"
+                            stroke-dasharray="34.87989505128276 10 34.87989505128276 10 34.87989505128276 10 34.87989505128276 10 34.87989505128276 10 34.87989505128276 10 34.87989505128276 10"
+                            stroke-width="4"></circle>
+                    </svg>
+                    <div class="imgBox">
+                        <img src="images/img17.jpg" class="cover">
+                    </div>
+                    <!-- Text -->
+                    <div class="h-text">
+                        <div class="head">
+                            <h4 title="Muhammad Shayan" aria-label="Muhammad Shayan">Muhammad Shayan</h4>
+                        </div>
+                        <div class="message">
+                            <p>today at 5:19 PM</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Chats 18 -->
+                <div class="block">
+                    <!-- Img -->
+                    <svg class="circle" width="48" height="48" viewBox="0 0 104 104">
+                        <circle cx="52" cy="52" r="50" fill="none" stroke-linecap="round" class="stroke"
+                            stroke-dashoffset="387.69908169872417"
+                            stroke-dasharray="34.87989505128276 10 34.87989505128276 10 34.87989505128276 10 34.87989505128276 10 34.87989505128276 10 34.87989505128276 10 34.87989505128276 10"
+                            stroke-width="4"></circle>
+                    </svg>
+                    <div class="imgBox">
+                        <img src="images/img18.jpg" class="cover">
+                    </div>
+                    <!-- Text -->
+                    <div class="h-text">
+                        <div class="head">
+                            <h4 title="Muhammad Shayan" aria-label="Muhammad Shayan">Muhammad Shayan</h4>
+                        </div>
+                        <div class="message">
+                            <p>today at 5:19 PM</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="rightStatus animate__animated animate__fadeInRight" id="rightStatus">
+
+
+            <div class="_shbxn">
+                <div class="_13bjQ">
+                    <div class="status-placeholder">
+                        <span data-testid="status-v3-placeholder" data-icon="status-v3-placeholder" class="">
+                            <svg version="1.1" id="Layer_1" x="0" y="0" viewBox="0 0 80 80" width="80" height="80"
+                                class="">
+                                <path fill="currentColor"
+                                    d="M30.566 78.982c-.222 0-.447-.028-.672-.087C12.587 74.324.5 58.588.5 40.631c0-3.509.459-6.989 1.363-10.343a2.625 2.625 0 0 1 5.068 1.366 34.505 34.505 0 0 0-1.182 8.977c0 15.578 10.48 29.226 25.485 33.188a2.625 2.625 0 0 1-.668 5.163zm19.355-.107C67.336 74.364 79.5 58.611 79.5 40.563c0-3.477-.452-6.933-1.345-10.27a2.624 2.624 0 1 0-5.071 1.356 34.578 34.578 0 0 1 1.166 8.914c0 15.655-10.545 29.319-25.646 33.23a2.625 2.625 0 0 0 1.317 5.082zM15.482 16.5C21.968 9.901 30.628 6.267 39.867 6.267c9.143 0 17.738 3.569 24.202 10.05a2.625 2.625 0 0 0 3.717-3.708C60.329 5.135 50.413 1.018 39.867 1.018c-10.658 0-20.648 4.191-28.128 11.802a2.624 2.624 0 1 0 3.743 3.68z">
+                                </path>
+                            </svg>
+                        </span>
+                    </div>
+                    <div class="status-text">Click on a contact to view their status
+                        updates</div>
+                </div>
+            </div>
+
+            <div class="ICON">
+                <div aria-disabled="true" role="button" tabindex="0" class="icons" data-tab="0" onclick="closeStatus()">
+                    <span data-testid="x-viewer" data-icon="x-viewer" class="">
+                        <svg viewBox="0 0 24 24" width="24" height="24" class="">
+                            <path fill="currentColor"
+                                d="m19.8 5.8-1.6-1.6-6.2 6.2-6.2-6.2-1.6 1.6 6.2 6.2-6.2 6.2 1.6 1.6 6.2-6.2 6.2 6.2 1.6-1.6-6.2-6.2 6.2-6.2z">
+                            </path>
+                        </svg>
+                    </span>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="rightSide" id="rightSide">
             <div class="header">
                 <div class="imgText">
                     <div class="userImg">
@@ -3162,7 +3644,11 @@
                 </div>
             </div>
         </div>
+
+
+
     </div>
+
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"

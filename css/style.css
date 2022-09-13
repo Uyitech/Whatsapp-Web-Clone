@@ -279,7 +279,6 @@ body .container {
 
 .chats .block .hide {
     display: none;
-    opacity: 0;
     color: var(--primary);
     font-size: 30px;
     font-weight: 500;
@@ -291,7 +290,6 @@ body .container {
 
 .chats .block:hover .hide {
     display: block;
-    opacity: 1;
 }
 
 .animate__animated.animate__fadeIn {
@@ -635,18 +633,18 @@ body .container {
 }
 
 /* Popup Screen */
-.pP:focus {
+.pP:hover {
     background: var(--icon-focus);
-    padding: 7px;
+    padding: 5.8px 7px 5.8px 7px;
     border-radius: 50%;
-    transition: 0.2s all linear;
+    transition: 0.2s all ;
 }
 
-.pUP:focus {
+.pUP:hover {
     background: var(--icon-focus);
-    padding: 7px;
+    padding: 5.8px 7px 5.8px 7px;
     border-radius: 50%;
-    transition: 0.2s all linear;
+    transition: 0.2s all ;
 }
 
 .popup {

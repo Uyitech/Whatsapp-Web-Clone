@@ -252,3 +252,21 @@ function closeHelp() {
     document.getElementById("settings").style.display = "block";
     document.getElementById("help").style.display = "none";
 }
+
+
+// Open new chat from home
+function openStatus() {
+    document.getElementById("status").style.display = "block";
+    document.getElementById("rightStatus").style.display = "block";
+    document.getElementById("leftSid").style.display = "none";
+    document.getElementById("rightSide").style.display = "none";
+}
+
+function closeStatus() {
+    document.getElementById("leftSid").style.display = "block";
+    document.getElementById("rightSide").style.display = "block";
+    document.getElementById("status").style.display = "none";
+    document.getElementById("rightStatus").style.display = "none";
+}
+
+
