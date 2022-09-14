@@ -51,6 +51,16 @@ function closeForm() {
 }
 
 
+// Open chatAbout from new chat
+function openChatAbout() {
+    document.getElementById("ChatAbout").style.display = "block";
+}
+
+function closeChatAbout() {
+    document.getElementById("ChatAbout").style.display = "none";
+}
+
+
 // Open group from new chat
 function openGroup() {
     document.getElementById("group").style.display = "block";
