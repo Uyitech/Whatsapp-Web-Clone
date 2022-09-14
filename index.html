@@ -3332,7 +3332,7 @@
 
         <div class="rightSide" id="rightSide">
             <div class="header">
-                <div class="imgText">
+                <div class="imgText" role="button" onclick="openChatAbout()">
                     <div class="userImg">
                         <img src="images/img1.jpg" alt="" class="cover">
                     </div>
@@ -3645,7 +3645,131 @@
             </div>
         </div>
 
-
+        <div class="ChatAbout animate__animated animate__fadeInLeft" id="ChatAbout">
+            <!-- Header -->
+            <div class="header-Chat">
+        
+                <!-- Icons -->
+                <div class="ICON">
+                    <div aria-disabled="false" role="button" tabindex="0" class="icons" data-tab="2" title="New chat"
+                        aria-label="New chat" onclick="closeChatAbout()">
+                        <span data-testid="chat" data-icon="chat" class="">
+                            <svg viewBox="0 0 24 24" width="24" height="24" class="">
+                                <path fill="currentColor" d="m12 4 1.4 1.4L7.8 11H20v2H7.8l5.6 5.6L12 20l-8-8 8-8z">
+                                </path>
+                            </svg>
+                        </span>
+                    </div>
+                </div>
+        
+                <div class="newText">
+                    <h2>Privacy</h2>
+                </div>
+        
+            </div>
+            <!-- Chats -->
+            <div class="chats-privacy">
+                <!-- Chats 1 -->
+                <div class="block">
+                    <!-- Text -->
+                    <div class="h-text">
+                        <div class="titlePro">
+                            <p>Who can see my personal info</p>
+                        </div>
+        
+                        <div class="head" onclick="openLast()">
+                            <div class="text-inner">
+                                <h4>Last seen</h4>
+                                <p>Everyone</p>
+                            </div>
+                            <span class="material-symbols-outlined">
+                                chevron_right
+                            </span>
+                        </div>
+        
+                        <div class="head" onclick="openPhoto()">
+                            <div class="text-inner">
+                                <h4>Profile photo</h4>
+                                <p>Everyone</p>
+                            </div>
+                            <span class="material-symbols-outlined">
+                                chevron_right
+                            </span>
+                        </div>
+        
+                        <div class="head" onclick="openAbout()">
+                            <div class="text-inner">
+                                <h4>About</h4>
+                                <p>Everyone</p>
+                            </div>
+                            <span class="material-symbols-outlined">
+                                chevron_right
+                            </span>
+                        </div>
+        
+                        <div class="F-head">
+                            <div class="text-inner">
+                                <label class="form-check-label" for="CheckRead">
+                                    <h4>Read Receipts</h4>
+                                    <p>If turned off, you won't send or receive Read receipts. Read receipts are always
+                                        sent for group chats.</p>
+                                </label>
+                            </div>
+                            <input class="form-check-input" type="checkbox" value="" id="CheckRead" checked>
+                        </div>
+        
+                    </div>
+                </div>
+        
+                <!-- Chats 2 -->
+                <div class="block">
+                    <!-- Text -->
+                    <div class="h-text">
+                        <div class="titlePro">
+                            <p>Disappearing messages</p>
+                        </div>
+        
+                        <div class="T-head" onclick="openDmessage()">
+                            <div class="text-inner">
+                                <h4>Default message timer</h4>
+                                <p>Off</p>
+                            </div>
+                            <span class="material-symbols-outlined">
+                                chevron_right
+                            </span>
+                        </div>
+        
+                    </div>
+                </div>
+        
+                <!-- Chats 2 -->
+                <div class="block">
+                    <div class="h-text">
+                        <div class="G-head" onclick="openGroups()">
+                            <div class="text-inner">
+                                <h4>Groups</h4>
+                                <p>My contacts</p>
+                            </div>
+                            <span class="material-symbols-outlined">
+                                chevron_right
+                            </span>
+                        </div>
+        
+                        <div class="R-head" onclick="openBlock()">
+                            <div class="text-inner">
+                                <h4>Blocked contacts</h4>
+                                <p>1</p>
+                            </div>
+                            <span class="material-symbols-outlined">
+                                chevron_right
+                            </span>
+                        </div>
+        
+                    </div>
+                </div>
+        
+            </div>
+        </div>
 
     </div>
 
