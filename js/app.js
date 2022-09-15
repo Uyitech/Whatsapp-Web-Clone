@@ -268,6 +268,7 @@ function closeHelp() {
 function openStatus() {
     document.getElementById("status").style.display = "block";
     document.getElementById("rightStatus").style.display = "block";
+    document.getElementById("right").style.display = "none";
     document.getElementById("leftSid").style.display = "none";
     document.getElementById("rightSide").style.display = "none";
 }
@@ -275,6 +276,7 @@ function openStatus() {
 function closeStatus() {
     document.getElementById("leftSid").style.display = "block";
     document.getElementById("rightSide").style.display = "block";
+    document.getElementById("right").style.display = "flex";
     document.getElementById("status").style.display = "none";
     document.getElementById("rightStatus").style.display = "none";
 }

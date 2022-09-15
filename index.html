@@ -31,12 +31,16 @@
 </head>
 
 <body class="body">
-    <h1 class="media">Only Available On Desktop 😊😇</h1>
+    <h1 class="media" style="text-align: center;">Only Available On Desktop 😊😇
+        <hr>
+        Download ON Mobile
+        <a href="https://www.whatsapp.com/download//" style="color: white; text-decoration: none">Here
+        </a>
+    </h1>
     <div class="container main" style="width: 1620px">
 
         <div class="leftSide animate__animated animate__fadeInRight" id="leftSid">
             <!-- Header -->
-
             <div class="header">
                 <!-- Profile Picture -->
                 <div class="userImg">
@@ -44,37 +48,21 @@
                 </div>
 
                 <!-- Dropdown -->
-                <div tabindex="-1" class="dropLeft" id="dropLeft">
-                    <ul class="_1HnQz">
-                        <li tabindex="0" class="" data-animate-dropdown-item="true" onclick="openGrp()">
-                            <div class="listItem" role="button" aria-label="New group">New group</div>
-                            <div></div>
-                        </li>
-                        <li tabindex="0" class="" data-animate-dropdown-item="true" onclick="openStarred()">
-                            <div class="listItem" role="button" aria-label="Starred messages">Starred messages</div>
-                            <div></div>
-                        </li>
-                        <li tabindex="0" class="" data-animate-dropdown-item="true" onclick="openSettings()">
-                            <div class="listItem" role="button" aria-label="Settings">Settings</div>
-                            <div></div>
-                        </li>
-                        <li tabindex="0" class="" data-animate-dropdown-item="true" role="button" data-bs-toggle="modal"
-                            data-bs-target="#exampleModalSec">
-                            <div class="listItem" role="button" aria-label="Log out">Log out</div>
-                            <div></div>
-                        </li>
-                    </ul>
-                </div>
+                <ul class="dropLeft" id="dropLeft">
+                    <li class="listItem" role="button" onclick="openGrp()">New group</li>
+                    <li class="listItem" role="button" onclick="openStarred()">Starred messages</li>
+                    <li class="listItem" role="button" onclick="openSettings()">Settings</li>
+                    <li class="listItem" role="button" data-bs-toggle="modal" data-bs-target="#exampleModalSec">Log out
+                    </li>
+                </ul>
 
                 <!-- Icons -->
                 <div class="ICON">
                     <img src="images/Sun-1.png" alt="" id="moon" class="icons" title="Light Mode"
                         aria-label="Light Mode">
-                    <div aria-disabled="false" role="button" tabindex="0" class="icons pUP" data-tab="2" title="Status"
-                        aria-label="Status" onclick="openStatus()">
-                        <span data-testid="status-v3-read" data-icon="status-v3-read" class="">
-                            <svg version="1.1" id="df9d3429-f0ef-48b5-b5eb-f9d27b2deba6" x="0" y="0" viewBox="0 0 24 24"
-                                width="24" height="24" class="">
+                    <button role="button" class="icons" onclick="openStatus()">
+                        <span class="">
+                            <svg version="1.1" x="0" y="0" viewBox="0 0 24 24" width="24" height="24" class="">
                                 <path fill="currentColor"
                                     d="M12.072 1.761a10.05 10.05 0 0 0-9.303 5.65.977.977 0 0 0 1.756.855 8.098 8.098 0 0 1 7.496-4.553.977.977 0 1 0 .051-1.952zM1.926 13.64a10.052 10.052 0 0 0 7.461 7.925.977.977 0 0 0 .471-1.895 8.097 8.097 0 0 1-6.012-6.386.977.977 0 0 0-1.92.356zm13.729 7.454a10.053 10.053 0 0 0 6.201-8.946.976.976 0 1 0-1.951-.081v.014a8.097 8.097 0 0 1-4.997 7.209.977.977 0 0 0 .727 1.813l.02-.009z">
                                 </path>
@@ -82,33 +70,30 @@
                                 </path>
                             </svg>
                         </span>
-                    </div>
+                    </button>
 
-                    <div aria-disabled="false" role="button" tabindex="0" class="icons pUP" data-tab="2"
-                        title="New chat" aria-label="New chat" onclick="openForm()">
-                        <span data-testid="chat" data-icon="chat" class="">
-                            <!-- <a href="newchat.html"> -->
+                    <button role="button" class="icons" onclick="openForm()">
+                        <span class="">
                             <svg viewBox="0 0 24 24" width="24" height="24" class="">
                                 <path fill="currentColor"
                                     d="M19.005 3.175H4.674C3.642 3.175 3 3.789 3 4.821V21.02l3.544-3.514h12.461c1.033 0 2.064-1.06 2.064-2.093V4.821c-.001-1.032-1.032-1.646-2.064-1.646zm-4.989 9.869H7.041V11.1h6.975v1.944zm3-4H7.041V7.1h9.975v1.944z">
                                 </path>
                             </svg>
-                            <!-- </a> -->
                         </span>
-                    </div>
+                    </button>
 
-                    <div aria-disabled="false" role="button" tabindex="0" class="icons pUP" data-tab="2" title="Menu"
-                        aria-label="Menu" onclick="myDropLeft()">
-                        <span data-testid="menu" data-icon="menu" class="">
+                    <button role="button" class="icons" onclick="myDropLeft()">
+                        <span class="">
                             <svg viewBox="0 0 24 24" width="24" height="24" class="">
                                 <path fill="currentColor"
                                     d="M12 7a2 2 0 1 0-.001-4.001A2 2 0 0 0 12 7zm0 2a2 2 0 1 0-.001 3.999A2 2 0 0 0 12 9zm0 6a2 2 0 1 0-.001 3.999A2 2 0 0 0 12 15z">
                                 </path>
                             </svg>
                         </span>
-                    </div>
+                    </button>
                 </div>
             </div>
+
             <!-- Search Bar -->
             <div class="search-bar">
                 <div>
@@ -117,10 +102,11 @@
                         placeholder="Search or start new chat">
                 </div>
             </div>
-            <!-- Chats -->
+
+            <!-- Chats Box -->
             <div class="chats">
                 <!-- Chats 1 -->
-                <div class="block active untick">
+                <div class="block active">
                     <!-- Img -->
                     <div class="imgBox">
                         <img src="images/img1.jpg" class="cover">
@@ -128,29 +114,37 @@
                     <!-- Text -->
                     <div class="h-text">
                         <div class="head">
-                            <h4 title="Muhammad Shayan" aria-label="Muhammad Shayan">Muhammad Shayan</h4>
+                            <h4 title="Shayan" aria-label="Shayan">Shayan</h4>
                             <p class="time">12:44 AM</p>
                         </div>
-                        <div class="untick">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 15" width="16" height="15"
-                                aria-label="read" class="blue-t">
-                                <path fill="currentColor"
-                                    d="M15.01 3.316l-.478-.372a.365.365 0 0 0-.51.063L8.666 9.879a.32.32 0 0 1-.484.033l-.358-.325a.319.319 0 0 0-.484.032l-.378.483a.418.418 0 0 0 .036.541l1.32 1.266c.143.14.361.125.484-.033l6.272-8.048a.366.366 0 0 0-.064-.512zm-4.1 0l-.478-.372a.365.365 0 0 0-.51.063L4.566 9.879a.32.32 0 0 1-.484.033L1.891 7.769a.366.366 0 0 0-.515.006l-.423.433a.364.364 0 0 0 .006.514l3.258 3.185c.143.14.361.125.484-.033l6.272-8.048a.365.365 0 0 0-.063-.51z">
-                                </path>
-                            </svg>
-                            <p title="ok thanks for your help i really appreciate"
-                                aria-label="ok thanks for your help i really appreciate">
-                                ok thanks for your help i really appreciate
-                            </p>
-                            <span class="material-symbols-outlined hide animate__animated animate__fadeInUp">
-                                expand_more
-                            </span>
+                        <div class="message-chat">
+                            <div class="tick-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="20" height="20"
+                                    aria-label="read" class="white-tick">
+                                    <path fill="currentColor"
+                                        d="M15.01 3.316l-.478-.372a.365.365 0 0 0-.51.063L8.666 9.879a.32.32 0 0 1-.484.033l-.358-.325a.319.319 0 0 0-.484.032l-.378.483a.418.418 0 0 0 .036.541l1.32 1.266c.143.14.361.125.484-.033l6.272-8.048a.366.366 0 0 0-.064-.512zm-4.1 0l-.478-.372a.365.365 0 0 0-.51.063L4.566 9.879a.32.32 0 0 1-.484.033L1.891 7.769a.366.366 0 0 0-.515.006l-.423.433a.364.364 0 0 0 .006.514l3.258 3.185c.143.14.361.125.484-.033l6.272-8.048a.365.365 0 0 0-.063-.51z">
+                                    </path>
+                                </svg>
+                            </div>
+
+                            <div class="chat-text-icon">
+                                <span class="thanks">ok thanks for your help i really appreciate</span>
+                                <div class="icon-more">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 20" width="19" height="20"
+                                        class="hide animate__animated animate__fadeInUp">
+                                        <path fill="currentColor"
+                                            d="M3.8 6.7l5.7 5.7 5.7-5.7 1.6 1.6-7.3 7.2-7.3-7.2 1.6-1.6z">
+                                        </path>
+                                    </svg>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
                 </div>
 
                 <!-- Chats 2 -->
-                <div class="block tick">
+                <div class="block">
                     <!-- Img -->
                     <div class="imgBox">
                         <img src="images/img2.jpg" class="cover">
@@ -161,23 +155,33 @@
                             <h4 title="Ashlar" aria-label="Ashlar">Ashlar</h4>
                             <p class="time">7:30 PM</p>
                         </div>
-                        <div class="tick">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 15" width="16" height="15"
-                                aria-label="read" class="blue-t">
-                                <path fill="currentColor"
-                                    d="M15.01 3.316l-.478-.372a.365.365 0 0 0-.51.063L8.666 9.879a.32.32 0 0 1-.484.033l-.358-.325a.319.319 0 0 0-.484.032l-.378.483a.418.418 0 0 0 .036.541l1.32 1.266c.143.14.361.125.484-.033l6.272-8.048a.366.366 0 0 0-.064-.512zm-4.1 0l-.478-.372a.365.365 0 0 0-.51.063L4.566 9.879a.32.32 0 0 1-.484.033L1.891 7.769a.366.366 0 0 0-.515.006l-.423.433a.364.364 0 0 0 .006.514l3.258 3.185c.143.14.361.125.484-.033l6.272-8.048a.365.365 0 0 0-.063-.51z">
-                                </path>
-                            </svg>
-                            <p title="Thank you." aria-label="Thank you.">Thank you.</p>
-                            <span class="material-symbols-outlined hide animate__animated animate__fadeInUp">
-                                expand_more
-                            </span>
+                        <div class="message-chat">
+                            <div class="tick-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="20" height="20"
+                                    aria-label="read" class="blue-tick">
+                                    <path fill="currentColor"
+                                        d="M15.01 3.316l-.478-.372a.365.365 0 0 0-.51.063L8.666 9.879a.32.32 0 0 1-.484.033l-.358-.325a.319.319 0 0 0-.484.032l-.378.483a.418.418 0 0 0 .036.541l1.32 1.266c.143.14.361.125.484-.033l6.272-8.048a.366.366 0 0 0-.064-.512zm-4.1 0l-.478-.372a.365.365 0 0 0-.51.063L4.566 9.879a.32.32 0 0 1-.484.033L1.891 7.769a.366.366 0 0 0-.515.006l-.423.433a.364.364 0 0 0 .006.514l3.258 3.185c.143.14.361.125.484-.033l6.272-8.048a.365.365 0 0 0-.063-.51z">
+                                    </path>
+                                </svg>
+                            </div>
+
+                            <div class="chat-text-icon">
+                                <span class="thanks">Thank you.</span>
+                                <div class="icon-more">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 20" width="19" height="20"
+                                        class="hide animate__animated animate__fadeInUp">
+                                        <path fill="currentColor"
+                                            d="M3.8 6.7l5.7 5.7 5.7-5.7 1.6 1.6-7.3 7.2-7.3-7.2 1.6-1.6z">
+                                        </path>
+                                    </svg>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
 
                 <!-- Chats 3 -->
-                <div class="block unread">
+                <div class="block">
                     <!-- Img -->
                     <div class="imgBox">
                         <img src="images/img3.jpg" class="cover">
@@ -188,21 +192,27 @@
                             <h4 title="Olivia" aria-label="Olivia">Olivia</h4>
                             <p class="time">yesterday</p>
                         </div>
-                        <div class="message">
-                            <p title="Hi, i found you on github" aria-label="Hi, i found you on github">Hi, i found you
-                                on github</p>
-                            <div class="U-TEXT">
-                                <span class="numb">1</span>
-                                <span class="material-symbols-outlined hide animate__animated animate__fadeInUp">
-                                    expand_more
-                                </span>
+                        <div class="message-chat">
+                            <div class="chat-text-icon">
+                                <span class="thanks">Hi, i found you on github</span>
+                                <div class="unread">
+                                    <span class="numb">1</span>
+                                    <div class="icon-more">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 20" width="19"
+                                            height="20" class="hide animate__animated animate__fadeInUp">
+                                            <path fill="currentColor"
+                                                d="M3.8 6.7l5.7 5.7 5.7-5.7 1.6 1.6-7.3 7.2-7.3-7.2 1.6-1.6z">
+                                            </path>
+                                        </svg>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <!-- Chats 4 -->
-                <div class="block unread">
+                <div class="block">
                     <!-- Img -->
                     <div class="imgBox">
                         <img src="images/img4.jpg" class="cover">
@@ -213,20 +223,27 @@
                             <h4 title="Amelia" aria-label="Amelia">Amelia</h4>
                             <p class="time">yesterday</p>
                         </div>
-                        <div class="message">
-                            <p title="Hello..." aria-label="Hello...">Hello...</p>
-                            <div class="U-TEXT">
-                                <span class="numb">2</span>
-                                <span class="material-symbols-outlined hide animate__animated animate__fadeInUp">
-                                    expand_more
-                                </span>
+                        <div class="message-chat">
+                            <div class="chat-text-icon">
+                                <span class="thanks">Hello...</span>
+                                <div class="unread">
+                                    <span class="numb">3</span>
+                                    <div class="icon-more">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 20" width="19"
+                                            height="20" class="hide animate__animated animate__fadeInUp">
+                                            <path fill="currentColor"
+                                                d="M3.8 6.7l5.7 5.7 5.7-5.7 1.6 1.6-7.3 7.2-7.3-7.2 1.6-1.6z">
+                                            </path>
+                                        </svg>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <!-- Chats 5 -->
-                <div class="block tick">
+                <div class="block">
                     <!-- Img -->
                     <div class="imgBox">
                         <img src="images/img5.jpg" class="cover">
@@ -234,26 +251,36 @@
                     <!-- Text -->
                     <div class="h-text">
                         <div class="head">
-                            <h4 title="Raoul Kumar" aria-label="Raoul Kumar">Raoul Kumar</h4>
+                            <h4 title="Raoul" aria-label="Raoul">Raoul</h4>
                             <p class="time">yesterday</p>
                         </div>
-                        <div class="tick">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 15" width="16" height="15"
-                                aria-label="read" class="blue-t">
-                                <path fill="currentColor"
-                                    d="M15.01 3.316l-.478-.372a.365.365 0 0 0-.51.063L8.666 9.879a.32.32 0 0 1-.484.033l-.358-.325a.319.319 0 0 0-.484.032l-.378.483a.418.418 0 0 0 .036.541l1.32 1.266c.143.14.361.125.484-.033l6.272-8.048a.366.366 0 0 0-.064-.512zm-4.1 0l-.478-.372a.365.365 0 0 0-.51.063L4.566 9.879a.32.32 0 0 1-.484.033L1.891 7.769a.366.366 0 0 0-.515.006l-.423.433a.364.364 0 0 0 .006.514l3.258 3.185c.143.14.361.125.484-.033l6.272-8.048a.365.365 0 0 0-.063-.51z">
-                                </path>
-                            </svg>
-                            <p title="oh okay." aria-label="oh okay.">oh okay.</p>
-                            <span class="material-symbols-outlined hide animate__animated animate__fadeInUp">
-                                expand_more
-                            </span>
+                        <div class="message-chat">
+                            <div class="tick-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="20" height="20"
+                                    aria-label="read" class="blue-tick">
+                                    <path fill="currentColor"
+                                        d="M15.01 3.316l-.478-.372a.365.365 0 0 0-.51.063L8.666 9.879a.32.32 0 0 1-.484.033l-.358-.325a.319.319 0 0 0-.484.032l-.378.483a.418.418 0 0 0 .036.541l1.32 1.266c.143.14.361.125.484-.033l6.272-8.048a.366.366 0 0 0-.064-.512zm-4.1 0l-.478-.372a.365.365 0 0 0-.51.063L4.566 9.879a.32.32 0 0 1-.484.033L1.891 7.769a.366.366 0 0 0-.515.006l-.423.433a.364.364 0 0 0 .006.514l3.258 3.185c.143.14.361.125.484-.033l6.272-8.048a.365.365 0 0 0-.063-.51z">
+                                    </path>
+                                </svg>
+                            </div>
+
+                            <div class="chat-text-icon">
+                                <span class="thanks">oh okay.</span>
+                                <div class="icon-more">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 20" width="19" height="20"
+                                        class="hide animate__animated animate__fadeInUp">
+                                        <path fill="currentColor"
+                                            d="M3.8 6.7l5.7 5.7 5.7-5.7 1.6 1.6-7.3 7.2-7.3-7.2 1.6-1.6z">
+                                        </path>
+                                    </svg>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
 
                 <!-- Chats 6 -->
-                <div class="block tick">
+                <div class="block">
                     <!-- Img -->
                     <div class="imgBox">
                         <img src="images/img6.jpg" class="cover">
@@ -264,18 +291,27 @@
                             <h4 title="Joseph" aria-label="Joseph">Joseph</h4>
                             <p class="time">8/12/2022</p>
                         </div>
-                        <div class="tick">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 15" width="16" height="15"
-                                aria-label="read" class="blue-t">
-                                <path fill="currentColor"
-                                    d="M15.01 3.316l-.478-.372a.365.365 0 0 0-.51.063L8.666 9.879a.32.32 0 0 1-.484.033l-.358-.325a.319.319 0 0 0-.484.032l-.378.483a.418.418 0 0 0 .036.541l1.32 1.266c.143.14.361.125.484-.033l6.272-8.048a.366.366 0 0 0-.064-.512zm-4.1 0l-.478-.372a.365.365 0 0 0-.51.063L4.566 9.879a.32.32 0 0 1-.484.033L1.891 7.769a.366.366 0 0 0-.515.006l-.423.433a.364.364 0 0 0 .006.514l3.258 3.185c.143.14.361.125.484-.033l6.272-8.048a.365.365 0 0 0-.063-.51z">
-                                </path>
-                            </svg>
-                            <p title="we are done with the project" aria-label="we are done with the project">we are
-                                done with the project</p>
-                            <span class="material-symbols-outlined hide animate__animated animate__fadeInUp">
-                                expand_more
-                            </span>
+                        <div class="message-chat">
+                            <div class="tick-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="20" height="20"
+                                    aria-label="read" class="blue-tick">
+                                    <path fill="currentColor"
+                                        d="M15.01 3.316l-.478-.372a.365.365 0 0 0-.51.063L8.666 9.879a.32.32 0 0 1-.484.033l-.358-.325a.319.319 0 0 0-.484.032l-.378.483a.418.418 0 0 0 .036.541l1.32 1.266c.143.14.361.125.484-.033l6.272-8.048a.366.366 0 0 0-.064-.512zm-4.1 0l-.478-.372a.365.365 0 0 0-.51.063L4.566 9.879a.32.32 0 0 1-.484.033L1.891 7.769a.366.366 0 0 0-.515.006l-.423.433a.364.364 0 0 0 .006.514l3.258 3.185c.143.14.361.125.484-.033l6.272-8.048a.365.365 0 0 0-.063-.51z">
+                                    </path>
+                                </svg>
+                            </div>
+
+                            <div class="chat-text-icon">
+                                <span class="thanks">we are done with the project</span>
+                                <div class="icon-more">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 20" width="19" height="20"
+                                        class="hide animate__animated animate__fadeInUp">
+                                        <path fill="currentColor"
+                                            d="M3.8 6.7l5.7 5.7 5.7-5.7 1.6 1.6-7.3 7.2-7.3-7.2 1.6-1.6z">
+                                        </path>
+                                    </svg>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -292,17 +328,24 @@
                             <h4 title="Diana" aria-label="Diana">Diana</h4>
                             <p class="time">8/8/2022</p>
                         </div>
-                        <div class="message">
-                            <p title="please wait.." aria-label="please wait..">please wait..</p>
-                            <span class="material-symbols-outlined hide animate__animated animate__fadeInUp">
-                                expand_more
-                            </span>
+                        <div class="message-chat">
+                            <div class="chat-text-icon">
+                                <span class="thanks">please wait..</span>
+                                <div class="icon-more">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 20" width="19" height="20"
+                                        class="hide animate__animated animate__fadeInUp">
+                                        <path fill="currentColor"
+                                            d="M3.8 6.7l5.7 5.7 5.7-5.7 1.6 1.6-7.3 7.2-7.3-7.2 1.6-1.6z">
+                                        </path>
+                                    </svg>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
 
                 <!-- Chats 8 -->
-                <div class="block untick">
+                <div class="block">
                     <!-- Img -->
                     <div class="imgBox">
                         <img src="images/img8.jpg" class="cover">
@@ -313,23 +356,33 @@
                             <h4 title="Kabir" aria-label="Kabir">Kabir</h4>
                             <p class="time">8/6/2022</p>
                         </div>
-                        <div class="untick">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 15" width="16" height="15"
-                                aria-label="read" class="blue-t">
-                                <path fill="currentColor"
-                                    d="M15.01 3.316l-.478-.372a.365.365 0 0 0-.51.063L8.666 9.879a.32.32 0 0 1-.484.033l-.358-.325a.319.319 0 0 0-.484.032l-.378.483a.418.418 0 0 0 .036.541l1.32 1.266c.143.14.361.125.484-.033l6.272-8.048a.366.366 0 0 0-.064-.512zm-4.1 0l-.478-.372a.365.365 0 0 0-.51.063L4.566 9.879a.32.32 0 0 1-.484.033L1.891 7.769a.366.366 0 0 0-.515.006l-.423.433a.364.364 0 0 0 .006.514l3.258 3.185c.143.14.361.125.484-.033l6.272-8.048a.365.365 0 0 0-.063-.51z">
-                                </path>
-                            </svg>
-                            <p title="Happy Birthday" aria-label="Happy Birthday">Happy Birthday</p>
-                            <span class="material-symbols-outlined hide animate__animated animate__fadeInUp">
-                                expand_more
-                            </span>
+                        <div class="message-chat">
+                            <div class="tick-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="20" height="20"
+                                    aria-label="read" class="white-tick">
+                                    <path fill="currentColor"
+                                        d="M15.01 3.316l-.478-.372a.365.365 0 0 0-.51.063L8.666 9.879a.32.32 0 0 1-.484.033l-.358-.325a.319.319 0 0 0-.484.032l-.378.483a.418.418 0 0 0 .036.541l1.32 1.266c.143.14.361.125.484-.033l6.272-8.048a.366.366 0 0 0-.064-.512zm-4.1 0l-.478-.372a.365.365 0 0 0-.51.063L4.566 9.879a.32.32 0 0 1-.484.033L1.891 7.769a.366.366 0 0 0-.515.006l-.423.433a.364.364 0 0 0 .006.514l3.258 3.185c.143.14.361.125.484-.033l6.272-8.048a.365.365 0 0 0-.063-.51z">
+                                    </path>
+                                </svg>
+                            </div>
+
+                            <div class="chat-text-icon">
+                                <span class="thanks">Happy Birthday</span>
+                                <div class="icon-more">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 20" width="19" height="20"
+                                        class="hide animate__animated animate__fadeInUp">
+                                        <path fill="currentColor"
+                                            d="M3.8 6.7l5.7 5.7 5.7-5.7 1.6 1.6-7.3 7.2-7.3-7.2 1.6-1.6z">
+                                        </path>
+                                    </svg>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
 
                 <!-- Chats 9 -->
-                <div class="block untick">
+                <div class="block">
                     <!-- Img -->
                     <div class="imgBox">
                         <img src="images/img9.jpg" class="cover">
@@ -337,20 +390,30 @@
                     <!-- Text -->
                     <div class="h-text">
                         <div class="head">
-                            <h4 title="Alha Smith" aria-label="Alha Smith">Alha Smith</h4>
+                            <h4 title="Grace" aria-label="Grace">Grace</h4>
                             <p class="time">3/4/2022</p>
                         </div>
-                        <div class="untick">
-                            <svg viewBox="0 0 16 15" width="16" height="15" class="blue-t">
-                                <path fill="currentColor"
-                                    d="m10.91 3.316-.478-.372a.365.365 0 0 0-.51.063L4.566 9.879a.32.32 0 0 1-.484.033L1.891 7.769a.366.366 0 0 0-.515.006l-.423.433a.364.364 0 0 0 .006.514l3.258 3.185c.143.14.361.125.484-.033l6.272-8.048a.365.365 0 0 0-.063-.51z">
-                                </path>
-                            </svg>
-                            <p title="Thank you for your help." aria-label="Thank you for your help.">Thank you for your
-                                help.</p>
-                            <span class="material-symbols-outlined hide animate__animated animate__fadeInUp">
-                                expand_more
-                            </span>
+                        <div class="message-chat">
+                            <div class="tick-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="20" height="20"
+                                    class="white-tick">
+                                    <path fill="currentColor"
+                                        d="m10.91 3.316-.478-.372a.365.365 0 0 0-.51.063L4.566 9.879a.32.32 0 0 1-.484.033L1.891 7.769a.366.366 0 0 0-.515.006l-.423.433a.364.364 0 0 0 .006.514l3.258 3.185c.143.14.361.125.484-.033l6.272-8.048a.365.365 0 0 0-.063-.51z">
+                                    </path>
+                                </svg>
+                            </div>
+
+                            <div class="chat-text-icon">
+                                <span class="thanks">Thank you for your help.</span>
+                                <div class="icon-more">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 20" width="19" height="20"
+                                        class="hide animate__animated animate__fadeInUp">
+                                        <path fill="currentColor"
+                                            d="M3.8 6.7l5.7 5.7 5.7-5.7 1.6 1.6-7.3 7.2-7.3-7.2 1.6-1.6z">
+                                        </path>
+                                    </svg>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -364,19 +427,23 @@
                     <!-- Text -->
                     <div class="h-text">
                         <div class="head">
-                            <h4 title="Adeboye Adesina" aria-label="Adeboye Adesina">Adeboye Adesina</h4>
+                            <h4 title="Adeboye" aria-label="Adeboye">Adeboye</h4>
                             <p class="time">29/5/2022</p>
                         </div>
-                        <div class="message">
-                            <p title="Messages are end-to-end encrypted. No one outside of this chat, not even WhatsApp, can read or listen to them. Click to learn more."
-                                aria-label="Messages are end-to-end encrypted. No one outside of this chat, not even WhatsApp, can read or listen to them. Click to learn more.">
-                                Messages are end-to-end encrypted. No one outside of this chat, not even WhatsApp, can
-                                read or listen to
-                                them. Click to learn more.
-                            </p>
-                            <span class="material-symbols-outlined hide animate__animated animate__fadeInUp">
-                                expand_more
-                            </span>
+                        <div class="message-chat">
+                            <div class="chat-text-icon">
+                                <span class="thanks">Messages are end-to-end encrypted. No one outside of this chat, not
+                                    even WhatsApp, can
+                                    read or listen to them. Click to learn more.</span>
+                                <div class="icon-more">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 20" width="19" height="20"
+                                        class="hide animate__animated animate__fadeInUp">
+                                        <path fill="currentColor"
+                                            d="M3.8 6.7l5.7 5.7 5.7-5.7 1.6 1.6-7.3 7.2-7.3-7.2 1.6-1.6z">
+                                        </path>
+                                    </svg>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -390,19 +457,23 @@
                     <!-- Text -->
                     <div class="h-text">
                         <div class="head">
-                            <h4 title="Danjuma Nwuzor" aria-label="Danjuma Nwuzor">Danjuma Nwuzor</h4>
+                            <h4 title="Danjuma" aria-label="Danjuma">Danjuma</h4>
                             <p class="time">29/5/2022</p>
                         </div>
-                        <div class="message">
-                            <p title="Messages are end-to-end encrypted. No one outside of this chat, not even WhatsApp, can read or listen to them. Click to learn more."
-                                aria-label="Messages are end-to-end encrypted. No one outside of this chat, not even WhatsApp, can read or listen to them. Click to learn more.">
-                                Messages are end-to-end encrypted. No one outside of this chat, not even WhatsApp, can
-                                read or listen to
-                                them. Click to learn more.
-                            </p>
-                            <span class="material-symbols-outlined hide animate__animated animate__fadeInUp">
-                                expand_more
-                            </span>
+                        <div class="message-chat">
+                            <div class="chat-text-icon">
+                                <span class="thanks">Messages are end-to-end encrypted. No one outside of this chat, not
+                                    even WhatsApp, can
+                                    read or listen to them. Click to learn more.</span>
+                                <div class="icon-more">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 20" width="19" height="20"
+                                        class="hide animate__animated animate__fadeInUp">
+                                        <path fill="currentColor"
+                                            d="M3.8 6.7l5.7 5.7 5.7-5.7 1.6 1.6-7.3 7.2-7.3-7.2 1.6-1.6z">
+                                        </path>
+                                    </svg>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -416,19 +487,23 @@
                     <!-- Text -->
                     <div class="h-text">
                         <div class="head">
-                            <h4 title="Bankole Elebiyo" aria-label="Bankole Elebiyo">Bankole Elebiyo</h4>
+                            <h4 title="Mutiat" aria-label="Mutiat">Mutiat</h4>
                             <p class="time">29/5/2022</p>
                         </div>
-                        <div class="message">
-                            <p title="Messages are end-to-end encrypted. No one outside of this chat, not even WhatsApp, can read or listen to them. Click to learn more."
-                                aria-label="Messages are end-to-end encrypted. No one outside of this chat, not even WhatsApp, can read or listen to them. Click to learn more.">
-                                Messages are end-to-end encrypted. No one outside of this chat, not even WhatsApp, can
-                                read or listen to
-                                them. Click to learn more.
-                            </p>
-                            <span class="material-symbols-outlined hide animate__animated animate__fadeInUp">
-                                expand_more
-                            </span>
+                        <div class="message-chat">
+                            <div class="chat-text-icon">
+                                <span class="thanks">Messages are end-to-end encrypted. No one outside of this chat, not
+                                    even WhatsApp, can
+                                    read or listen to them. Click to learn more.</span>
+                                <div class="icon-more">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 20" width="19" height="20"
+                                        class="hide animate__animated animate__fadeInUp">
+                                        <path fill="currentColor"
+                                            d="M3.8 6.7l5.7 5.7 5.7-5.7 1.6 1.6-7.3 7.2-7.3-7.2 1.6-1.6z">
+                                        </path>
+                                    </svg>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -442,19 +517,23 @@
                     <!-- Text -->
                     <div class="h-text">
                         <div class="head">
-                            <h4 title="Akunna Mutiat" aria-label="Akunna Mutiat">Akunna Mutiat</h4>
+                            <h4 title="Mutiat" aria-label="Mutiat">Mutiat</h4>
                             <p class="time">29/5/2022</p>
                         </div>
-                        <div class="message">
-                            <p title="Messages are end-to-end encrypted. No one outside of this chat, not even WhatsApp, can read or listen to them. Click to learn more."
-                                aria-label="Messages are end-to-end encrypted. No one outside of this chat, not even WhatsApp, can read or listen to them. Click to learn more.">
-                                Messages are end-to-end encrypted. No one outside of this chat, not even WhatsApp, can
-                                read or listen to
-                                them. Click to learn more.
-                            </p>
-                            <span class="material-symbols-outlined hide animate__animated animate__fadeInUp">
-                                expand_more
-                            </span>
+                        <div class="message-chat">
+                            <div class="chat-text-icon">
+                                <span class="thanks">Messages are end-to-end encrypted. No one outside of this chat, not
+                                    even WhatsApp, can
+                                    read or listen to them. Click to learn more.</span>
+                                <div class="icon-more">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 20" width="19" height="20"
+                                        class="hide animate__animated animate__fadeInUp">
+                                        <path fill="currentColor"
+                                            d="M3.8 6.7l5.7 5.7 5.7-5.7 1.6 1.6-7.3 7.2-7.3-7.2 1.6-1.6z">
+                                        </path>
+                                    </svg>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -468,19 +547,23 @@
                     <!-- Text -->
                     <div class="h-text">
                         <div class="head">
-                            <h4 title="Muhammad Alihu" aria-label="Muhammad Alihu">Muhammad Alihu</h4>
+                            <h4 title="Alihu" aria-label="Alihu">Alihu</h4>
                             <p class="time">29/5/2022</p>
                         </div>
-                        <div class="message">
-                            <p title="Messages are end-to-end encrypted. No one outside of this chat, not even WhatsApp, can read or listen to them. Click to learn more."
-                                aria-label="Messages are end-to-end encrypted. No one outside of this chat, not even WhatsApp, can read or listen to them. Click to learn more.">
-                                Messages are end-to-end encrypted. No one outside of this chat, not even WhatsApp, can
-                                read or listen to
-                                them. Click to learn more.
-                            </p>
-                            <span class="material-symbols-outlined hide animate__animated animate__fadeInUp">
-                                expand_more
-                            </span>
+                        <div class="message-chat">
+                            <div class="chat-text-icon">
+                                <span class="thanks">Messages are end-to-end encrypted. No one outside of this chat, not
+                                    even WhatsApp, can
+                                    read or listen to them. Click to learn more.</span>
+                                <div class="icon-more">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 20" width="19" height="20"
+                                        class="hide animate__animated animate__fadeInUp">
+                                        <path fill="currentColor"
+                                            d="M3.8 6.7l5.7 5.7 5.7-5.7 1.6 1.6-7.3 7.2-7.3-7.2 1.6-1.6z">
+                                        </path>
+                                    </svg>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -494,19 +577,23 @@
                     <!-- Text -->
                     <div class="h-text">
                         <div class="head">
-                            <h4 title="Muhammad Shayan" aria-label="Muhammad Shayan">Muhammad Shayan</h4>
+                            <h4 title="Shayan" aria-label="Shayan">Shayan</h4>
                             <p class="time">29/5/2022</p>
                         </div>
-                        <div class="message">
-                            <p title="Messages are end-to-end encrypted. No one outside of this chat, not even WhatsApp, can read or listen to them. Click to learn more."
-                                aria-label="Messages are end-to-end encrypted. No one outside of this chat, not even WhatsApp, can read or listen to them. Click to learn more.">
-                                Messages are end-to-end encrypted. No one outside of this chat, not even WhatsApp, can
-                                read or listen to
-                                them. Click to learn more.
-                            </p>
-                            <span class="material-symbols-outlined hide animate__animated animate__fadeInUp">
-                                expand_more
-                            </span>
+                        <div class="message-chat">
+                            <div class="chat-text-icon">
+                                <span class="thanks">Messages are end-to-end encrypted. No one outside of this chat, not
+                                    even WhatsApp, can
+                                    read or listen to them. Click to learn more.</span>
+                                <div class="icon-more">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 20" width="19" height="20"
+                                        class="hide animate__animated animate__fadeInUp">
+                                        <path fill="currentColor"
+                                            d="M3.8 6.7l5.7 5.7 5.7-5.7 1.6 1.6-7.3 7.2-7.3-7.2 1.6-1.6z">
+                                        </path>
+                                    </svg>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -520,19 +607,23 @@
                     <!-- Text -->
                     <div class="h-text">
                         <div class="head">
-                            <h4 title="Muhammad Shayan" aria-label="Muhammad Shayan">Muhammad Shayan</h4>
+                            <h4 title="Shayan" aria-label="Shayan">Shayan</h4>
                             <p class="time">29/5/2022</p>
                         </div>
-                        <div class="message">
-                            <p title="Messages are end-to-end encrypted. No one outside of this chat, not even WhatsApp, can read or listen to them. Click to learn more."
-                                aria-label="Messages are end-to-end encrypted. No one outside of this chat, not even WhatsApp, can read or listen to them. Click to learn more.">
-                                Messages are end-to-end encrypted. No one outside of this chat, not even WhatsApp, can
-                                read or listen to
-                                them. Click to learn more.
-                            </p>
-                            <span class="material-symbols-outlined hide animate__animated animate__fadeInUp">
-                                expand_more
-                            </span>
+                        <div class="message-chat">
+                            <div class="chat-text-icon">
+                                <span class="thanks">Messages are end-to-end encrypted. No one outside of this chat, not
+                                    even WhatsApp, can
+                                    read or listen to them. Click to learn more.</span>
+                                <div class="icon-more">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 20" width="19" height="20"
+                                        class="hide animate__animated animate__fadeInUp">
+                                        <path fill="currentColor"
+                                            d="M3.8 6.7l5.7 5.7 5.7-5.7 1.6 1.6-7.3 7.2-7.3-7.2 1.6-1.6z">
+                                        </path>
+                                    </svg>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -546,19 +637,23 @@
                     <!-- Text -->
                     <div class="h-text">
                         <div class="head">
-                            <h4 title="Muhammad Shayan" aria-label="Muhammad Shayan">Muhammad Shayan</h4>
+                            <h4 title="Shayan" aria-label="Shayan">Shayan</h4>
                             <p class="time">29/5/2022</p>
                         </div>
-                        <div class="message">
-                            <p title="Messages are end-to-end encrypted. No one outside of this chat, not even WhatsApp, can read or listen to them. Click to learn more."
-                                aria-label="Messages are end-to-end encrypted. No one outside of this chat, not even WhatsApp, can read or listen to them. Click to learn more.">
-                                Messages are end-to-end encrypted. No one outside of this chat, not even WhatsApp, can
-                                read or listen to
-                                them. Click to learn more.
-                            </p>
-                            <span class="material-symbols-outlined hide animate__animated animate__fadeInUp">
-                                expand_more
-                            </span>
+                        <div class="message-chat">
+                            <div class="chat-text-icon">
+                                <span class="thanks">Messages are end-to-end encrypted. No one outside of this chat, not
+                                    even WhatsApp, can
+                                    read or listen to them. Click to learn more.</span>
+                                <div class="icon-more">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 20" width="19" height="20"
+                                        class="hide animate__animated animate__fadeInUp">
+                                        <path fill="currentColor"
+                                            d="M3.8 6.7l5.7 5.7 5.7-5.7 1.6 1.6-7.3 7.2-7.3-7.2 1.6-1.6z">
+                                        </path>
+                                    </svg>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -572,19 +667,23 @@
                     <!-- Text -->
                     <div class="h-text">
                         <div class="head">
-                            <h4 title="Muhammad Shayan" aria-label="Muhammad Shayan">Muhammad Shayan</h4>
+                            <h4 title="Shayan" aria-label="Shayan">Shayan</h4>
                             <p class="time">29/5/2022</p>
                         </div>
-                        <div class="message">
-                            <p title="Messages are end-to-end encrypted. No one outside of this chat, not even WhatsApp, can read or listen to them. Click to learn more."
-                                aria-label="Messages are end-to-end encrypted. No one outside of this chat, not even WhatsApp, can read or listen to them. Click to learn more.">
-                                Messages are end-to-end encrypted. No one outside of this chat, not even WhatsApp, can
-                                read or listen to
-                                them. Click to learn more.
-                            </p>
-                            <span class="material-symbols-outlined hide animate__animated animate__fadeInUp">
-                                expand_more
-                            </span>
+                        <div class="message-chat">
+                            <div class="chat-text-icon">
+                                <span class="thanks">Messages are end-to-end encrypted. No one outside of this chat, not
+                                    even WhatsApp, can
+                                    read or listen to them. Click to learn more.</span>
+                                <div class="icon-more">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 20" width="19" height="20"
+                                        class="hide animate__animated animate__fadeInUp">
+                                        <path fill="currentColor"
+                                            d="M3.8 6.7l5.7 5.7 5.7-5.7 1.6 1.6-7.3 7.2-7.3-7.2 1.6-1.6z">
+                                        </path>
+                                    </svg>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -599,17 +698,14 @@
 
                 <!-- Icons -->
                 <div class="ICON">
-                    <div aria-disabled="false" role="button" tabindex="0" class="icons" data-tab="2" title="New chat"
-                        aria-label="New chat" onclick="closeForm()">
-                        <span data-testid="chat" data-icon="chat" class="">
-                            <!-- <a href="index.html"> -->
+                    <button role="button" class="icons" onclick="closeForm()">
+                        <spanclass="">
                             <svg viewBox="0 0 24 24" width="24" height="24" class="">
                                 <path fill="currentColor" d="m12 4 1.4 1.4L7.8 11H20v2H7.8l5.6 5.6L12 20l-8-8 8-8z">
                                 </path>
                             </svg>
-                            <!-- </a> -->
-                        </span>
-                    </div>
+                            </span>
+                    </button>
                 </div>
 
                 <div class="newText">
@@ -633,11 +729,9 @@
                     <div class="iconBox">
                         <i class="bi bi-people-fill"></i>
                     </div>
-
                     <div class="head">
                         <h4 title="New group" aria-label="New group">New group</h4>
                     </div>
-
                 </div>
 
                 <div class="a">
@@ -698,7 +792,6 @@
                         </div>
                     </div>
                 </div>
-
 
                 <!-- Chats 4 -->
                 <div class="block">
@@ -833,7 +926,7 @@
                     <!-- Text -->
                     <div class="h-text">
                         <div class="head">
-                            <h4 title="Adesinar" aria-label="Adesinar">Adesinar</h4>
+                            <h4>Adeboye</h4>
                         </div>
                         <div class="message">
                             <p title="Hey there! I am using WhatsApp." aria-label="Hey there! I am using WhatsApp.">Hey
@@ -869,7 +962,7 @@
                     <!-- Text -->
                     <div class="h-text">
                         <div class="head">
-                            <h4 title="Akunna" aria-label="Akunna">Akunna</h4>
+                            <h4>Lina</h4>
                         </div>
                         <div class="message">
                             <p title="Hey there! I am using WhatsApp." aria-label="Hey there! I am using WhatsApp.">Hey
@@ -978,17 +1071,14 @@
 
                 <!-- Icons -->
                 <div class="ICON">
-                    <div aria-disabled="false" role="button" tabindex="0" class="icons" data-tab="2" title="New chat"
-                        aria-label="New chat" onclick="closeGroup()">
-                        <span data-testid="chat" data-icon="chat" class="">
-                            <!-- <a href="index.html"> -->
+                    <button role="button" class="icons" onclick="closeGroup()">
+                        <span class="">
                             <svg viewBox="0 0 24 24" width="24" height="24" class="">
                                 <path fill="currentColor" d="m12 4 1.4 1.4L7.8 11H20v2H7.8l5.6 5.6L12 20l-8-8 8-8z">
                                 </path>
                             </svg>
-                            <!-- </a> -->
                         </span>
-                    </div>
+                    </button>
                 </div>
 
                 <div class="newText">
@@ -1010,7 +1100,6 @@
                 <div class="a">
                     <h3>A</h3>
                 </div>
-
 
                 <!-- Chats 1 -->
                 <div class="block top">
@@ -1066,7 +1155,6 @@
                         </div>
                     </div>
                 </div>
-
 
                 <!-- Chats 4 -->
                 <div class="block">
@@ -1201,7 +1289,7 @@
                     <!-- Text -->
                     <div class="h-text">
                         <div class="head">
-                            <h4 title="Adesinar" aria-label="Adesinar">Adesinar</h4>
+                            <h4 title=r" aria-label=r"r</h4>
                         </div>
                         <div class="message">
                             <p title="Hey there! I am using WhatsApp." aria-label="Hey there! I am using WhatsApp.">Hey
@@ -1237,7 +1325,7 @@
                     <!-- Text -->
                     <div class="h-text">
                         <div class="head">
-                            <h4 title="Akunna" aria-label="Akunna">Akunna</h4>
+                            <h4 title=" aria-label=">/h4>
                         </div>
                         <div class="message">
                             <p title="Hey there! I am using WhatsApp." aria-label="Hey there! I am using WhatsApp.">Hey
@@ -1346,15 +1434,14 @@
 
                 <!-- Icons -->
                 <div class="ICON">
-                    <div aria-disabled="false" role="button" tabindex="0" class="icons" data-tab="2" title="New chat"
-                        aria-label="New chat" onclick="closeSettings()">
-                        <span data-testid="chat" data-icon="chat" class="">
+                    <button role="button" class="icons" onclick="closeSettings()">
+                        <span class="">
                             <svg viewBox="0 0 24 24" width="24" height="24" class="">
                                 <path fill="currentColor" d="m12 4 1.4 1.4L7.8 11H20v2H7.8l5.6 5.6L12 20l-8-8 8-8z">
                                 </path>
                             </svg>
                         </span>
-                    </div>
+                    </button>
                 </div>
 
                 <div class="newText">
@@ -1389,8 +1476,7 @@
                 <div class="block" onclick="openNotifications()">
                     <!-- Img -->
                     <div class="icon-Box">
-                        <div aria-disabled="false" role="button" tabindex="0" class="icons-setings" data-tab="2"
-                            title="Notifications" aria-label="Notifications">
+                        <button role="button" class="icons-setings">
                             <span data-testid="settings-notifications" data-icon="settings-notifications" class="">
                                 <svg viewBox="0 0 24 24" width="24" height="24" class="">
                                     <path fill="currentColor"
@@ -1398,7 +1484,7 @@
                                     </path>
                                 </svg>
                             </span>
-                        </div>
+                        </button>
                     </div>
                     <!-- Text -->
                     <div class="h-text">
@@ -1413,9 +1499,8 @@
                 <div class="block" onclick="openPrivacy()">
                     <!-- Img -->
                     <div class="icon-Box">
-                        <div aria-disabled="false" role="button" tabindex="0" class="icons-setings" data-tab="2"
-                            title="Privacy" aria-label="Privacy">
-                            <span data-testid="security-lock" data-icon="security-lock" class="">
+                        <button role="button" class="icons-setings">
+                            <span class="">
                                 <svg width="21" height="21" viewBox="0 0 28 35" class="">
                                     <path
                                         d="M14 1.102a8.273 8.273 0 0 1 8.273 8.273l-.001 2.804.084.003A4.86 4.86 0 0 1 27 17.037v12.43a4.86 4.86 0 0 1-4.86 4.86H5.86A4.86 4.86 0 0 1 1 29.467v-12.43a4.86 4.86 0 0 1 4.727-4.858V9.375A8.273 8.273 0 0 1 14 1.102Zm0 18.458c-1.958 0-3.545 1.653-3.545 3.692s1.587 3.691 3.545 3.691 3.545-1.652 3.545-3.691c0-2.04-1.587-3.692-3.545-3.692Zm0-14.766c-2.538 0-4.61 2-4.722 4.51l-.005.217-.001 2.655h9.455V9.521A4.727 4.727 0 0 0 14 4.794Z"
@@ -1423,7 +1508,7 @@
                                     </path>
                                 </svg>
                             </span>
-                        </div>
+                        </button>
                     </div>
                     <!-- Text -->
                     <div class="h-text">
@@ -1437,9 +1522,8 @@
                 <div class="block" onclick="openSecurity()">
                     <!-- Img -->
                     <div class="icon-Box">
-                        <div aria-disabled="false" role="button" tabindex="0" class="icons-setings" data-tab="2"
-                            title="Security" aria-label="Security">
-                            <span data-testid="settings-security" data-icon="settings-security" class="">
+                        <button role="button" class="icons-setings">
+                            <span class="">
                                 <svg width="24" height="24" viewBox="0 0 24 24" class="">
                                     <path
                                         d="M12.027 2 4 5.568v5.35c0 4.95 3.425 9.58 8.027 10.704 4.602-1.124 8.027-5.753 8.027-10.703V5.568L12.027 2Zm0 9.802h6.243c-.472 3.674-2.925 6.948-6.243 7.973v-7.964H5.784V6.727l6.243-2.774v7.849Z"
@@ -1447,130 +1531,127 @@
                                     </path>
                                 </svg>
                             </span>
+                        </button>
+                        </button>
+                        <!-- Text -->
+                        <div class="h-text">
+                            <div class="head">
+                                <h4 title="Security" aria-label="Security">Security</h4>
+                            </div>
                         </div>
                     </div>
-                    <!-- Text -->
-                    <div class="h-text">
-                        <div class="head">
-                            <h4 title="Security" aria-label="Security">Security</h4>
-                        </div>
-                    </div>
-                </div>
 
 
-                <!-- Chats 4 -->
-                <div class="block" role="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                    <!-- Img -->
-                    <div class="icon-Box">
-                        <div aria-disabled="false" role="button" tabindex="0" class="icons-setings" data-tab="2"
-                            title="Theme" aria-label="Theme">
-                            <span data-testid="settings-theme" data-icon="settings-theme" class="">
-                                <svg width="24" height="24" viewBox="0 0 24 24" class="">
-                                    <path
-                                        d="m12 1 3.22 3.22h4.56v4.56L23 12l-3.22 3.22v4.56h-4.56L12 23l-3.22-3.22H4.22v-4.56L1 12l3.22-3.22V4.22h4.56L12 1Zm0 5v12c3.31 0 6-2.69 6-6a6.005 6.005 0 0 0-5.775-5.996L12 6Z"
-                                        fill="currentColor">
-                                    </path>
-                                </svg>
-                            </span>
+                    <!-- Chats 4 -->
+                    <div class="block" role="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <!-- Img -->
+                        <div class="icon-Box">
+                            <button role="button" class="icons-setings">
+                                <span class="">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" class="">
+                                        <path
+                                            d="m12 1 3.22 3.22h4.56v4.56L23 12l-3.22 3.22v4.56h-4.56L12 23l-3.22-3.22H4.22v-4.56L1 12l3.22-3.22V4.22h4.56L12 1Zm0 5v12c3.31 0 6-2.69 6-6a6.005 6.005 0 0 0-5.775-5.996L12 6Z"
+                                            fill="currentColor">
+                                        </path>
+                                    </svg>
+                                </span>
+                            </button>
+                        </div>
+                        <!-- Text -->
+                        <div class="h-text">
+                            <div class="head">
+                                <h4 title="Theme" aria-label="Theme">Theme</h4>
+                            </div>
                         </div>
                     </div>
-                    <!-- Text -->
-                    <div class="h-text">
-                        <div class="head">
-                            <h4 title="Theme" aria-label="Theme">Theme</h4>
-                        </div>
-                    </div>
-                </div>
 
-                <!-- Chats 5 -->
-                <div class="block" onclick="openWallpaper()">
-                    <!-- Img -->
-                    <div class="icon-Box">
-                        <div aria-disabled="false" role="button" tabindex="0" class="icons-setings" data-tab="2"
-                            title="Chat wallpaper" aria-label="Chat wallpaper">
-                            <span data-testid="settings-wallpaper" data-icon="settings-wallpaper" class="">
-                                <svg viewBox="0 0 24 24" width="24" height="24" class="">
-                                    <path fill="currentColor"
-                                        d="M4.9 5.9h6.4V4.1H4.9c-1 0-1.8.8-1.8 1.8v6.4h1.8V5.9zm5.3 8-3.6 4.4h10.7l-2.7-3.6-1.8 2.4-2.6-3.2zm6.2-4c0-.7-.6-1.3-1.3-1.3s-1.3.6-1.3 1.3.6 1.3 1.3 1.3 1.3-.6 1.3-1.3zm2.7-5.8h-6.4v1.8h6.4v6.4h1.8V5.9c0-1-.8-1.8-1.8-1.8zm0 16h-6.4v1.8h6.4c1 0 1.8-.8 1.8-1.8v-6.4h-1.8v6.4zM4.9 13.7H3.1v6.4c0 1 .8 1.8 1.8 1.8h6.4v-1.8H4.9v-6.4z">
-                                    </path>
-                                </svg>
-                            </span>
+                    <!-- Chats 5 -->
+                    <div class="block" onclick="openWallpaper()">
+                        <!-- Img -->
+                        <div class="icon-Box">
+                            <button role="button" class="icons-setings">
+                                <span class="">
+                                    <svg viewBox="0 0 24 24" width="24" height="24" class="">
+                                        <path fill="currentColor"
+                                            d="M4.9 5.9h6.4V4.1H4.9c-1 0-1.8.8-1.8 1.8v6.4h1.8V5.9zm5.3 8-3.6 4.4h10.7l-2.7-3.6-1.8 2.4-2.6-3.2zm6.2-4c0-.7-.6-1.3-1.3-1.3s-1.3.6-1.3 1.3.6 1.3 1.3 1.3 1.3-.6 1.3-1.3zm2.7-5.8h-6.4v1.8h6.4v6.4h1.8V5.9c0-1-.8-1.8-1.8-1.8zm0 16h-6.4v1.8h6.4c1 0 1.8-.8 1.8-1.8v-6.4h-1.8v6.4zM4.9 13.7H3.1v6.4c0 1 .8 1.8 1.8 1.8h6.4v-1.8H4.9v-6.4z">
+                                        </path>
+                                    </svg>
+                                </span>
+                            </button>
+                        </div>
+                        <!-- Text -->
+                        <div class="h-text">
+                            <div class="head">
+                                <h4 title="Chat wallpaper" aria-label="Chat wallpaper">Chat wallpaper</h4>
+                            </div>
                         </div>
                     </div>
-                    <!-- Text -->
-                    <div class="h-text">
-                        <div class="head">
-                            <h4 title="Chat wallpaper" aria-label="Chat wallpaper">Chat wallpaper</h4>
-                        </div>
-                    </div>
-                </div>
 
-                <!-- Chats 6 -->
-                <div class="block" onclick="openRequest()">
-                    <!-- Img -->
-                    <div class="icon-Box">
-                        <div aria-disabled="false" role="button" tabindex="0" class="icons-setings" data-tab="2"
-                            title="Request Account Info" aria-label="Request Account Info">
-                            <span data-testid="settings-document" data-icon="settings-document" class="">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" class="">
-                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                        d="M6 2c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8.83c0-.53-.21-1.04-.59-1.41l-4.83-4.83c-.37-.38-.88-.59-1.41-.59H6Zm7 6V3.5L18.5 9H14c-.55 0-1-.45-1-1Zm-5 4a1 1 0 1 0 0 2h8a1 1 0 1 0 0-2H8Zm6 5a1 1 0 0 0-1-1H8a1 1 0 1 0 0 2h5a1 1 0 0 0 1-1Z"
-                                        fill="currentColor">
-                                    </path>
-                                </svg>
-                            </span>
+                    <!-- Chats 6 -->
+                    <div class="block" onclick="openRequest()">
+                        <!-- Img -->
+                        <div class="icon-Box">
+                            <button role="button" class="icons-setings">
+                                <span class="">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" class="">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M6 2c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8.83c0-.53-.21-1.04-.59-1.41l-4.83-4.83c-.37-.38-.88-.59-1.41-.59H6Zm7 6V3.5L18.5 9H14c-.55 0-1-.45-1-1Zm-5 4a1 1 0 1 0 0 2h8a1 1 0 1 0 0-2H8Zm6 5a1 1 0 0 0-1-1H8a1 1 0 1 0 0 2h5a1 1 0 0 0 1-1Z"
+                                            fill="currentColor">
+                                        </path>
+                                    </svg>
+                                </span>
+                            </button>
+                        </div>
+                        <!-- Text -->
+                        <div class="h-text">
+                            <div class="head">
+                                <h4 title="Request Account Info" aria-label="Request Account Info">Request Account Info
+                                </h4>
+                            </div>
                         </div>
                     </div>
-                    <!-- Text -->
-                    <div class="h-text">
-                        <div class="head">
-                            <h4 title="Request Account Info" aria-label="Request Account Info">Request Account Info</h4>
-                        </div>
-                    </div>
-                </div>
 
-                <!-- Chats 7 -->
-                <div class="block">
-                    <!-- Img -->
-                    <div class="icon-Box">
-                        <div aria-disabled="false" role="button" tabindex="0" class="icons-setings" data-tab="2"
-                            title="Keyboard shortcuts aria-label=" Keyboard shortcuts>
-                            <span data-testid="settings-keyboard" data-icon="settings-keyboard" class="">
-                                <svg width="24" height="24" viewBox="0 0 24 24" class="">
-                                    <path fill="currentColor"
-                                        d="M10.852 12.648h2.296L12 9ZM20 8.691V6c0-1.102-.898-2-2-2h-2.691L13.41 2.102a2 2 0 0 0-2.828 0L8.692 4H6c-1.102 0-2 .898-2 2v2.691L2.102 10.59a2.004 2.004 0 0 0 0 2.832L4 15.32V18c0 1.102.898 2 2 2h2.691l1.899 1.898c.781.782 2.05.782 2.832 0L15.32 20H18c1.102 0 2-.898 2-2v-2.691l1.898-1.899a2.004 2.004 0 0 0 0-2.832Zm-5.91 6.707L13.602 14h-3.204l-.488 1.398a.89.89 0 0 1-.84.602.888.888 0 0 1-.84-1.191l2.442-6.86C10.872 7.38 11.398 7 12 7c.602 0 1.129.379 1.34.941l2.441 6.86a.89.89 0 0 1-.84 1.187.868.868 0 0 1-.851-.59Zm0 0">
-                                    </path>
-                                </svg>
-                            </span>
+                    <!-- Chats 7 -->
+                    <div class="block">
+                        <!-- Img -->
+                        <div class="icon-Box">
+                            <button role="button" class="icons-setings">
+                                <span class="">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" class="">
+                                        <path fill="currentColor"
+                                            d="M10.852 12.648h2.296L12 9ZM20 8.691V6c0-1.102-.898-2-2-2h-2.691L13.41 2.102a2 2 0 0 0-2.828 0L8.692 4H6c-1.102 0-2 .898-2 2v2.691L2.102 10.59a2.004 2.004 0 0 0 0 2.832L4 15.32V18c0 1.102.898 2 2 2h2.691l1.899 1.898c.781.782 2.05.782 2.832 0L15.32 20H18c1.102 0 2-.898 2-2v-2.691l1.898-1.899a2.004 2.004 0 0 0 0-2.832Zm-5.91 6.707L13.602 14h-3.204l-.488 1.398a.89.89 0 0 1-.84.602.888.888 0 0 1-.84-1.191l2.442-6.86C10.872 7.38 11.398 7 12 7c.602 0 1.129.379 1.34.941l2.441 6.86a.89.89 0 0 1-.84 1.187.868.868 0 0 1-.851-.59Zm0 0">
+                                        </path>
+                                    </svg>
+                                </span>
+                            </button>
+                        </div>
+                        <!-- Text -->
+                        <div class="h-text">
+                            <div class="head">
+                                <h4 title="Keyboard shortcuts" aria-label="Keyboard shortcuts">Keyboard shortcuts</h4>
+                            </div>
                         </div>
                     </div>
-                    <!-- Text -->
-                    <div class="h-text">
-                        <div class="head">
-                            <h4 title="Keyboard shortcuts" aria-label="Keyboard shortcuts">Keyboard shortcuts</h4>
-                        </div>
-                    </div>
-                </div>
 
-                <!-- Chats 8 -->
-                <div class="block bottom" onclick="openHelp()">
-                    <!-- Img -->
-                    <div class="icon-Box">
-                        <div aria-disabled="false" role="button" tabindex="0" class="icons-setings" data-tab="2"
-                            title="Help" aria-label="Help">
-                            <span data-testid="settings-help" data-icon="settings-help" class="">
-                                <svg viewBox="0 0 24 24" width="24" height="24" class="">
-                                    <path fill="currentColor"
-                                        d="M12 4.7c-4.5 0-8.2 3.7-8.2 8.2s3.7 8.2 8.2 8.2 8.2-3.7 8.2-8.2-3.7-8.2-8.2-8.2zm.8 13.9h-1.6V17h1.6v1.6zm1.7-6.3-.7.7c-.7.6-1 1.1-1 2.3h-1.6v-.4c0-.9.3-1.7 1-2.3l1-1.1c.3-.2.5-.7.5-1.1 0-.9-.7-1.6-1.6-1.6s-1.6.7-1.6 1.6H8.7c0-1.8 1.5-3.3 3.3-3.3s3.3 1.5 3.3 3.3c0 .8-.4 1.4-.8 1.9z">
-                                    </path>
-                                </svg>
-                            </span>
+                    <!-- Chats 8 -->
+                    <div class="block bottom" onclick="openHelp()">
+                        <!-- Img -->
+                        <div class="icon-Box">
+                            <button role="button" class="icons-setings">
+                                <span class="">
+                                    <svg viewBox="0 0 24 24" width="24" height="24" class="">
+                                        <path fill="currentColor"
+                                            d="M12 4.7c-4.5 0-8.2 3.7-8.2 8.2s3.7 8.2 8.2 8.2 8.2-3.7 8.2-8.2-3.7-8.2-8.2-8.2zm.8 13.9h-1.6V17h1.6v1.6zm1.7-6.3-.7.7c-.7.6-1 1.1-1 2.3h-1.6v-.4c0-.9.3-1.7 1-2.3l1-1.1c.3-.2.5-.7.5-1.1 0-.9-.7-1.6-1.6-1.6s-1.6.7-1.6 1.6H8.7c0-1.8 1.5-3.3 3.3-3.3s3.3 1.5 3.3 3.3c0 .8-.4 1.4-.8 1.9z">
+                                        </path>
+                                    </svg>
+                                </span>
+                            </button>
                         </div>
-                    </div>
-                    <!-- Text -->
-                    <div class="h-text">
-                        <div class="head">
-                            <h4 title="Help" aria-label="Help">Help</h4>
+                        <!-- Text -->
+                        <div class="h-text">
+                            <div class="head">
+                                <h4 title="Help" aria-label="Help">Help</h4>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -1584,7 +1665,7 @@
 
                 <!-- Icons -->
                 <div class="ICON">
-                    <div aria-disabled="false" role="button" tabindex="0" class="icons" data-tab="2" title="New chat"
+                    <div aria-disabled="false" role="button" class="icons" data-tab="2" title="New chat"
                         aria-label="New chat" onclick="closeProfile()">
                         <span data-testid="chat" data-icon="chat" class="">
                             <svg viewBox="0 0 24 24" width="24" height="24" class="">
@@ -1607,8 +1688,8 @@
                     <div class="imgBox">
                         <img src="images/img10.jpg" alt="" class="cover animate__animated animate__fadeIn">
                         <div class="middle">
-                            <div aria-disabled="false" role="button" tabindex="0" class="icons-profile" data-tab="2"
-                                title="Camera" aria-label="Camera">
+                            <div aria-disabled="false" role="button" class="icons-profile" data-tab="2" title="Camera"
+                                aria-label="Camera">
                                 <span data-testid="camera" data-icon="camera" class="">
                                     <svg viewBox="0 0 24 24" width="24" height="24" class="">
                                         <path fill="currentColor"
@@ -1632,8 +1713,8 @@
 
                         <div class="head">
                             <h4>🛐❣️ Úyï Øsa ❣️🛐</h4>
-                            <div aria-disabled="false" role="button" tabindex="0" class="icons-prof" data-tab="2"
-                                title="Edit" aria-label="Edit">
+                            <div aria-disabled="false" role="button" class="icons-prof" data-tab="2" title="Edit"
+                                aria-label="Edit">
                                 <span data-testid="pencil" data-icon="pencil" class="">
                                     <svg viewBox="0 0 24 24" width="24" height="24" class="">
                                         <path fill="currentColor"
@@ -1663,8 +1744,8 @@
 
                         <div class="head">
                             <h4>Perfect has seven letter💫💥💦and so does meeeeee🛐💦☦️</h4>
-                            <div aria-disabled="false" role="button" tabindex="0" class="icons-prof" data-tab="2"
-                                title="Edit" aria-label="Edit">
+                            <div aria-disabled="false" role="button" class="icons-prof" data-tab="2" title="Edit"
+                                aria-label="Edit">
                                 <span data-testid="pencil" data-icon="pencil" class="">
                                     <svg viewBox="0 0 24 24" width="24" height="24" class="">
                                         <path fill="currentColor"
@@ -1689,7 +1770,7 @@
 
                 <!-- Icons -->
                 <div class="ICON">
-                    <div aria-disabled="false" role="button" tabindex="0" class="icons" data-tab="2" title="New chat"
+                    <div aria-disabled="false" role="button" class="icons" data-tab="2" title="New chat"
                         aria-label="New chat" onclick="closeNotifications()">
                         <span data-testid="chat" data-icon="chat" class="">
                             <svg viewBox="0 0 24 24" width="24" height="24" class="">
@@ -1764,7 +1845,7 @@
 
                 <!-- Icons -->
                 <div class="ICON">
-                    <div aria-disabled="false" role="button" tabindex="0" class="icons" data-tab="2" title="New chat"
+                    <div aria-disabled="false" role="button" class="icons" data-tab="2" title="New chat"
                         aria-label="New chat" onclick="closePrivacy()">
                         <span data-testid="chat" data-icon="chat" class="">
                             <svg viewBox="0 0 24 24" width="24" height="24" class="">
@@ -1891,7 +1972,7 @@
 
                 <!-- Icons -->
                 <div class="ICON">
-                    <div aria-disabled="false" role="button" tabindex="0" class="icons" data-tab="2" title="New chat"
+                    <div aria-disabled="false" role="button" class="icons" data-tab="2" title="New chat"
                         aria-label="New chat" onclick="closeLast()">
                         <span data-testid="chat" data-icon="chat" class="">
                             <svg viewBox="0 0 24 24" width="24" height="24" class="">
@@ -1967,7 +2048,7 @@
 
                 <!-- Icons -->
                 <div class="ICON">
-                    <div aria-disabled="false" role="button" tabindex="0" class="icons" data-tab="2" title="New chat"
+                    <div aria-disabled="false" role="button" class="icons" data-tab="2" title="New chat"
                         aria-label="New chat" onclick="closePhoto()">
                         <span data-testid="chat" data-icon="chat" class="">
                             <svg viewBox="0 0 24 24" width="24" height="24" class="">
@@ -2043,7 +2124,7 @@
 
                 <!-- Icons -->
                 <div class="ICON">
-                    <div aria-disabled="false" role="button" tabindex="0" class="icons" data-tab="2" title="New chat"
+                    <div aria-disabled="false" role="button" class="icons" data-tab="2" title="New chat"
                         aria-label="New chat" onclick="closeAbout()">
                         <span data-testid="chat" data-icon="chat" class="">
                             <svg viewBox="0 0 24 24" width="24" height="24" class="">
@@ -2119,7 +2200,7 @@
 
                 <!-- Icons -->
                 <div class="ICON">
-                    <div aria-disabled="false" role="button" tabindex="0" class="icons" data-tab="2" title="New chat"
+                    <div aria-disabled="false" role="button" class="icons" data-tab="2" title="New chat"
                         aria-label="New chat" onclick="closeDmessage()">
                         <span data-testid="chat" data-icon="chat" class="">
                             <svg viewBox="0 0 24 24" width="24" height="24" class="">
@@ -2204,7 +2285,7 @@
 
                 <!-- Icons -->
                 <div class="ICON">
-                    <div aria-disabled="false" role="button" tabindex="0" class="icons" data-tab="2" title="New chat"
+                    <div aria-disabled="false" role="button" class="icons" data-tab="2" title="New chat"
                         aria-label="New chat" onclick="closeGroups()">
                         <span data-testid="chat" data-icon="chat" class="">
                             <svg viewBox="0 0 24 24" width="24" height="24" class="">
@@ -2276,7 +2357,7 @@
 
                 <!-- Icons -->
                 <div class="ICON">
-                    <div aria-disabled="false" role="button" tabindex="0" class="icons" data-tab="2" title="New chat"
+                    <div aria-disabled="false" role="button" class="icons" data-tab="2" title="New chat"
                         aria-label="New chat" onclick="closeBlock()">
                         <span data-testid="chat" data-icon="chat" class="">
                             <svg viewBox="0 0 24 24" width="24" height="24" class="">
@@ -2297,8 +2378,7 @@
                 <div class="block">
                     <!-- Img -->
                     <div class="iconBox">
-                        <div aria-disabled="false" role="button" tabindex="0" class="icons" data-tab="2"
-                            title="Add blocked contact">
+                        <div aria-disabled="false" role="button" class="icons" data-tab="2" title="Add blocked contact">
                             <span data-testid="add-user" data-icon="add-user" class="">
                                 <svg viewBox="0 0 24 24" width="24" height="24" class="">
                                     <path fill="currentColor"
@@ -2362,7 +2442,7 @@
 
                 <!-- Icons -->
                 <div class="ICON">
-                    <div aria-disabled="false" role="button" tabindex="0" class="icons" data-tab="2" title="New chat"
+                    <div aria-disabled="false" role="button" class="icons" data-tab="2" title="New chat"
                         aria-label="New chat" onclick="closeSecurity()">
                         <span data-testid="chat" data-icon="chat" class="">
                             <svg viewBox="0 0 24 24" width="24" height="24" class="">
@@ -2383,7 +2463,7 @@
 
                 <div class="top-pad">
                     <div class="icons-pad">
-                        <div aria-disabled="false" tabindex="0" class="icons" data-tab="2">
+                        <div aria-disabled="false" class="icons" data-tab="2">
                             <span data-testid="security-drawer-lock" data-icon="security-drawer-lock" class="">
                                 <svg width="84" viewBox="0 0 84 84" fill="none" preserveAspectRatio="xMidYMid meet"
                                     class="">
@@ -3017,7 +3097,7 @@
                     <!-- Text -->
                     <div class="h-text">
                         <div class="head">
-                            <h4 title="Raoul Kumar" aria-label="Raoul Kumar">Raoul Kumar</h4>
+                            <h4 title="Raoul" aria-label="Raoul">Raoul</h4>
                         </div>
                         <div class="message">
                             <p>today at 5:19 PM</p>
@@ -3111,7 +3191,7 @@
                     <!-- Text -->
                     <div class="h-text">
                         <div class="head">
-                            <h4 title="Alha Smith" aria-label="Alha Smith">Alha Smith</h4>
+                            <h4 title="Grace" aria-label="Grace">Grace</h4>
                         </div>
                         <div class="message">
                             <p>today at 5:19 PM</p>
@@ -3134,7 +3214,7 @@
                     <!-- Text -->
                     <div class="h-text">
                         <div class="head">
-                            <h4 title="Adeboye Adesina" aria-label="Adeboye Adesina">Adeboye Adesina</h4>
+                            <h4 title="Adeboye" aria-label="Adeboye">Adeboye</h4>
                         </div>
                         <div class="message">
                             <p>today at 5:19 PM</p>
@@ -3157,7 +3237,7 @@
                     <!-- Text -->
                     <div class="h-text">
                         <div class="head">
-                            <h4 title="Danjuma Nwuzor" aria-label="Danjuma Nwuzor">Danjuma Nwuzor</h4>
+                            <h4 title="Danjuma" aria-label="Danjuma">Danjuma</h4>
                         </div>
                         <div class="message">
                             <p>today at 5:19 PM</p>
@@ -3180,7 +3260,7 @@
                     <!-- Text -->
                     <div class="h-text">
                         <div class="head">
-                            <h4 title="Bankole Elebiyo" aria-label="Bankole Elebiyo">Bankole Elebiyo</h4>
+                            <h4 title="Bankole" aria-label="Bankole">Bankole</h4>
                         </div>
                         <div class="message">
                             <p>today at 5:19 PM</p>
@@ -3203,7 +3283,7 @@
                     <!-- Text -->
                     <div class="h-text">
                         <div class="head">
-                            <h4 title="Akunna Mutiat" aria-label="Akunna Mutiat">Akunna Mutiat</h4>
+                            <h4 title="Mutiat" aria-label="Mutiat">Mutiat</h4>
                         </div>
                         <div class="message">
                             <p>today at 5:19 PM</p>
@@ -3226,7 +3306,7 @@
                     <!-- Text -->
                     <div class="h-text">
                         <div class="head">
-                            <h4 title="Muhammad Alihu" aria-label="Muhammad Alihu">Muhammad Alihu</h4>
+                            <h4 title="Alihu" aria-label="Alihu">Alihu</h4>
                         </div>
                         <div class="message">
                             <p>today at 5:19 PM</p>
@@ -3249,7 +3329,7 @@
                     <!-- Text -->
                     <div class="h-text">
                         <div class="head">
-                            <h4 title="Muhammad Shayan" aria-label="Muhammad Shayan">Muhammad Shayan</h4>
+                            <h4 title="Shayan" aria-label="Shayan">Shayan</h4>
                         </div>
                         <div class="message">
                             <p>today at 5:19 PM</p>
@@ -3272,7 +3352,7 @@
                     <!-- Text -->
                     <div class="h-text">
                         <div class="head">
-                            <h4 title="Muhammad Shayan" aria-label="Muhammad Shayan">Muhammad Shayan</h4>
+                            <h4 title="Shayan" aria-label="Shayan">Shayan</h4>
                         </div>
                         <div class="message">
                             <p>today at 5:19 PM</p>
@@ -3295,7 +3375,7 @@
                     <!-- Text -->
                     <div class="h-text">
                         <div class="head">
-                            <h4 title="Muhammad Shayan" aria-label="Muhammad Shayan">Muhammad Shayan</h4>
+                            <h4 title="Shayan" aria-label="Shayan">Shayan</h4>
                         </div>
                         <div class="message">
                             <p>today at 5:19 PM</p>
@@ -3318,7 +3398,7 @@
                     <!-- Text -->
                     <div class="h-text">
                         <div class="head">
-                            <h4 title="Muhammad Shayan" aria-label="Muhammad Shayan">Muhammad Shayan</h4>
+                            <h4 title="Shayan" aria-label="Shayan">Shayan</h4>
                         </div>
                         <div class="message">
                             <p>today at 5:19 PM</p>
@@ -3330,8 +3410,6 @@
         </div>
 
         <div class="rightStatus animate__animated animate__fadeInRight" id="rightStatus">
-
-
             <div class="_shbxn">
                 <div class="_13bjQ">
                     <div class="status-placeholder">
@@ -3363,88 +3441,48 @@
 
         </div>
 
-        <div class="" style="flex: 70%; display: flex;">
+        <div class="" style="flex: 70%; display: flex;" id="right">
             <div class="rightSide" id="rightSide">
                 <div class="header">
                     <div class="imgText" role="button" onclick="openChatAbout()">
                         <div class="userImg">
                             <img src="images/img1.jpg" alt="" class="cover">
                         </div>
-                        <h4 title="Muhammad Shayan" aria-label="Muhammad Shayan">Muhammad Shayan<br><span
-                                aria-label="online">online</span></h4>
-                    </div>
-
-                    <!-- Dropdown -->
-                    <div tabindex="-1" class="drop" id="drop">
-                        <ul class="_1HnQz">
-                            <div>
-                                <div data-testid="contact-menu-dropdown">
-                                    <li tabindex="0" class="" data-animate-dropdown-item="true">
-                                        <div class="listItem" role="button" aria-label="Contact info">Contact
-                                            info
-                                        </div>
-                                    </li>
-                                    <li tabindex="0" class="" data-animate-dropdown-item="true">
-                                        <div class="listItem" role="button" aria-label="Select messages">Select
-                                            messages
-                                        </div>
-                                    </li>
-                                    <li tabindex="0" class="" data-animate-dropdown-item="true">
-                                        <div class="listItem" role="button" aria-label="Close chat">Close chat
-                                        </div>
-                                    </li>
-                                    <li tabindex="0" class="" data-animate-dropdown-item="true">
-                                        <div class="listItem" role="button" aria-label="Mute notifications">Mute
-                                            notifications
-                                        </div>
-                                    </li>
-                                    <li tabindex="0" class="" data-animate-dropdown-item="true">
-                                        <div class="listItem" role="button" aria-label="Disappearing messages">
-                                            Disappearing messages
-                                        </div>
-                                    </li>
-                                    <li tabindex="0" class="" data-animate-dropdown-item="true">
-                                        <div class="listItem" role="button" aria-label="Clear messages">Clear
-                                            messages
-                                        </div>
-                                    </li>
-                                    <li tabindex="0" class="" data-animate-dropdown-item="true">
-                                        <div class="listItem" role="button" aria-label="Delete chat">Delete chat
-                                        </div>
-                                    </li>
-                                </div>
-                            </div>
-                        </ul>
+                        <h4 title="Shayan" aria-label="Shayan">Shayan<br><span aria-label="online">online</span></h4>
                     </div>
 
                     <!-- Icons -->
-                    <div class="ICON">
-                        <div aria-disabled="false" role="button" tabindex="0" class="icons pP" data-tab="0"
-                            title="Search…" aria-label="Search…">
-                            <span data-testid="search-alt" data-icon="search-alt" class="">
-                                <svg viewBox="0 0 24 24" width="24" height="24" class="">
-                                    <path fill="currentColor"
-                                        d="M15.9 14.3H15l-.3-.3c1-1.1 1.6-2.7 1.6-4.3 0-3.7-3-6.7-6.7-6.7S3 6 3 9.7s3 6.7 6.7 6.7c1.6 0 3.2-.6 4.3-1.6l.3.3v.8l5.1 5.1 1.5-1.5-5-5.2zm-6.2 0c-2.6 0-4.6-2.1-4.6-4.6s2.1-4.6 4.6-4.6 4.6 2.1 4.6 4.6-2 4.6-4.6 4.6z">
-                                    </path>
-                                </svg>
-                            </span>
-                        </div>
+                    <div class="chat-side">
+                        <button class="icons pP">
+                            <svg viewBox="0 0 24 24" width="24" height="24" class="">
+                                <path fill="currentColor"
+                                    d="M15.9 14.3H15l-.3-.3c1-1.1 1.6-2.7 1.6-4.3 0-3.7-3-6.7-6.7-6.7S3 6 3 9.7s3 6.7 6.7 6.7c1.6 0 3.2-.6 4.3-1.6l.3.3v.8l5.1 5.1 1.5-1.5-5-5.2zm-6.2 0c-2.6 0-4.6-2.1-4.6-4.6s2.1-4.6 4.6-4.6 4.6 2.1 4.6 4.6-2 4.6-4.6 4.6z">
+                                </path>
+                            </svg>
+                        </button>
 
-                        <div aria-disabled="false" role="button" tabindex="0" class="icons pP" data-tab="0" title="Menu"
-                            aria-label="Menu" onclick="myDrop()">
-                            <span data-testid="menu" data-icon="menu" class="">
+                        <div class="dropdown-icon">
+                            <button class="pressed icons pP" onclick="myDrop()">
                                 <svg viewBox="0 0 24 24" width="24" height="24" class="">
                                     <path fill="currentColor"
                                         d="M12 7a2 2 0 1 0-.001-4.001A2 2 0 0 0 12 7zm0 2a2 2 0 1 0-.001 3.999A2 2 0 0 0 12 9zm0 6a2 2 0 1 0-.001 3.999A2 2 0 0 0 12 15z">
                                     </path>
                                 </svg>
-                            </span>
+                            </button>
+                            <ul class="drop" id="drop">
+                                <li class="listItem" role="button">Contact info</li>
+                                <li class="listItem" role="button">Select messages </li>
+                                <li class="listItem" role="button">Close chat</li>
+                                <li class="listItem" role="button">Mute notifications</li>
+                                <li class="listItem" role="button">Disappearing messages</li>
+                                <li class="listItem" role="button">Clear messages</li>
+                                <li class="listItem" role="button">Delete chat</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
 
                 <!-- ChatBox -->
-
                 <div class="chatBox">
                     <div class="chat__date-wrapper"><span class="chat__date"> 04/06/2021</span></div>
                     <p class="chat__encryption-msg">
@@ -3885,65 +3923,14 @@
                 </div>
                 <!-- Chats -->
                 <div class="chats-chatAbout">
-                    <div class="img-Ani">
-                        <div class="img-animated"></div>
-                    </div>
+                    <div class="img-about">
+                        <div class="img-Ani">
+                            <img src="images/img1.jpg" class="img-animated" alt="" draggable="false">
+                        </div>
 
-                    <div class="text-Ani">
-                        <p>Version 2.2232.8</p>
-                    </div>
-
-
-                    <!-- Chats 1 -->
-                    <div class="block">
-                        <!-- Text -->
-                        <div class="h-text">
-                            <div class="titlePro">
-                                <p>Who can see my personal info</p>
-                            </div>
-
-                            <div class="head" onclick="openLast()">
-                                <div class="text-inner">
-                                    <h4>Last seen</h4>
-                                    <p>Everyone</p>
-                                </div>
-                                <span class="material-symbols-outlined">
-                                    chevron_right
-                                </span>
-                            </div>
-
-                            <div class="head" onclick="openPhoto()">
-                                <div class="text-inner">
-                                    <h4>Profile photo</h4>
-                                    <p>Everyone</p>
-                                </div>
-                                <span class="material-symbols-outlined">
-                                    chevron_right
-                                </span>
-                            </div>
-
-                            <div class="head" onclick="openAbout()">
-                                <div class="text-inner">
-                                    <h4>About</h4>
-                                    <p>Everyone</p>
-                                </div>
-                                <span class="material-symbols-outlined">
-                                    chevron_right
-                                </span>
-                            </div>
-
-                            <div class="F-head">
-                                <div class="text-inner">
-                                    <label class="form-check-label" for="CheckRead">
-                                        <h4>Read Receipts</h4>
-                                        <p>If turned off, you won't send or receive Read receipts. Read receipts are
-                                            always
-                                            sent for group chats.</p>
-                                    </label>
-                                </div>
-                                <input class="form-check-input" type="checkbox" value="" id="CheckRead" checked>
-                            </div>
-
+                        <div class="text-Ani">
+                            <h3>Shayan</h3>
+                            <p>+234 805 742 1760</p>
                         </div>
                     </div>
 
@@ -3952,52 +3939,181 @@
                         <!-- Text -->
                         <div class="h-text">
                             <div class="titlePro">
-                                <p>Disappearing messages</p>
+                                <p>About</p>
+                            </div>
+                            <div class="bio">
+                                <div class="text-inner">
+                                    <h4>Hey there i am using Whatsapp clone</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Chats 2 -->
+                    <div class="block">
+                        <div class="h-text">
+                            <div class="titlePro">
+                                <p>Media, links and docs</p>
+                                <div class="pictures-text">
+                                    <h4>3</h4>
+                                    <span class="material-symbols-outlined">
+                                        chevron_right
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="media-links">
+                                <img src="images/download.jpeg" alt="" class="avatar" draggable="false">
+                                <img src="images/download.jpeg" alt="" class="avatar" draggable="false">
+                                <img src="images/download.jpeg" alt="" class="avatar" draggable="false">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Chats 3 -->
+                    <div class="block">
+                        <!-- Text -->
+                        <div class="h-text">
+                            <div class="head">
+                                <div class="contact-star">
+                                    <span class="star">
+                                        <svg viewBox="0 0 16 14" height="20" class="">
+                                            <path fill="currentColor"
+                                                d="m8.3 10.2-2.5 1.7c-.3.2-.8-.1-.7-.5L6 8.6c.1-.2 0-.4-.2-.5L3.5 6.3c-.4-.3-.2-.8.2-.8l3-.1c.2 0 .3-.1.4-.3l1-2.8c.1-.4.7-.4.8 0l1 2.8c.1.2.2.3.4.3l3 .1c.4 0 .6.5.3.8l-2.4 1.8c-.1.1-.2.3-.2.5l.9 2.9c.1.4-.3.7-.7.5l-2.5-1.7c-.1-.2-.3-.2-.4-.1z">
+                                            </path>
+                                        </svg>
+                                    </span>
+                                </div>
+                                <div class="contact-text">
+                                    <span class="star-text">Starred messages</span>
+                                </div>
+                                <div class="icon-media">
+                                    <span class="">
+                                        <svg viewBox="0 0 10 21" width="10" height="21" class="">
+                                            <path fill="currentColor"
+                                                d="m1 15.75 5.2-5.2L1 5.35l1.5-1.5 6.5 6.7-6.6 6.6-1.4-1.4z">
+                                            </path>
+                                        </svg>
+                                    </span>
+                                </div>
                             </div>
 
-                            <div class="T-head" onclick="openDmessage()">
-                                <div class="text-inner">
-                                    <h4>Default message timer</h4>
+                            <div class="head">
+                                <div class="contact-star">
+                                    <span class="star">
+                                        <svg viewBox="0 0 24 24" height="20" class="">
+                                            <path fill="currentColor"
+                                                d="M12 21.7c.9 0 1.7-.8 1.7-1.7h-3.4c0 .9.8 1.7 1.7 1.7zm5.6-5.2v-4.7c0-2.7-1.8-4.8-4.3-5.4v-.6c0-.7-.6-1.3-1.3-1.3s-1.3.6-1.3 1.3v.6c-2.5.6-4.3 2.7-4.3 5.4v4.7l-1.7 1.7v.9h14.6v-.9l-1.7-1.7z">
+                                            </path>
+                                        </svg>
+                                    </span>
+                                </div>
+                                <div class="contact-text">
+                                    <span class="star-text">Mute notification</span>
+                                </div>
+                            </div>
+
+                            <div class="head">
+                                <div class="contact-star">
+                                    <span class="star">
+                                        <svg height="20" viewBox="0 0 36 36" class="">
+                                            <path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M18 31.5c.09 0 .182 0 .272-.003a1.5 1.5 0 0 0-.06-3c-.07.002-.14.003-.212.003v3Zm0-24c.071 0 .142 0 .213.002a1.5 1.5 0 0 0 .06-3L18 4.5v3Zm6.515-1.326a1.5 1.5 0 0 0-1.45 2.626c.124.068.246.139.367.212a1.5 1.5 0 1 0 1.554-2.566 13.503 13.503 0 0 0-.47-.272Zm5.039 4.84a1.5 1.5 0 0 0-2.566 1.554c.073.12.144.243.212.366a1.5 1.5 0 0 0 2.626-1.45 13.535 13.535 0 0 0-.272-.47Zm1.943 6.714a1.5 1.5 0 0 0-3 .06 10.76 10.76 0 0 1 0 .425 1.5 1.5 0 0 0 3 .06 13.693 13.693 0 0 0 0-.545Zm-1.67 6.787a1.5 1.5 0 0 0-2.627-1.45c-.068.124-.139.246-.212.367a1.5 1.5 0 1 0 2.566 1.554c.094-.155.185-.312.272-.47Zm-4.841 5.039a1.5 1.5 0 0 0-1.554-2.566c-.12.073-.243.144-.366.212a1.5 1.5 0 0 0 1.45 2.626c.158-.087.315-.178.47-.272ZM18 4.5C10.544 4.5 4.5 10.544 4.5 18S10.544 31.5 18 31.5v-3c-5.8 0-10.5-4.701-10.5-10.5S12.2 7.5 18 7.5v-3Z">
+                                            </path>
+                                            <path fill="currentColor"
+                                                d="M23.325 12.01a.865.865 0 0 1 1.21 1.21l-4.564 6.087a1.951 1.951 0 1 1-2.732-2.732l6.086-4.564Z">
+                                            </path>
+                                        </svg>
+                                    </span>
+                                </div>
+                                <div class="contact-text">
+                                    <span class="star-text">Disappearing messages</span>
                                     <p>Off</p>
                                 </div>
-                                <span class="material-symbols-outlined">
-                                    chevron_right
-                                </span>
+                                <div class="icon-media">
+                                    <span class="">
+                                        <svg viewBox="0 0 10 21" width="10" height="21" class="">
+                                            <path fill="currentColor"
+                                                d="m1 15.75 5.2-5.2L1 5.35l1.5-1.5 6.5 6.7-6.6 6.6-1.4-1.4z">
+                                            </path>
+                                        </svg>
+                                    </span>
+                                </div>
                             </div>
 
+                            <div class="head">
+                                <div class="contact-star">
+                                    <span class="star">
+                                        <svg viewBox="0 0 24 24" height="20" class="">
+                                            <path fill="currentColor"
+                                                d="M17.3 7.6h-.9V5.8c0-2.5-1.9-4.4-4.4-4.4S7.6 3.3 7.6 5.8v1.8h-.9c-1 0-1.8.8-1.8 1.8v8.9c0 1 .8 1.8 1.8 1.8h10.6c1 0 1.8-.8 1.8-1.8V9.4c0-1-.8-1.8-1.8-1.8zM12 15.8c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm2.7-8.2H9.2V5.8c0-1.5 1.2-2.7 2.7-2.7s2.7 1.2 2.7 2.7v1.8h.1z">
+                                            </path>
+                                        </svg>
+                                    </span>
+                                </div>
+                                <div class="contact-text">
+                                    <span class="star-text">Encryption</span>
+                                    <p>Messagesare end-tto-end encrypted. Click to verify</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
-                    <!-- Chats 2 -->
-                    <div class="block">
+                    <!-- Chats 4 -->
+                    <div class="bottom">
+                        <!-- Text -->
                         <div class="h-text">
-                            <div class="G-head" onclick="openGroups()">
-                                <div class="text-inner">
-                                    <h4>Groups</h4>
-                                    <p>My contacts</p>
+                            <div class="Block-head">
+                                <div class="contact-star">
+                                    <span class="star">
+                                        <svg viewBox="0 0 24 24" width="24" height="24" class="">
+                                            <path fill="currentColor"
+                                                d="M12 2.8c-5.3 0-9.7 4.3-9.7 9.7s4.3 9.7 9.7 9.7 9.7-4.3 9.7-9.7-4.4-9.7-9.7-9.7zm-7.3 9.7c0-4 3.3-7.3 7.3-7.3 1.6 0 3.1.5 4.3 1.4L6.1 16.8c-.9-1.2-1.4-2.7-1.4-4.3zm7.3 7.3c-1.6 0-3-.5-4.2-1.4L17.9 8.3c.9 1.2 1.4 2.6 1.4 4.2 0 4-3.3 7.3-7.3 7.3z">
+                                            </path>
+                                        </svg>
+                                    </span>
                                 </div>
-                                <span class="material-symbols-outlined">
-                                    chevron_right
-                                </span>
+                                <div class="contact-text">
+                                    <span class="star-text">Block Shayan</span>
+                                </div>
                             </div>
 
-                            <div class="R-head" onclick="openBlock()">
-                                <div class="text-inner">
-                                    <h4>Blocked contacts</h4>
-                                    <p>1</p>
+                            <div class="Block-head">
+                                <div class="contact-star">
+                                    <span class="star">
+                                        <svg viewBox="0 0 24 24" width="24" height="24" class="">
+                                            <path fill="currentColor"
+                                                d="M14.091 4.2H6.318c-.691 0-1.295.432-1.555 1.036l-2.591 6.132c-.086.173-.172.346-.172.605V13.7c0 .95.777 1.727 1.727 1.727h5.441L8.305 19.4v.259c0 .345.173.691.345.95l.95.864 5.7-5.7c.345-.345.518-.777.518-1.209V5.927c0-.95-.777-1.727-1.727-1.727zm3.454 0v10.364H21V4.2h-3.455z">
+                                            </path>
+                                        </svg>
+                                    </span>
                                 </div>
-                                <span class="material-symbols-outlined">
-                                    chevron_right
-                                </span>
+                                <div class="contact-text">
+                                    <span class="star-text">Report Shayan</span>
+                                </div>
                             </div>
 
+                            <div class="Block-head">
+                                <div class="contact-star">
+                                    <span class="star">
+                                        <svg viewBox="0 0 24 24" width="24" height="24" class="">
+                                            <path fill="currentColor"
+                                                d="M6 18c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V6H6v12zM19 3h-3.5l-1-1h-5l-1 1H5v2h14V3z">
+                                            </path>
+                                        </svg>
+                                    </span>
+                                </div>
+                                <div class="contact-text">
+                                    <span class="star-text">Delete chat</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
                 </div>
             </div>
-        </div>
 
+
+        </div>
     </div>
 
 

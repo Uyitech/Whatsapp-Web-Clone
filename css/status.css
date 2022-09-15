@@ -2,8 +2,8 @@
     position: relative;
     margin-left: 100px;
     flex: 30%;
-    background-color: #1e262c;
-    /* border-right: 1px solid var(--border-right); */
+    /* background-color: #1e262c; */
+    background: var(--header-bg);
 }
 
 .status {
@@ -14,7 +14,7 @@
     position: relative;
     width: 100%;
     height: 69px;
-    background: #1e262c;
+    background: var(--header-bg);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -65,7 +65,7 @@
     position: relative;
     overflow-y: auto;
     height: calc(100% - 104px);
-    background: #1e262c;
+    background-color: var(--side);
 }
 
 .chats-status .recent {
