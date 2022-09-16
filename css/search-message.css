@@ -1,0 +1,125 @@
+/* CHAT SCREEN */
+.search-message {
+    display: none;
+    position: relative;
+    flex: 30%;
+    background-color: var(--side);
+    border-left: 1.5px solid var(--border-right);
+}
+
+.search-message .header-Chat {
+    position: relative;
+    width: 100%;
+    height: 60px;
+    background: var(--secondary);
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+}
+
+.search-message .header-Chat .newText h2 {
+    font-size: 16.5px;
+    color: var(--contact-info-h2);
+    font-weight: 400;
+    margin-left: 13px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.search-message .ICON {
+    width: 53px;
+}
+
+.search-message .icons {
+    flex: none;
+    color: var(--contact-info-h2);
+    padding: 0 7px;
+    margin-left: 3px;
+    display: inline-table;
+}
+
+.search-message .search-bar {
+    margin-top: 7px;
+    margin-bottom: 7px;
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 15px;
+}
+
+.search-message .search-bar div {
+    width: 100%;
+}
+
+.search-message .search-bar div input {
+    width: 100%;
+    border: none;
+    outline: none;
+    background: var(--secondary);
+    border-radius: 7px;
+    padding: 6px;
+    height: 38px;
+    font-size: 14px;
+    align-items: center;
+    color: var(--h4);
+    padding-left: 65px;
+}
+
+.search-message .search-bar div input::placeholder {
+    font-size: 13px;
+    color: var(--primary);
+}
+
+.search,
+.go-back {
+    position: absolute;
+    left: 30px;
+    top: 7px;
+    font-size: 1em;
+    color: var(--icons);
+    justify-content: center;
+    align-items: center;
+    transition: .8s all;
+}
+
+.search {
+    opacity: 1;
+}
+
+.go-back {
+    opacity: 0;
+    color: #008069;
+}
+
+.search-bar:focus-within .go-back {
+    transform: rotate(360deg);
+    opacity: 1;
+    transition-delay: 0s;
+}
+
+.search-bar:focus-within .search {
+    opacity: 0;
+}
+
+.chats-search {
+    position: relative;
+    height: calc(100% - 160px);
+    overflow-y: auto;
+}
+
+.chats-search .a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+}
+
+.chats-search .a h3 {
+    font-size: 13px;
+    letter-spacing: 0.3px;
+    font-weight: 400;
+    margin-bottom: 0%;
+    color: var(--primary);
+}

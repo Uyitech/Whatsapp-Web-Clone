@@ -30,8 +30,8 @@ function myDropLeft() {
 const moon = document.getElementById("moon")
 
 moon.onclick = function () {
-    document.body.classList.toggle("dark-theme");
-    if (document.body.classList.contains("dark-theme")) {
+    document.body.classList.toggle("light-theme");
+    if (document.body.classList.contains("light-theme")) {
         moon.src = "images/Moon-1.png";
     } else {
         moon.src = "images/Sun-1.png";
@@ -58,6 +58,15 @@ function openChatAbout() {
 
 function closeChatAbout() {
     document.getElementById("ChatAbout").style.display = "none";
+}
+
+// Open Search from new chat
+function openSearch() {
+    document.getElementById("search-message").style.display = "block";
+}
+
+function closeSearch() {
+    document.getElementById("search-message").style.display = "none";
 }
 
 

@@ -6,8 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="images/whatsapp.png" type="image/x-icon">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all-privacy-screen.css">
+    <link rel="stylesheet" href="css/search-message.css">
+    <link rel="stylesheet" href="css/Contact-info.css">
+    <link rel="stylesheet" href="css/newChat.css">
+    <link rel="stylesheet" href="css/setings.css">
     <link rel="stylesheet" href="css/status.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/group.css">
+    <link rel="stylesheet" href="css/modal.css">
+
     <title>Whatsapp Web Clone</title>
 
     <!-- Google Fonts -->
@@ -31,7 +39,7 @@
 </head>
 
 <body class="body">
-    <h1 class="media" style="text-align: center;">Only Available On Desktop 😊😇
+    <h1 class="media">Only Available On Desktop 😊😇
         <hr>
         Download ON Mobile
         <a href="https://www.whatsapp.com/download//" style="color: white; text-decoration: none">Here
@@ -97,7 +105,22 @@
             <!-- Search Bar -->
             <div class="search-bar">
                 <div>
-                    <i class="bi bi-search"></i>
+                    <button class="search">
+                        <span class="">
+                            <svg viewBox="0 0 24 24" width="24" height="24" class="">
+                                <path fill="currentColor"
+                                    d="M15.009 13.805h-.636l-.22-.219a5.184 5.184 0 0 0 1.256-3.386 5.207 5.207 0 1 0-5.207 5.208 5.183 5.183 0 0 0 3.385-1.255l.221.22v.635l4.004 3.999 1.194-1.195-3.997-4.007zm-4.808 0a3.605 3.605 0 1 1 0-7.21 3.605 3.605 0 0 1 0 7.21z">
+                                </path>
+                            </svg>
+                        </span>
+                    </button>
+
+                    <span class="go-back">
+                        <svg viewBox="0 0 24 24" width="24" height="24" class="">
+                            <path fill="currentColor" d="m12 4 1.4 1.4L7.8 11H20v2H7.8l5.6 5.6L12 20l-8-8 8-8z">
+                            </path>
+                        </svg>
+                    </span>
                     <input type="text" title="Search or start new chat" aria-label="Search or start new chat"
                         placeholder="Search or start new chat">
                 </div>
@@ -716,7 +739,22 @@
             <!-- Search Bar -->
             <div class="search-bar">
                 <div>
-                    <i class="bi bi-search"></i>
+                    <button class="search">
+                        <span class="">
+                            <svg viewBox="0 0 24 24" width="24" height="24" class="">
+                                <path fill="currentColor"
+                                    d="M15.009 13.805h-.636l-.22-.219a5.184 5.184 0 0 0 1.256-3.386 5.207 5.207 0 1 0-5.207 5.208 5.183 5.183 0 0 0 3.385-1.255l.221.22v.635l4.004 3.999 1.194-1.195-3.997-4.007zm-4.808 0a3.605 3.605 0 1 1 0-7.21 3.605 3.605 0 0 1 0 7.21z">
+                                </path>
+                            </svg>
+                        </span>
+                    </button>
+
+                    <span class="go-back">
+                        <svg viewBox="0 0 24 24" width="24" height="24" class="">
+                            <path fill="currentColor" d="m12 4 1.4 1.4L7.8 11H20v2H7.8l5.6 5.6L12 20l-8-8 8-8z">
+                            </path>
+                        </svg>
+                    </span>
                     <input type="text" title="Search contacts" aria-label="Search contacts"
                         placeholder="Search contacts">
                 </div>
@@ -1089,7 +1127,22 @@
             <!-- Search Bar -->
             <div class="search-bar">
                 <div>
-                    <i class="bi bi-search"></i>
+                    <button class="search">
+                        <span class="">
+                            <svg viewBox="0 0 24 24" width="24" height="24" class="">
+                                <path fill="currentColor"
+                                    d="M15.009 13.805h-.636l-.22-.219a5.184 5.184 0 0 0 1.256-3.386 5.207 5.207 0 1 0-5.207 5.208 5.183 5.183 0 0 0 3.385-1.255l.221.22v.635l4.004 3.999 1.194-1.195-3.997-4.007zm-4.808 0a3.605 3.605 0 1 1 0-7.21 3.605 3.605 0 0 1 0 7.21z">
+                                </path>
+                            </svg>
+                        </span>
+                    </button>
+
+                    <span class="go-back">
+                        <svg viewBox="0 0 24 24" width="24" height="24" class="">
+                            <path fill="currentColor" d="m12 4 1.4 1.4L7.8 11H20v2H7.8l5.6 5.6L12 20l-8-8 8-8z">
+                            </path>
+                        </svg>
+                    </span>
                     <input type="text" title="Type contact name" aria-label="Type contact name"
                         placeholder="Type contact name">
                 </div>
@@ -1471,7 +1524,6 @@
                     </div>
                 </div>
 
-
                 <!-- Chats 1 -->
                 <div class="block" onclick="openNotifications()">
                     <!-- Img -->
@@ -1532,129 +1584,129 @@
                                 </svg>
                             </span>
                         </button>
-                        </button>
-                        <!-- Text -->
-                        <div class="h-text">
-                            <div class="head">
-                                <h4 title="Security" aria-label="Security">Security</h4>
-                            </div>
-                        </div>
                     </div>
-
-
-                    <!-- Chats 4 -->
-                    <div class="block" role="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                        <!-- Img -->
-                        <div class="icon-Box">
-                            <button role="button" class="icons-setings">
-                                <span class="">
-                                    <svg width="24" height="24" viewBox="0 0 24 24" class="">
-                                        <path
-                                            d="m12 1 3.22 3.22h4.56v4.56L23 12l-3.22 3.22v4.56h-4.56L12 23l-3.22-3.22H4.22v-4.56L1 12l3.22-3.22V4.22h4.56L12 1Zm0 5v12c3.31 0 6-2.69 6-6a6.005 6.005 0 0 0-5.775-5.996L12 6Z"
-                                            fill="currentColor">
-                                        </path>
-                                    </svg>
-                                </span>
-                            </button>
-                        </div>
-                        <!-- Text -->
-                        <div class="h-text">
-                            <div class="head">
-                                <h4 title="Theme" aria-label="Theme">Theme</h4>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Chats 5 -->
-                    <div class="block" onclick="openWallpaper()">
-                        <!-- Img -->
-                        <div class="icon-Box">
-                            <button role="button" class="icons-setings">
-                                <span class="">
-                                    <svg viewBox="0 0 24 24" width="24" height="24" class="">
-                                        <path fill="currentColor"
-                                            d="M4.9 5.9h6.4V4.1H4.9c-1 0-1.8.8-1.8 1.8v6.4h1.8V5.9zm5.3 8-3.6 4.4h10.7l-2.7-3.6-1.8 2.4-2.6-3.2zm6.2-4c0-.7-.6-1.3-1.3-1.3s-1.3.6-1.3 1.3.6 1.3 1.3 1.3 1.3-.6 1.3-1.3zm2.7-5.8h-6.4v1.8h6.4v6.4h1.8V5.9c0-1-.8-1.8-1.8-1.8zm0 16h-6.4v1.8h6.4c1 0 1.8-.8 1.8-1.8v-6.4h-1.8v6.4zM4.9 13.7H3.1v6.4c0 1 .8 1.8 1.8 1.8h6.4v-1.8H4.9v-6.4z">
-                                        </path>
-                                    </svg>
-                                </span>
-                            </button>
-                        </div>
-                        <!-- Text -->
-                        <div class="h-text">
-                            <div class="head">
-                                <h4 title="Chat wallpaper" aria-label="Chat wallpaper">Chat wallpaper</h4>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Chats 6 -->
-                    <div class="block" onclick="openRequest()">
-                        <!-- Img -->
-                        <div class="icon-Box">
-                            <button role="button" class="icons-setings">
-                                <span class="">
-                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" class="">
-                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                            d="M6 2c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8.83c0-.53-.21-1.04-.59-1.41l-4.83-4.83c-.37-.38-.88-.59-1.41-.59H6Zm7 6V3.5L18.5 9H14c-.55 0-1-.45-1-1Zm-5 4a1 1 0 1 0 0 2h8a1 1 0 1 0 0-2H8Zm6 5a1 1 0 0 0-1-1H8a1 1 0 1 0 0 2h5a1 1 0 0 0 1-1Z"
-                                            fill="currentColor">
-                                        </path>
-                                    </svg>
-                                </span>
-                            </button>
-                        </div>
-                        <!-- Text -->
-                        <div class="h-text">
-                            <div class="head">
-                                <h4 title="Request Account Info" aria-label="Request Account Info">Request Account Info
-                                </h4>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Chats 7 -->
-                    <div class="block">
-                        <!-- Img -->
-                        <div class="icon-Box">
-                            <button role="button" class="icons-setings">
-                                <span class="">
-                                    <svg width="24" height="24" viewBox="0 0 24 24" class="">
-                                        <path fill="currentColor"
-                                            d="M10.852 12.648h2.296L12 9ZM20 8.691V6c0-1.102-.898-2-2-2h-2.691L13.41 2.102a2 2 0 0 0-2.828 0L8.692 4H6c-1.102 0-2 .898-2 2v2.691L2.102 10.59a2.004 2.004 0 0 0 0 2.832L4 15.32V18c0 1.102.898 2 2 2h2.691l1.899 1.898c.781.782 2.05.782 2.832 0L15.32 20H18c1.102 0 2-.898 2-2v-2.691l1.898-1.899a2.004 2.004 0 0 0 0-2.832Zm-5.91 6.707L13.602 14h-3.204l-.488 1.398a.89.89 0 0 1-.84.602.888.888 0 0 1-.84-1.191l2.442-6.86C10.872 7.38 11.398 7 12 7c.602 0 1.129.379 1.34.941l2.441 6.86a.89.89 0 0 1-.84 1.187.868.868 0 0 1-.851-.59Zm0 0">
-                                        </path>
-                                    </svg>
-                                </span>
-                            </button>
-                        </div>
-                        <!-- Text -->
-                        <div class="h-text">
-                            <div class="head">
-                                <h4 title="Keyboard shortcuts" aria-label="Keyboard shortcuts">Keyboard shortcuts</h4>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Chats 8 -->
-                    <div class="block bottom" onclick="openHelp()">
-                        <!-- Img -->
-                        <div class="icon-Box">
-                            <button role="button" class="icons-setings">
-                                <span class="">
-                                    <svg viewBox="0 0 24 24" width="24" height="24" class="">
-                                        <path fill="currentColor"
-                                            d="M12 4.7c-4.5 0-8.2 3.7-8.2 8.2s3.7 8.2 8.2 8.2 8.2-3.7 8.2-8.2-3.7-8.2-8.2-8.2zm.8 13.9h-1.6V17h1.6v1.6zm1.7-6.3-.7.7c-.7.6-1 1.1-1 2.3h-1.6v-.4c0-.9.3-1.7 1-2.3l1-1.1c.3-.2.5-.7.5-1.1 0-.9-.7-1.6-1.6-1.6s-1.6.7-1.6 1.6H8.7c0-1.8 1.5-3.3 3.3-3.3s3.3 1.5 3.3 3.3c0 .8-.4 1.4-.8 1.9z">
-                                        </path>
-                                    </svg>
-                                </span>
-                            </button>
-                        </div>
-                        <!-- Text -->
-                        <div class="h-text">
-                            <div class="head">
-                                <h4 title="Help" aria-label="Help">Help</h4>
-                            </div>
+                    <!-- Text -->
+                    <div class="h-text">
+                        <div class="head">
+                            <h4 title="Security" aria-label="Security">Security</h4>
                         </div>
                     </div>
                 </div>
+
+
+                <!-- Chats 4 -->
+                <div class="block" role="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <!-- Img -->
+                    <div class="icon-Box">
+                        <button role="button" class="icons-setings">
+                            <span class="">
+                                <svg width="24" height="24" viewBox="0 0 24 24" class="">
+                                    <path
+                                        d="m12 1 3.22 3.22h4.56v4.56L23 12l-3.22 3.22v4.56h-4.56L12 23l-3.22-3.22H4.22v-4.56L1 12l3.22-3.22V4.22h4.56L12 1Zm0 5v12c3.31 0 6-2.69 6-6a6.005 6.005 0 0 0-5.775-5.996L12 6Z"
+                                        fill="currentColor">
+                                    </path>
+                                </svg>
+                            </span>
+                        </button>
+                    </div>
+                    <!-- Text -->
+                    <div class="h-text">
+                        <div class="head">
+                            <h4 title="Theme" aria-label="Theme">Theme</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Chats 5 -->
+                <div class="block" onclick="openWallpaper()">
+                    <!-- Img -->
+                    <div class="icon-Box">
+                        <button role="button" class="icons-setings">
+                            <span class="">
+                                <svg viewBox="0 0 24 24" width="24" height="24" class="">
+                                    <path fill="currentColor"
+                                        d="M4.9 5.9h6.4V4.1H4.9c-1 0-1.8.8-1.8 1.8v6.4h1.8V5.9zm5.3 8-3.6 4.4h10.7l-2.7-3.6-1.8 2.4-2.6-3.2zm6.2-4c0-.7-.6-1.3-1.3-1.3s-1.3.6-1.3 1.3.6 1.3 1.3 1.3 1.3-.6 1.3-1.3zm2.7-5.8h-6.4v1.8h6.4v6.4h1.8V5.9c0-1-.8-1.8-1.8-1.8zm0 16h-6.4v1.8h6.4c1 0 1.8-.8 1.8-1.8v-6.4h-1.8v6.4zM4.9 13.7H3.1v6.4c0 1 .8 1.8 1.8 1.8h6.4v-1.8H4.9v-6.4z">
+                                    </path>
+                                </svg>
+                            </span>
+                        </button>
+                    </div>
+                    <!-- Text -->
+                    <div class="h-text">
+                        <div class="head">
+                            <h4 title="Chat wallpaper" aria-label="Chat wallpaper">Chat wallpaper</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Chats 6 -->
+                <div class="block" onclick="openRequest()">
+                    <!-- Img -->
+                    <div class="icon-Box">
+                        <button role="button" class="icons-setings">
+                            <span class="">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" class="">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M6 2c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8.83c0-.53-.21-1.04-.59-1.41l-4.83-4.83c-.37-.38-.88-.59-1.41-.59H6Zm7 6V3.5L18.5 9H14c-.55 0-1-.45-1-1Zm-5 4a1 1 0 1 0 0 2h8a1 1 0 1 0 0-2H8Zm6 5a1 1 0 0 0-1-1H8a1 1 0 1 0 0 2h5a1 1 0 0 0 1-1Z"
+                                        fill="currentColor">
+                                    </path>
+                                </svg>
+                            </span>
+                        </button>
+                    </div>
+                    <!-- Text -->
+                    <div class="h-text">
+                        <div class="head">
+                            <h4 title="Request Account Info" aria-label="Request Account Info">Request Account Info
+                            </h4>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Chats 7 -->
+                <div class="block">
+                    <!-- Img -->
+                    <div class="icon-Box">
+                        <button role="button" class="icons-setings">
+                            <span class="">
+                                <svg width="24" height="24" viewBox="0 0 24 24" class="">
+                                    <path fill="currentColor"
+                                        d="M10.852 12.648h2.296L12 9ZM20 8.691V6c0-1.102-.898-2-2-2h-2.691L13.41 2.102a2 2 0 0 0-2.828 0L8.692 4H6c-1.102 0-2 .898-2 2v2.691L2.102 10.59a2.004 2.004 0 0 0 0 2.832L4 15.32V18c0 1.102.898 2 2 2h2.691l1.899 1.898c.781.782 2.05.782 2.832 0L15.32 20H18c1.102 0 2-.898 2-2v-2.691l1.898-1.899a2.004 2.004 0 0 0 0-2.832Zm-5.91 6.707L13.602 14h-3.204l-.488 1.398a.89.89 0 0 1-.84.602.888.888 0 0 1-.84-1.191l2.442-6.86C10.872 7.38 11.398 7 12 7c.602 0 1.129.379 1.34.941l2.441 6.86a.89.89 0 0 1-.84 1.187.868.868 0 0 1-.851-.59Zm0 0">
+                                    </path>
+                                </svg>
+                            </span>
+                        </button>
+                    </div>
+                    <!-- Text -->
+                    <div class="h-text">
+                        <div class="head">
+                            <h4 title="Keyboard shortcuts" aria-label="Keyboard shortcuts">Keyboard shortcuts</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Chats 8 -->
+                <div class="block bottom" onclick="openHelp()">
+                    <!-- Img -->
+                    <div class="icon-Box">
+                        <button role="button" class="icons-setings">
+                            <span class="">
+                                <svg viewBox="0 0 24 24" width="24" height="24" class="">
+                                    <path fill="currentColor"
+                                        d="M12 4.7c-4.5 0-8.2 3.7-8.2 8.2s3.7 8.2 8.2 8.2 8.2-3.7 8.2-8.2-3.7-8.2-8.2-8.2zm.8 13.9h-1.6V17h1.6v1.6zm1.7-6.3-.7.7c-.7.6-1 1.1-1 2.3h-1.6v-.4c0-.9.3-1.7 1-2.3l1-1.1c.3-.2.5-.7.5-1.1 0-.9-.7-1.6-1.6-1.6s-1.6.7-1.6 1.6H8.7c0-1.8 1.5-3.3 3.3-3.3s3.3 1.5 3.3 3.3c0 .8-.4 1.4-.8 1.9z">
+                                    </path>
+                                </svg>
+                            </span>
+                        </button>
+                    </div>
+                    <!-- Text -->
+                    <div class="h-text">
+                        <div class="head">
+                            <h4 title="Help" aria-label="Help">Help</h4>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
 
@@ -2584,8 +2636,8 @@
         </div>
 
 
-        <div class="modal fade" id="exampleModal" data-bs-backdrop="static" tabindex="-1"
-            aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal fade" id="exampleModal" data-bs-backdrop="static" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
                     <h5 class="m-title">Choose theme</h5>
@@ -2941,8 +2993,8 @@
         </div>
 
 
-        <div class="modal fade" id="exampleModalSec" data-bs-backdrop="static" tabindex="-1"
-            aria-labelledby="exampleModalLabelSec" aria-hidden="true">
+        <div class="modal fade" id="exampleModalSec" data-bs-backdrop="static" aria-labelledby="exampleModalLabelSec"
+            aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
                     <h5 class="m-title">Log Out?</h5>
@@ -2959,6 +3011,7 @@
                 </div>
             </div>
         </div>
+
 
         <div class="status animate__animated animate__fadeInLeft" id="status">
             <!-- Header -->
@@ -3409,6 +3462,7 @@
             </div>
         </div>
 
+
         <div class="rightStatus animate__animated animate__fadeInRight" id="rightStatus">
             <div class="_shbxn">
                 <div class="_13bjQ">
@@ -3453,7 +3507,7 @@
 
                     <!-- Icons -->
                     <div class="chat-side">
-                        <button class="icons pP">
+                        <button class="icons pP" onclick="openSearch()">
                             <svg viewBox="0 0 24 24" width="24" height="24" class="">
                                 <path fill="currentColor"
                                     d="M15.9 14.3H15l-.3-.3c1-1.1 1.6-2.7 1.6-4.3 0-3.7-3-6.7-6.7-6.7S3 6 3 9.7s3 6.7 6.7 6.7c1.6 0 3.2-.6 4.3-1.6l.3.3v.8l5.1 5.1 1.5-1.5-5-5.2zm-6.2 0c-2.6 0-4.6-2.1-4.6-4.6s2.1-4.6 4.6-4.6 4.6 2.1 4.6 4.6-2 4.6-4.6 4.6z">
@@ -3470,8 +3524,8 @@
                                 </svg>
                             </button>
                             <ul class="drop" id="drop">
-                                <li class="listItem" role="button">Contact info</li>
-                                <li class="listItem" role="button">Select messages </li>
+                                <li class="listItem" role="button" onclick="openChatAbout()">Contact info</li>
+                                <li class="listItem" role="button">Select messages</li>
                                 <li class="listItem" role="button">Close chat</li>
                                 <li class="listItem" role="button">Mute notifications</li>
                                 <li class="listItem" role="button">Disappearing messages</li>
@@ -3491,9 +3545,9 @@
                             <path
                                 d="M5.00847986,1.6 C6.38255462,1.6 7.50937014,2.67435859 7.5940156,4.02703389 L7.59911976,4.1906399 L7.599,5.462 L7.75719976,5.46214385 C8.34167974,5.46214385 8.81591972,5.94158383 8.81591972,6.53126381 L8.81591972,9.8834238 C8.81591972,10.4731038 8.34167974,10.9525438 7.75719976,10.9525438 L2.25767996,10.9525438 C1.67527998,10.9525438 1.2,10.4731038 1.2,9.8834238 L1.2,6.53126381 C1.2,5.94158383 1.67423998,5.46214385 2.25767996,5.46214385 L2.416,5.462 L2.41679995,4.1906399 C2.41679995,2.81636129 3.49135449,1.68973395 4.84478101,1.60510326 L5.00847986,1.6 Z M5.00847986,2.84799995 C4.31163824,2.84799995 3.73624912,3.38200845 3.6709675,4.06160439 L3.6647999,4.1906399 L3.663,5.462 L6.35,5.462 L6.35111981,4.1906399 C6.35111981,3.53817142 5.88169076,2.99180999 5.26310845,2.87228506 L5.13749818,2.85416626 L5.00847986,2.84799995 Z"
                                 fill="currentColor"></path>
-                        </svg>Messages are end-to-end encrypted. No one outside of this chat, not even WhatsApp, can
-                        read or listen to them.
-                        Click to learn more.
+                        </svg>
+                        Messages are end-to-end encrypted. No one outside of this chat, not even WhatsApp, can
+                        read or listen to them. Click to learn more.
                     </p>
 
                     <p class="chatMessage my-chat">
@@ -3704,37 +3758,34 @@
                 </div>
 
                 <div class="chat-footer">
-                    <div aria-disabled="false" role="button" tabindex="0" class="icons Mar" data-tab="2" title="Emoji"
-                        aria-label="Emoji">
-                        <span data-testid="smiley" data-icon="smiley" class="">
+                    <buttton role="button" class="icons Mar">
+                        <span class="">
                             <svg viewBox="0 0 24 24" width="24" height="24" class="">
                                 <path fill="currentColor"
                                     d="M9.153 11.603c.795 0 1.439-.879 1.439-1.962s-.644-1.962-1.439-1.962-1.439.879-1.439 1.962.644 1.962 1.439 1.962zm-3.204 1.362c-.026-.307-.131 5.218 6.063 5.551 6.066-.25 6.066-5.551 6.066-5.551-6.078 1.416-12.129 0-12.129 0zm11.363 1.108s-.669 1.959-5.051 1.959c-3.505 0-5.388-1.164-5.607-1.959 0 0 5.912 1.055 10.658 0zM11.804 1.011C5.609 1.011.978 6.033.978 12.228s4.826 10.761 11.021 10.761S23.02 18.423 23.02 12.228c.001-6.195-5.021-11.217-11.216-11.217zM12 21.354c-5.273 0-9.381-3.886-9.381-9.159s3.942-9.548 9.215-9.548 9.548 4.275 9.548 9.548c-.001 5.272-4.109 9.159-9.382 9.159zm3.108-9.751c.795 0 1.439-.879 1.439-1.962s-.644-1.962-1.439-1.962-1.439.879-1.439 1.962.644 1.962 1.439 1.962z">
                                 </path>
                             </svg>
                         </span>
-                    </div>
+                    </buttton>
 
-                    <div aria-disabled="false" role="button" tabindex="0" class="icons pUP Marg" data-tab="2"
-                        title="Attach" aria-label="Attach" onclick="myFunction()">
-                        <span data-testid="clip" data-icon="clip" class="">
+                    <buttton role="button" class="icons Marg" onclick="myFunction()">
+                        <span class="">
                             <svg viewBox="0 0 24 24" width="24" height="24" class="">
                                 <path fill="currentColor"
                                     d="M1.816 15.556v.002c0 1.502.584 2.912 1.646 3.972s2.472 1.647 3.974 1.647a5.58 5.58 0 0 0 3.972-1.645l9.547-9.548c.769-.768 1.147-1.767 1.058-2.817-.079-.968-.548-1.927-1.319-2.698-1.594-1.592-4.068-1.711-5.517-.262l-7.916 7.915c-.881.881-.792 2.25.214 3.261.959.958 2.423 1.053 3.263.215l5.511-5.512c.28-.28.267-.722.053-.936l-.244-.244c-.191-.191-.567-.349-.957.04l-5.506 5.506c-.18.18-.635.127-.976-.214-.098-.097-.576-.613-.213-.973l7.915-7.917c.818-.817 2.267-.699 3.23.262.5.501.802 1.1.849 1.685.051.573-.156 1.111-.589 1.543l-9.547 9.549a3.97 3.97 0 0 1-2.829 1.171 3.975 3.975 0 0 1-2.83-1.173 3.973 3.973 0 0 1-1.172-2.828c0-1.071.415-2.076 1.172-2.83l7.209-7.211c.157-.157.264-.579.028-.814L11.5 4.36a.572.572 0 0 0-.834.018l-7.205 7.207a5.577 5.577 0 0 0-1.645 3.971z">
                                 </path>
                             </svg>
                         </span>
-                    </div>
+                    </buttton>
 
                     <div class="popup" id="popup">
 
                         <!-- Popup Screen -->
                         <div class="popupScreen">
                             <ul class="_1HnQz">
-                                <li data-animate-dropdown-item="true" data-testid="mi-attach-contact">
-                                    <div aria-label="Contact" title="Contact" class="popopIcons"
-                                        data-animate-menu-icons-item="true" role="button">
-                                        <span data-testid="attach-contact" data-icon="attach-contact" class="">
+                                <li>
+                                    <div aria-label="Contact" title="Contact" class="popopIcons" role="button">
+                                        <span class="">
                                             <svg viewBox="0 0 53 53" width="53" height="53" class="">
                                                 <defs>
                                                     <circle id="contact-SVGID_1_" cx="26.5" cy="26.5" r="25.5"></circle>
@@ -3760,10 +3811,9 @@
                                     </div>
                                 </li>
 
-                                <li data-animate-dropdown-item="true" data-testid="mi-attach-document">
-                                    <div aria-label="Document" title="Document" class="popopIcons"
-                                        data-animate-menu-icons-item="true" role="button">
-                                        <span data-testid="attach-document" data-icon="attach-document" class="">
+                                <li>
+                                    <div aria-label="Document" title="Document" class="popopIcons" role="button">
+                                        <span class="">
                                             <svg viewBox="0 0 53 53" width="53" height="53" class="">
                                                 <defs>
                                                     <circle id="document-SVGID_1_" cx="26.5" cy="26.5" r="25.5">
@@ -3791,10 +3841,9 @@
                                     </div>
                                 </li>
 
-                                <li data-animate-dropdown-item="true" data-testid="mi-attach-camera">
-                                    <div aria-label="Camera" title="Camera" class="popopIcons"
-                                        data-animate-menu-icons-item="true" role="button">
-                                        <span data-testid="attach-camera" data-icon="attach-camera" class="">
+                                <li>
+                                    <div aria-label="Camera" title="Camera" class="popopIcons" role="button">
+                                        <span class="">
                                             <svg viewBox="0 0 53 53" width="53" height="53" class="">
                                                 <defs>
                                                     <circle id="camera-SVGID_1_" cx="26.5" cy="26.5" r="25.5"></circle>
@@ -3821,10 +3870,9 @@
                                     </div>
                                 </li>
 
-                                <li data-animate-dropdown-item="true" data-testid="mi-attach-sticker">
-                                    <div aria-label="Sticker" title="Sticker" class="popopIcons"
-                                        data-animate-menu-icons-item="true" role="button">
-                                        <span data-testid="attach-sticker" data-icon="attach-sticker" class="">
+                                <li>
+                                    <div aria-label="Sticker" title="Sticker" class="popopIcons" role="button">
+                                        <span class="">
                                             <svg width="53" height="53" viewBox="0 0 53 53" fill="none" class="">
                                                 <g clip-path="url(#clip0_850:74884)">
                                                     <circle cx="26.5" cy="26.5" r="26.5" fill="#0063CB"></circle>
@@ -3848,10 +3896,10 @@
                                     </div>
                                 </li>
 
-                                <li data-animate-dropdown-item="true" data-testid="mi-attach-media">
+                                <li>
                                     <div aria-label="Photos &amp; Videos" title="Photos &amp; Videos" class="popopIcons"
-                                        data-animate-menu-icons-item="true" role="button">
-                                        <span data-testid="attach-image" data-icon="attach-image" class="">
+                                        role="button">
+                                        <span class="">
                                             <svg viewBox="0 0 53 53" width="53" height="53" class="">
                                                 <defs>
                                                     <circle id="image-SVGID_1_" cx="26.5" cy="26.5" r="25.5"></circle>
@@ -3885,16 +3933,15 @@
 
                     <input type="text" placeholder="Type a message">
 
-                    <div aria-disabled="false" role="button" tabindex="0" class="icons" data-tab="2"
-                        title="Voice message" aria-label="Voice message">
-                        <span data-testid="ptt" data-icon="ptt" class="">
+                    <button role="button" class="icons">
+                        <span class="">
                             <svg viewBox="0 0 24 24" width="24" height="24" class="">
                                 <path fill="currentColor"
                                     d="M11.999 14.942c2.001 0 3.531-1.53 3.531-3.531V4.35c0-2.001-1.53-3.531-3.531-3.531S8.469 2.35 8.469 4.35v7.061c0 2.001 1.53 3.531 3.53 3.531zm6.238-3.53c0 3.531-2.942 6.002-6.237 6.002s-6.237-2.471-6.237-6.002H3.761c0 4.001 3.178 7.297 7.061 7.885v3.884h2.354v-3.884c3.884-.588 7.061-3.884 7.061-7.885h-2z">
                                 </path>
                             </svg>
                         </span>
-                    </div>
+                    </button>
                 </div>
             </div>
 
@@ -3904,16 +3951,15 @@
 
                     <!-- Icons -->
                     <div class="ICON">
-                        <div aria-disabled="false" role="button" tabindex="0" class="icons" data-tab="2"
-                            onclick="closeChatAbout()">
-                            <span data-testid="x" data-icon="x" class=""><svg fill="currentColor" viewBox="0 0 24 24"
-                                    width="24" height="24" class="">
+                        <button role="button" class="icons" onclick="closeChatAbout()">
+                            <span class="">
+                                <svg fill="currentColor" viewBox="0 0 24 24" width="24" height="24" class="">
                                     <path
                                         d="m19.1 17.2-5.3-5.3 5.3-5.3-1.8-1.8-5.3 5.4-5.3-5.3-1.8 1.7 5.3 5.3-5.3 5.3L6.7 19l5.3-5.3 5.3 5.3 1.8-1.8z">
                                     </path>
                                 </svg>
                             </span>
-                        </div>
+                        </button>
                     </div>
 
                     <div class="newText">
@@ -4112,7 +4158,61 @@
                 </div>
             </div>
 
+            <div class="search-message" id="search-message">
+                <!-- Header -->
+                <div class="header-Chat">
 
+                    <!-- Icons -->
+                    <div class="ICON">
+                        <button role="button" class="icons" onclick="closeSearch()">
+                            <span class="">
+                                <svg fill="currentColor" viewBox="0 0 24 24" width="24" height="24" class="">
+                                    <path
+                                        d="m19.1 17.2-5.3-5.3 5.3-5.3-1.8-1.8-5.3 5.4-5.3-5.3-1.8 1.7 5.3 5.3-5.3 5.3L6.7 19l5.3-5.3 5.3 5.3 1.8-1.8z">
+                                    </path>
+                                </svg>
+                            </span>
+                        </button>
+                    </div>
+
+                    <div class="newText">
+                        <h2>Search Messages</h2>
+                    </div>
+
+                </div>
+                <!-- Search Bar -->
+                <div class="search-bar">
+                    <div>
+                        <button class="search">
+                            <span class="">
+                                <svg viewBox="0 0 24 24" width="24" height="24" class="">
+                                    <path fill="currentColor"
+                                        d="M15.009 13.805h-.636l-.22-.219a5.184 5.184 0 0 0 1.256-3.386 5.207 5.207 0 1 0-5.207 5.208 5.183 5.183 0 0 0 3.385-1.255l.221.22v.635l4.004 3.999 1.194-1.195-3.997-4.007zm-4.808 0a3.605 3.605 0 1 1 0-7.21 3.605 3.605 0 0 1 0 7.21z">
+                                    </path>
+                                </svg>
+                            </span>
+                        </button>
+
+                        <span class="go-back">
+                            <svg viewBox="0 0 24 24" width="24" height="24" class="">
+                                <path fill="currentColor" d="m12 4 1.4 1.4L7.8 11H20v2H7.8l5.6 5.6L12 20l-8-8 8-8z">
+                                </path>
+                            </svg>
+                        </span>
+
+                        <input type="text" title="Search" aria-label="Search" placeholder="Search"
+                            class="search-Wrapper">
+                    </div>
+                </div>
+                <!-- Chats -->
+                <div class="chats-search">
+                    <!-- Chats 1 -->
+
+                    <div class="a">
+                        <h3>Searching for messages with Shayan</h3>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 

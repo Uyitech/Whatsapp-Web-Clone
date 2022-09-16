@@ -2,7 +2,6 @@
     position: relative;
     margin-left: 100px;
     flex: 30%;
-    /* background-color: #1e262c; */
     background: var(--header-bg);
 }
 
@@ -13,7 +12,7 @@
 .status .header {
     position: relative;
     width: 100%;
-    height: 69px;
+    height: 75px;
     background: var(--header-bg);
     display: flex;
     justify-content: space-between;
@@ -34,13 +33,13 @@
     font-size: 15.5px;
     line-height: 1.3em;
     margin-left: 15px;
-    color: var(--h4);
+    color: var(--head-title);
     margin-top: 10px;
 }
 
 .status .imgText h4 span {
     font-weight: 400;
-    color: var(--primary);
+    color: var(--status-text);
     font-size: 12.5px;
 }
 
@@ -101,7 +100,7 @@
 }
 
 .chats-status .block:hover {
-    background: #2c353a;
+    background: var(--block);
 }
 
 .chats-status .block .imgBox {
@@ -182,6 +181,10 @@
     padding: 15px;
 }
 
+.rightStatus .ICON .icons {
+    color: var(--head-title);
+}
+
 .rightStatus ._shbxn {
     top: 0;
     width: 100%;
@@ -212,5 +215,5 @@
     font-weight: 400;
     line-height: 24px;
     text-align: center;
-    color: #9494A1;
+    color: var(--status-right-text);
 }

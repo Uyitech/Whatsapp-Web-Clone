@@ -1,0 +1,175 @@
+/* Modal Theme */
+.modal {
+    background: var(--modal-bg);
+}
+
+.modal .modal-dialog .modal-content {
+    padding: 22px 24px 20px;
+    background-color: var(--modal-content-bg);
+    box-shadow: 0 17px 50px 0 rgba(var(--modal-shadow), .19), 0 12px 15px 0 rgba(var(--modal-shadow), .24);
+    border-radius: 3px;
+    border: none;
+}
+
+.modal .modal-dialog .modal-content .m-title {
+    font-size: 20px;
+    color: var(--modal-text);
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.modal .modal-dialog .modal-content ul {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 10px;
+}
+
+.modal .modal-dialog .modal-content ul li label {
+    display: flex;
+    margin-bottom: 12.5px;
+}
+
+.modal .modal-dialog .modal-content ul li label h4 {
+    font-size: 12.7px;
+    color: var(--modal-text);
+    font-weight: 400;
+    margin-bottom: 0;
+}
+
+.modal .modal-dialog .modal-content ul li .form-check-input {
+    height: 12px;
+    width: 12px;
+    margin-top: 2px;
+    margin-right: 8px;
+    border: none;
+    border: 2px solid var(--uncheck);
+}
+
+.modal .modal-dialog .modal-content ul li .form-check-input:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.modal .modal-dialog .modal-content ul li .form-check-input:checked {
+    border: 2px solid var(--checked-border);
+    background: var(--checked-bg);
+}
+
+.modal .modal-dialog .modal-content ul li .form-check-input:checked[type=radio] {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='2' fill='%23fff'/%3e%3c/svg%3e");
+}
+
+.modal .modal-dialog .modal-content .m-btn {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.modal .modal-dialog .modal-content .m-btn .btn1 {
+    background: transparent;
+    border: 1.5px solid var(--modal-btn);
+    color: var(--modal-btn2);
+    font-size: 14px;
+    font-weight: 500;
+    transition: 0.4s linear;
+    text-transform: uppercase;
+    border-radius: 3px;
+    padding: 7px 22px;
+}
+
+.modal .modal-dialog .modal-content .m-btn .btn2 {
+    background: var(--modal-btn2);
+    border: 1.5px solid var(--modal-btn2);
+    margin-left: 8px;
+    color: var(--modal-btn-text);
+    font-size: 14px;
+    font-weight: 500;
+    transition: 0.4s linear;
+    text-transform: uppercase;
+    border-radius: 3px;
+    padding: 7px 22px;
+}
+
+.modal .modal-dialog .modal-content .m-btn .btn1:hover {
+    background: var(--modal-btn);
+    transition: 0.4s linear;
+}
+
+.modal .modal-dialog .modal-content .m-btn .btn2:hover {
+    background: var(--modal-btn-hover);
+    border-color: var(--modal-btn-hover);
+    transition: 0.4s linear;
+}
+
+
+
+/* Modal Log Out */
+.modal {
+    background: var(--modal-bg);
+}
+
+.modal .modal-dialog .modal-content {
+    padding: 22px 24px 20px;
+    background-color: var(--modal-content-bg);
+    box-shadow: 0 17px 50px 0 rgba(var(--modal-shadow), .19), 0 12px 15px 0 rgba(var(--modal-shadow), .24);
+    border-radius: 3px;
+    border: none;
+}
+
+.modal .modal-dialog .modal-content .m-title {
+    font-size: 20px;
+    color: var(--modal-text);
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.modal .modal-dialog .modal-content h4 {
+    font-size: 12.7px;
+    color: var(--modal-text);
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.modal .modal-dialog .modal-content .m-btn {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.modal .modal-dialog .modal-content .m-btn .btn1 {
+    background: transparent;
+    border: 1.5px solid var(--modal-btn);
+    color: var(--modal-btn2);
+    font-size: 14px;
+    font-weight: 600;
+    transition: 0.4s linear;
+    text-transform: uppercase;
+    border-radius: 3px;
+    padding: 7px 22px;
+}
+
+.modal .modal-dialog .modal-content .m-btn .btn2 {
+    background: var(--modal-btn2);
+    border: 1.5px solid var(--modal-btn2);
+    margin-left: 8px;
+    color: var(--modal-btn-text);
+    font-size: 14px;
+    font-weight: 600;
+    transition: 0.4s linear;
+    text-transform: uppercase;
+    border-radius: 3px;
+    padding: 7px 22px;
+}
+
+.modal .modal-dialog .modal-content .m-btn .btn1:hover {
+    background: var(--modal-btn);
+    transition: 0.4s linear;
+}
+
+.modal .modal-dialog .modal-content .m-btn .btn2:hover {
+    background: var(--modal-btn-hover);
+    border-color: var(--modal-btn-hover);
+    transition: 0.4s linear;
+}

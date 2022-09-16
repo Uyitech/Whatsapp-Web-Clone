@@ -1,0 +1,673 @@
+/* Last seen  SCREEN */
+.last-seen {
+    display: none;
+    position: relative;
+    flex: 30%;
+    background-color: var(--profile-BGG);
+    border-right: 1px solid var(--border-right);
+}
+
+.header-Chat {
+    position: relative;
+    width: 100%;
+    height: 110px;
+    background: var(--header-bg);
+    display: flex;
+    padding: 0 15px;
+    padding-top: 65px;
+}
+
+.last-seen .icons {
+    flex: none;
+    color: var(--head-title);
+    padding: 0 7px;
+    margin-left: 3px;
+    display: inline-table;
+}
+
+.chats-last {
+    position: relative;
+    height: calc(100% - 110px);
+    overflow-y: auto;
+}
+
+.chats-last .block {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding-top: 14px;
+    padding-bottom: 13px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-bottom: 10px;
+    background: var(--profile-bg);
+}
+
+.chats-last .block .h-text {
+    position: relative;
+    width: 100%;
+}
+
+.chats-last .block .h-text .titlePro p {
+    font-size: 13.5px;
+    color: var(--last-seen-title);
+    margin-bottom: 25px;
+}
+
+.chats-last .block .h-text {
+    position: relative;
+    width: 100%;
+}
+
+.chats-last .block .h-text .head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 12px;
+    padding-bottom: 15px;
+}
+
+.chats-last .block .h-text .head h4 {
+    font-size: 15.5px;
+    font-weight: 400;
+    color: var(--h4);
+    cursor: pointer;
+}
+
+.chats-last .block .h-text .head .form-check-input {
+    height: 20px;
+    width: 20px;
+    margin-right: 27px;
+    margin-top: 2px;
+    background: none;
+    border: 2px solid var(--uncheck-circle);
+    cursor: pointer;
+}
+
+.chats-last .block .h-text .head .form-check-input:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.chats-last .block .h-text .head .form-check-input:checked {
+    border: 2px solid var(--checked-border);
+    background: var(--checked-bg);
+}
+
+.chats-last .block .h-text .head .form-check-input:checked[type=radio] {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='2' fill='%23fff'/%3e%3c/svg%3e");
+}
+
+
+/*Profile photo SCREEN */
+.p-photo {
+    display: none;
+    position: relative;
+    flex: 30%;
+    background-color: var(--profile-BGG);
+    border-right: 1px solid var(--border-right);
+}
+
+.header-Chat {
+    position: relative;
+    width: 100%;
+    height: 110px;
+    background: var(--header-bg);
+    display: flex;
+    padding: 0 15px;
+    padding-top: 65px;
+}
+
+.p-photo .icons {
+    flex: none;
+    color: var(--head-title);
+    padding: 0 7px;
+    margin-left: 3px;
+    display: inline-table;
+}
+
+.chats-photo {
+    position: relative;
+    height: calc(100% - 110px);
+    overflow-y: auto;
+}
+
+.chats-photo .block {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding-top: 14px;
+    padding-bottom: 13px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-bottom: 10px;
+    background: var(--profile-bg);
+}
+
+.chats-photo .block .h-text {
+    position: relative;
+    width: 100%;
+}
+
+.chats-photo .block .h-text .titlePro p {
+    font-size: 13.5px;
+    color: var(--last-seen-title);
+    margin-bottom: 25px;
+}
+
+.chats-photo .block .h-text {
+    position: relative;
+    width: 100%;
+}
+
+.chats-photo .block .h-text .head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 12px;
+    padding-bottom: 15px;
+}
+
+.chats-photo .block .h-text .head h4 {
+    font-size: 15.5px;
+    font-weight: 400;
+    color: var(--h4);
+    cursor: pointer;
+}
+
+.chats-photo .block .h-text .head .form-check-input {
+    height: 20px;
+    width: 20px;
+    margin-right: 27px;
+    margin-top: 2px;
+    background: none;
+    border: 2px solid var(--uncheck-circle);
+    cursor: pointer;
+}
+
+.chats-photo .block .h-text .head .form-check-input:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.chats-photo .block .h-text .head .form-check-input:checked {
+    border: 2px solid var(--checked-border);
+    background: var(--checked-bg);
+}
+
+.chats-photo .block .h-text .head .form-check-input:checked[type=radio] {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='2' fill='%23fff'/%3e%3c/svg%3e");
+}
+
+
+/* About SCREEN */
+.about {
+    display: none;
+    position: relative;
+    flex: 30%;
+    background-color: var(--profile-BGG);
+    border-right: 1px solid var(--border-right);
+}
+
+.header-Chat {
+    position: relative;
+    width: 100%;
+    height: 110px;
+    background: var(--header-bg);
+    display: flex;
+    padding: 0 15px;
+    padding-top: 65px;
+}
+
+.about .icons {
+    flex: none;
+    color: var(--head-title);
+    padding: 0 7px;
+    margin-left: 3px;
+    display: inline-table;
+}
+
+.chats-about {
+    position: relative;
+    height: calc(100% - 110px);
+    overflow-y: auto;
+}
+
+.chats-about .block {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding-top: 14px;
+    padding-bottom: 13px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-bottom: 10px;
+    background: var(--profile-bg);
+}
+
+.chats-about .block .h-text {
+    position: relative;
+    width: 100%;
+}
+
+.chats-about .block .h-text .titlePro p {
+    font-size: 13.5px;
+    color: var(--last-seen-title);
+    margin-bottom: 25px;
+}
+
+.chats-about .block .h-text {
+    position: relative;
+    width: 100%;
+}
+
+.chats-about .block .h-text .head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 12px;
+    padding-bottom: 15px;
+}
+
+.chats-about .block .h-text .head h4 {
+    font-size: 15.5px;
+    font-weight: 400;
+    color: var(--h4);
+    cursor: pointer;
+}
+
+.chats-about .block .h-text .head .form-check-input {
+    height: 20px;
+    width: 20px;
+    margin-right: 27px;
+    margin-top: 2px;
+    background: none;
+    border: 2px solid var(--uncheck-circle);
+    cursor: pointer;
+}
+
+.chats-about .block .h-text .head .form-check-input:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.chats-about .block .h-text .head .form-check-input:checked {
+    border: 2px solid var(--checked-border);
+    background: var(--checked-bg);
+}
+
+.chats-about .block .h-text .head .form-check-input:checked[type=radio] {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='2' fill='%23fff'/%3e%3c/svg%3e");
+}
+
+
+/* Disappearing SCREEN */
+.D-message {
+    display: none;
+    position: relative;
+    flex: 30%;
+    background-color: var(--profile-BGG);
+    border-right: 1px solid var(--border-right);
+}
+
+.header-Chat {
+    position: relative;
+    width: 100%;
+    height: 110px;
+    background: var(--header-bg);
+    display: flex;
+    padding: 0 15px;
+    padding-top: 65px;
+}
+
+.D-message .icons {
+    flex: none;
+    color: var(--head-title);
+    padding: 0 7px;
+    margin-left: 3px;
+    display: inline-table;
+}
+
+.chats-default {
+    position: relative;
+    height: calc(100% - 110px);
+    overflow-y: auto;
+}
+
+.img-top {
+    position: relative;
+    width: 100%;
+    display: flex;
+    background: var(--profile-bg);
+    padding-top: 30px;
+    padding-bottom: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-top .disappear {
+    height: 130px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.chats-default .block {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding-top: 14px;
+    padding-bottom: 13px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-bottom: 10px;
+    background: var(--profile-bg);
+}
+
+.chats-default .block .h-text {
+    position: relative;
+    width: 100%;
+}
+
+.chats-default .block .h-text .titlePro p {
+    font-size: 13.5px;
+    color: var(--yur-name-abt);
+    margin-bottom: 25px;
+}
+
+.chats-default .block .h-text .Learn-more {
+    padding-top: 15px;
+}
+
+.chats-default .block .h-text .Learn-more a {
+    font-size: 13.5px;
+    color: var(--learn-more);
+}
+
+.chats-default .block .h-text {
+    position: relative;
+    width: 100%;
+}
+
+.chats-default .block .h-text .head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 12px;
+    padding-bottom: 15px;
+}
+
+.chats-default .block .h-text .head h4 {
+    font-size: 15.5px;
+    font-weight: 400;
+    color: var(--h4);
+    cursor: pointer;
+}
+
+.chats-default .block .h-text .head .form-check-input {
+    height: 20px;
+    width: 20px;
+    margin-right: 27px;
+    margin-top: 2px;
+    background: none;
+    border: 2px solid var(--uncheck-circle);
+    cursor: pointer;
+}
+
+.chats-default .block .h-text .head .form-check-input:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.chats-default .block .h-text .head .form-check-input:checked {
+    border: 2px solid var(--checked-border);
+    background: var(--checked-bg);
+}
+
+.chats-default .block .h-text .head .form-check-input:checked[type=radio] {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='2' fill='%23fff'/%3e%3c/svg%3e");
+}
+
+
+/* About SCREEN */
+.groups {
+    display: none;
+    position: relative;
+    flex: 30%;
+    background-color: var(--profile-BGG);
+    border-right: 1px solid var(--border-right);
+}
+
+.header-Chat {
+    position: relative;
+    width: 100%;
+    height: 110px;
+    background: var(--header-bg);
+    display: flex;
+    padding: 0 15px;
+    padding-top: 65px;
+}
+
+.groups .icons {
+    flex: none;
+    color: var(--head-title);
+    padding: 0 7px;
+    margin-left: 3px;
+    display: inline-table;
+}
+
+.chats-groups {
+    position: relative;
+    height: calc(100% - 110px);
+    overflow-y: auto;
+}
+
+.chats-groups .block {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding-top: 14px;
+    padding-bottom: 13px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-bottom: 10px;
+    background: var(--profile-bg);
+}
+
+.chats-groups .block .h-text {
+    position: relative;
+    width: 100%;
+}
+
+.chats-groups .block .h-text .titlePro p {
+    font-size: 13.5px;
+    color: var(--last-seen-title);
+    margin-bottom: 25px;
+}
+
+.chats-groups .block .h-text .admins {
+    padding-top: 12px;
+}
+
+.chats-groups .block .h-text .admins p {
+    font-size: 13.5px;
+    color: var(--last-seen-title);
+}
+
+.chats-groups .block .h-text {
+    position: relative;
+    width: 100%;
+}
+
+.chats-groups .block .h-text .head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 12px;
+    padding-bottom: 15px;
+}
+
+.chats-groups .block .h-text .head h4 {
+    font-size: 15.5px;
+    font-weight: 400;
+    color: var(--h4);
+    cursor: pointer;
+}
+
+.chats-groups .block .h-text .head .form-check-input {
+    height: 20px;
+    width: 20px;
+    margin-right: 27px;
+    margin-top: 2px;
+    background: none;
+    border: 2px solid var(--uncheck-circle);
+    cursor: pointer;
+}
+
+.chats-groups .block .h-text .head .form-check-input:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.chats-groups .block .h-text .head .form-check-input:checked {
+    border: 2px solid var(--checked-border);
+    background: var(--checked-bg);
+}
+
+.chats-groups .block .h-text .head .form-check-input:checked[type=radio] {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='2' fill='%23fff'/%3e%3c/svg%3e");
+}
+
+
+/* Block SCREEN */
+.blocks {
+    display: none;
+    position: relative;
+    flex: 30%;
+    background-color: var(--profile-BGG);
+    border-right: 1px solid var(--border-right);
+}
+
+.header-Chat {
+    position: relative;
+    width: 100%;
+    height: 110px;
+    background: var(--header-bg);
+    display: flex;
+    padding: 0 15px;
+    padding-top: 65px;
+}
+
+.blocks .icons {
+    flex: none;
+    color: var(--head-title);
+    padding: 0 7px;
+    margin-left: 3px;
+    display: inline-table;
+}
+
+.blocks .iconBox .icons {
+    color: var(--settings-icon);
+}
+
+.chats-block {
+    position: relative;
+    height: calc(100% - 160px);
+    overflow-y: auto;
+}
+
+.chats-block .block {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 0.7px solid var(--block);
+    background: var(--profile-bg);
+    cursor: pointer;
+}
+
+.chats-block .block.top {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 13px 15px 13px 15px;
+    border-bottom: none;
+}
+
+.chats-block .block:hover {
+    background: var(--secondary);
+}
+
+.chats-block .block .imgBox {
+    position: relative;
+    min-width: 50px;
+    height: 50px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.chats-block .block .h-text {
+    position: relative;
+    width: 100%;
+}
+
+.chats-block .block .Add-text {
+    position: relative;
+    width: 100%;
+}
+
+.chats-block .block .h-text .head {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: -6px;
+}
+
+.chats-block .block .Add-text .head {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: -3px;
+}
+
+.chats-block .block .Add-text .head h4 {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--h4);
+    letter-spacing: 0.4px;
+    margin-bottom: 0;
+    padding-left: 14px;
+}
+
+.chats-block .block .h-text .head h4 {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--h4);
+    letter-spacing: 0.4px;
+}
+
+.message {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.chats-block .b-con {
+    position: relative;
+    width: 100%;
+}
+
+.chats-block .b-con p {
+    color: var(--b-con);
+    font-size: 13.3px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    padding-left: 34px;
+    padding-right: 20px;
+}
