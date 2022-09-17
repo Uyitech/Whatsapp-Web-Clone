@@ -786,9 +786,6 @@ button {
 }
 
 
-
-
-
 /* Starred SCREEN */
 .starred {
     display: none;
@@ -838,7 +835,6 @@ button {
     display: -webkit-box;
     margin-bottom: 0rem;
 }
-
 
 .chats-star .block {
     display: flex;
