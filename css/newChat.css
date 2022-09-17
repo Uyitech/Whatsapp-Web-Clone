@@ -73,7 +73,7 @@
 
 .chats-new {
     position: relative;
-    height: calc(100% - 160px);
+    height: calc(100% - 162px);
     overflow-y: auto;
 }
 
