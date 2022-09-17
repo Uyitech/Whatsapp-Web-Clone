@@ -84,11 +84,14 @@ function closeForm() {
 function openRightSide() {
     document.getElementById("rightSide").style.display = "block";
     document.getElementById("Intro-Left").style.display = "none";
+
 }
 
 function closeRightSide() {
     document.getElementById("Intro-Left").style.display = "block";
     document.getElementById("rightSide").style.display = "none";
+    document.getElementById("ChatAbout").style.display = "none";
+    document.getElementById("search-message").style.display = "none";
 }
 
 
