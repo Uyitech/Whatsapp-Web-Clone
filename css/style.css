@@ -241,6 +241,7 @@ body .container {
     justify-content: space-between;
     align-items: center;
     padding: 0 15px;
+    z-index: 999;
 }
 
 .userImg {
@@ -765,22 +766,26 @@ button {
     font-size: 15px;
 }
 
-.popup {
-    display: none;
+.chat-footer .chat-attach {
+    position: relative;
 }
 
-.popupScreen ul {
+.chat-footer .chat-attach .popup {
     position: absolute;
-    left: 50px;
-    padding: 0 0 0;
+    width: 110px !important;
+    opacity: 1 !important;
+    overflow: hidden;
+    transition: background .3s linear;
+    display: none;
+    flex-direction: column;
     bottom: 40px;
-    list-style: none;
 }
 
-.popopIcons {
-    transition: 0.5s all linear;
-    margin-bottom: 10px;
+.chat-footer .chat-attach .popup .popopIcons {
+    margin-bottom: 7px;
 }
+
+
 
 
 
