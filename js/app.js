@@ -81,6 +81,8 @@ function closeForm() {
     document.getElementById("Newchat").style.display = "none";
 }
 
+
+
 function openRightSide() {
     document.getElementById("rightSide").style.display = "block";
     document.getElementById("Intro-Left").style.display = "none";
@@ -103,6 +105,7 @@ function openChatAbout() {
 function closeChatAbout() {
     document.getElementById("ChatAbout").style.display = "none";
 }
+
 
 // Open Search from new chat
 function openSearch() {
@@ -257,7 +260,7 @@ function closeGroups() {
 }
 
 
-// Open blocked from privacy
+// Open blocked Contact from privacy
 function openBlock() {
     document.getElementById("blocks").style.display = "block";
     document.getElementById("privacy").style.display = "none";
