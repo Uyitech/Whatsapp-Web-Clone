@@ -1,31 +1,53 @@
-function myFunction() {
-    var x = document.getElementById("popup");
-    if (x.style.display === "none") {
-        x.style.display = "block";
-    } else {
-        x.style.display = "none";
-    }
-}
+// Dropdown Right Side
+$(document).ready(function () {
+    $("#dropDown").click(function (event) {
+        $(".drop").toggle(400);
+        event.stopPropagation();
+    });
+});
+
+$(".drop").click(function (event) {
+    event.stopPropagation();
+});
+
+$(document).click(function () {
+    $(".drop").fadeOut();
+});
 
 
-function myDrop() {
-    var x = document.getElementById("drop");
-    if (x.style.display === "none") {
-        x.style.display = "block";
-    } else {
-        x.style.display = "none";
-    }
-}
+// Popup Conversation
+$(document).ready(function () {
+    $("#chat-popup").click(function (event) {
+        $(".popup").toggle(700);
+        event.stopPropagation();
+    });
+});
+
+$(".popup").click(function (event) {
+    event.stopPropagation();
+});
+
+$(document).click(function () {
+    $(".popup").fadeOut();
+});
 
 
-function myDropLeft() {
-    var x = document.getElementById("dropLeft");
-    if (x.style.display === "none") {
-        x.style.display = "block";
-    } else {
-        x.style.display = "none";
-    }
-}
+// Dropdown LeftSide
+$(document).ready(function () {
+    $("#dropDown2").click(function (event) {
+        $(".dropLeft").toggle(400);
+        event.stopPropagation();
+    });
+});
+
+$(".dropLeft").click(function (event) {
+    event.stopPropagation();
+});
+
+$(document).click(function () {
+    $(".dropLeft").fadeOut();
+});
+
 
 const moon = document.getElementById("moon")
 
@@ -39,6 +61,15 @@ moon.onclick = function () {
 }
 
 
+const select = document.querySelectorAll('.chat-list')
+
+function active() {
+    select.forEach(l => l.classList.remove('active'))
+    this.classList.add('active')
+}
+select.forEach(l => l.addEventListener("click", active))
+
+
 // Open new chat from home
 function openForm() {
     document.getElementById("Newchat").style.display = "block";
@@ -48,6 +79,16 @@ function openForm() {
 function closeForm() {
     document.getElementById("leftSid").style.display = "block";
     document.getElementById("Newchat").style.display = "none";
+}
+
+function openRightSide() {
+    document.getElementById("rightSide").style.display = "block";
+    document.getElementById("Intro-Left").style.display = "none";
+}
+
+function closeRightSide() {
+    document.getElementById("Intro-Left").style.display = "block";
+    document.getElementById("rightSide").style.display = "none";
 }
 
 
@@ -277,6 +318,7 @@ function closeHelp() {
 function openStatus() {
     document.getElementById("status").style.display = "block";
     document.getElementById("rightStatus").style.display = "block";
+    document.getElementById("Intro-Left").style.display = "none";
     document.getElementById("right").style.display = "none";
     document.getElementById("leftSid").style.display = "none";
     document.getElementById("rightSide").style.display = "none";
@@ -284,8 +326,9 @@ function openStatus() {
 
 function closeStatus() {
     document.getElementById("leftSid").style.display = "block";
-    document.getElementById("rightSide").style.display = "block";
+    document.getElementById("Intro-Left").style.display = "block";
     document.getElementById("right").style.display = "flex";
+    document.getElementById("rightSide").style.display = "none";
     document.getElementById("status").style.display = "none";
     document.getElementById("rightStatus").style.display = "none";
 }

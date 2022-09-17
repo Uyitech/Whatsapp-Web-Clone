@@ -43,6 +43,7 @@
     margin-right: 8px;
     border: none;
     border: 2px solid var(--uncheck);
+    transition: 0.3s all;
 }
 
 .modal .modal-dialog .modal-content ul li .form-check-input:focus {
@@ -53,9 +54,11 @@
 .modal .modal-dialog .modal-content ul li .form-check-input:checked {
     border: 2px solid var(--checked-border);
     background: var(--checked-bg);
+    transition: 0.3s all;
 }
 
 .modal .modal-dialog .modal-content ul li .form-check-input:checked[type=radio] {
+    transition: 0.3s all;
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='2' fill='%23fff'/%3e%3c/svg%3e");
 }
 
@@ -103,7 +106,6 @@
 }
 
 
-
 /* Modal Log Out */
 .modal {
     background: var(--modal-bg);
@@ -122,6 +124,51 @@
     color: var(--modal-text);
     font-weight: 500;
     margin-bottom: 10px;
+}
+
+.modal .modal-dialog .modal-content .modal-text {
+    font-size: 12.7px;
+    letter-spacing: 0.5px;
+    color: var(--settings-icon);
+    font-weight: 400;
+    padding-top: 20px;
+}
+
+.modal .modal-dialog .modal-content .v2{
+    padding-bottom: 10px;
+    padding-top: 20px;
+}
+
+.modal .modal-dialog .modal-content .checkbox {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.modal .modal-dialog .modal-content .checkbox .form-check-input {
+    height: 19px;
+    width: 19px;
+    margin-top: -1px;
+    border-radius: 2px;
+    border: none;
+    background: none;
+    transition: 0.3s all;
+    border: 2px solid var(--uncheck);
+}
+
+.modal .modal-dialog .modal-content .checkbox .form-check-input:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.modal .modal-dialog .modal-content .checkbox .form-check-input:checked {
+    border: 2px solid var(--checked-border);
+    background: var(--checked-bg);
+    transition: 0.3s all;
+}
+
+.modal .modal-dialog .modal-content .checkbox .form-check-input:checked[type=checkbox] {
+    transition: 0.3s all;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='m6 10 3 3 6-6'/%3e%3c/svg%3e");
 }
 
 .modal .modal-dialog .modal-content h4 {
@@ -144,6 +191,7 @@
     color: var(--modal-btn2);
     font-size: 14px;
     font-weight: 600;
+    letter-spacing: 1px;
     transition: 0.4s linear;
     text-transform: uppercase;
     border-radius: 3px;
@@ -157,6 +205,7 @@
     color: var(--modal-btn-text);
     font-size: 14px;
     font-weight: 600;
+    letter-spacing: 1px;
     transition: 0.4s linear;
     text-transform: uppercase;
     border-radius: 3px;

@@ -17,7 +17,6 @@
     padding-top: 65px;
 }
 
-
 .header-Chat .newText h2 {
     font-size: 18.5px;
     color: var(--head-title);
@@ -72,17 +71,6 @@
     color: var(--primary);
 }
 
-
-.Newchat .search-bar div i {
-    position: absolute;
-    left: 30px;
-    top: 7px;
-    font-size: 1em;
-    color: var(--icons);
-    justify-content: center;
-    align-items: center;
-}
-
 .chats-new {
     position: relative;
     height: calc(100% - 160px);
@@ -96,20 +84,12 @@
     align-items: center;
     padding: 15px;
     border-bottom: 0.7px solid var(--block);
+    border-right: none;
     cursor: pointer;
 }
 
 .chats-new .block.top {
     border-top: 0.7px solid var(--block);
-}
-
-.chats-new .block.group {
-    position: relative;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    padding: 15px;
-    cursor: pointer;
 }
 
 .chats-new .block.group .iconBox {
@@ -177,10 +157,4 @@
     font-weight: 400;
     color: var(--h4);
     letter-spacing: 0.4px;
-}
-
-.message {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }

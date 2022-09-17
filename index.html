@@ -9,9 +9,10 @@
     <link rel="stylesheet" href="css/all-privacy-screen.css">
     <link rel="stylesheet" href="css/search-message.css">
     <link rel="stylesheet" href="css/Contact-info.css">
-    <link rel="stylesheet" href="css/newChat.css">
     <link rel="stylesheet" href="css/setings.css">
+    <link rel="stylesheet" href="css/newChat.css">
     <link rel="stylesheet" href="css/status.css">
+    <link rel="stylesheet" href="css/intro.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/group.css">
     <link rel="stylesheet" href="css/modal.css">
@@ -30,6 +31,7 @@
         integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
 
     <!-- Bootstrap Icon -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
@@ -90,7 +92,7 @@
                         </span>
                     </button>
 
-                    <button role="button" class="icons" onclick="myDropLeft()">
+                    <button role="button" class="icons" id="dropDown2">
                         <span class="">
                             <svg viewBox="0 0 24 24" width="24" height="24" class="">
                                 <path fill="currentColor"
@@ -129,7 +131,7 @@
             <!-- Chats Box -->
             <div class="chats">
                 <!-- Chats 1 -->
-                <div class="block active">
+                <div class="block chat-list" onclick="openRightSide()">
                     <!-- Img -->
                     <div class="imgBox">
                         <img src="images/img1.jpg" class="cover">
@@ -167,7 +169,7 @@
                 </div>
 
                 <!-- Chats 2 -->
-                <div class="block">
+                <div class="block chat-list">
                     <!-- Img -->
                     <div class="imgBox">
                         <img src="images/img2.jpg" class="cover">
@@ -204,7 +206,7 @@
                 </div>
 
                 <!-- Chats 3 -->
-                <div class="block">
+                <div class="block chat-list">
                     <!-- Img -->
                     <div class="imgBox">
                         <img src="images/img3.jpg" class="cover">
@@ -235,7 +237,7 @@
                 </div>
 
                 <!-- Chats 4 -->
-                <div class="block">
+                <div class="block chat-list">
                     <!-- Img -->
                     <div class="imgBox">
                         <img src="images/img4.jpg" class="cover">
@@ -266,7 +268,7 @@
                 </div>
 
                 <!-- Chats 5 -->
-                <div class="block">
+                <div class="block chat-list">
                     <!-- Img -->
                     <div class="imgBox">
                         <img src="images/img5.jpg" class="cover">
@@ -303,7 +305,7 @@
                 </div>
 
                 <!-- Chats 6 -->
-                <div class="block">
+                <div class="block chat-list">
                     <!-- Img -->
                     <div class="imgBox">
                         <img src="images/img6.jpg" class="cover">
@@ -340,7 +342,7 @@
                 </div>
 
                 <!-- Chats 7 -->
-                <div class="block">
+                <div class="block chat-list">
                     <!-- Img -->
                     <div class="imgBox">
                         <img src="images/img7.jpg" class="cover">
@@ -368,7 +370,7 @@
                 </div>
 
                 <!-- Chats 8 -->
-                <div class="block">
+                <div class="block chat-list">
                     <!-- Img -->
                     <div class="imgBox">
                         <img src="images/img8.jpg" class="cover">
@@ -405,7 +407,7 @@
                 </div>
 
                 <!-- Chats 9 -->
-                <div class="block">
+                <div class="block chat-list">
                     <!-- Img -->
                     <div class="imgBox">
                         <img src="images/img9.jpg" class="cover">
@@ -442,7 +444,7 @@
                 </div>
 
                 <!-- Chats 10 -->
-                <div class="block">
+                <div class="block chat-list">
                     <!-- Img -->
                     <div class="imgBox">
                         <img src="images/img10.jpg" class="cover">
@@ -472,7 +474,7 @@
                 </div>
 
                 <!-- Chats 11 -->
-                <div class="block">
+                <div class="block chat-list">
                     <!-- Img -->
                     <div class="imgBox">
                         <img src="images/img11.jpg" class="cover">
@@ -502,7 +504,7 @@
                 </div>
 
                 <!-- Chats 12 -->
-                <div class="block">
+                <div class="block chat-list">
                     <!-- Img -->
                     <div class="imgBox">
                         <img src="images/img12.jpg" class="cover">
@@ -532,7 +534,7 @@
                 </div>
 
                 <!-- Chats 13 -->
-                <div class="block">
+                <div class="block chat-list">
                     <!-- Img -->
                     <div class="imgBox">
                         <img src="images/img13.jpg" class="cover">
@@ -562,7 +564,7 @@
                 </div>
 
                 <!-- Chats 14 -->
-                <div class="block">
+                <div class="block chat-list">
                     <!-- Img -->
                     <div class="imgBox">
                         <img src="images/img14.jpg" class="cover">
@@ -592,7 +594,7 @@
                 </div>
 
                 <!-- Chats 15 -->
-                <div class="block">
+                <div class="block chat-list">
                     <!-- Img -->
                     <div class="imgBox">
                         <img src="images/img15.jpg" class="cover">
@@ -622,7 +624,7 @@
                 </div>
 
                 <!-- Chats 16 -->
-                <div class="block">
+                <div class="block chat-list">
                     <!-- Img -->
                     <div class="imgBox">
                         <img src="images/img16.jpg" class="cover">
@@ -652,7 +654,7 @@
                 </div>
 
                 <!-- Chats 17 -->
-                <div class="block">
+                <div class="block chat-list">
                     <!-- Img -->
                     <div class="imgBox">
                         <img src="images/img17.jpg" class="cover">
@@ -682,7 +684,7 @@
                 </div>
 
                 <!-- Chats 18 -->
-                <div class="block">
+                <div class="block chat-list">
                     <!-- Img -->
                     <div class="imgBox">
                         <img src="images/img18.jpg" class="cover">
@@ -714,7 +716,6 @@
             </div>
         </div>
 
-
         <div class="Newchat animate__animated animate__fadeInLeft" id="Newchat">
             <!-- Header -->
             <div class="header-Chat">
@@ -722,12 +723,12 @@
                 <!-- Icons -->
                 <div class="ICON">
                     <button role="button" class="icons" onclick="closeForm()">
-                        <spanclass="">
+                        <span class="">
                             <svg viewBox="0 0 24 24" width="24" height="24" class="">
                                 <path fill="currentColor" d="m12 4 1.4 1.4L7.8 11H20v2H7.8l5.6 5.6L12 20l-8-8 8-8z">
                                 </path>
                             </svg>
-                            </span>
+                        </span>
                     </button>
                 </div>
 
@@ -825,7 +826,8 @@
                             <h4 title="Adeboye" aria-label="Adeboye">Adeboye</h4>
                         </div>
                         <div class="message">
-                            <p title="Hey there! I am using WhatsApp." aria-label="Hey there! I am using WhatsApp.">Hey
+                            <p title="Hey there! I am using WhatsApp." aria-label="Hey there! I am using WhatsApp.">
+                                Hey
                                 there! I am using WhatsApp.</p>
                         </div>
                     </div>
@@ -860,7 +862,8 @@
                             <h4 title="Abdul F5" aria-label="Abdul F5">Abdul F5</h4>
                         </div>
                         <div class="message">
-                            <p title="Hey there! I am using WhatsApp." aria-label="Hey there! I am using WhatsApp.">Hey
+                            <p title="Hey there! I am using WhatsApp." aria-label="Hey there! I am using WhatsApp.">
+                                Hey
                                 there! I am using WhatsApp.</p>
                         </div>
                     </div>
@@ -878,7 +881,8 @@
                             <h4 title="Ade" aria-label="Ade">Ade</h4>
                         </div>
                         <div class="message">
-                            <p title="Hey there! I am using WhatsApp." aria-label="Hey there! I am using WhatsApp.">Hey
+                            <p title="Hey there! I am using WhatsApp." aria-label="Hey there! I am using WhatsApp.">
+                                Hey
                                 there! I am using WhatsApp.</p>
                         </div>
                     </div>
@@ -896,7 +900,8 @@
                             <h4 title="Adanma" aria-label="Adanma">Adanma</h4>
                         </div>
                         <div class="message">
-                            <p title="Hey there! I am using WhatsApp." aria-label="Hey there! I am using WhatsApp.">Hey
+                            <p title="Hey there! I am using WhatsApp." aria-label="Hey there! I am using WhatsApp.">
+                                Hey
                                 there! I am using WhatsApp.</p>
                         </div>
                     </div>
@@ -931,7 +936,8 @@
                             <h4 title="Alha" aria-label="Alha">Alha</h4>
                         </div>
                         <div class="message">
-                            <p title="Hey there! I am using WhatsApp." aria-label="Hey there! I am using WhatsApp.">Hey
+                            <p title="Hey there! I am using WhatsApp." aria-label="Hey there! I am using WhatsApp.">
+                                Hey
                                 there! I am using WhatsApp.</p>
                         </div>
                     </div>
@@ -949,7 +955,8 @@
                             <h4 title="Adeboye" aria-label="Adeboye">Adeboye</h4>
                         </div>
                         <div class="message">
-                            <p title="Hey there! I am using WhatsApp." aria-label="Hey there! I am using WhatsApp.">Hey
+                            <p title="Hey there! I am using WhatsApp." aria-label="Hey there! I am using WhatsApp.">
+                                Hey
                                 there! I am using WhatsApp.</p>
                         </div>
                     </div>
@@ -967,7 +974,8 @@
                             <h4>Adeboye</h4>
                         </div>
                         <div class="message">
-                            <p title="Hey there! I am using WhatsApp." aria-label="Hey there! I am using WhatsApp.">Hey
+                            <p title="Hey there! I am using WhatsApp." aria-label="Hey there! I am using WhatsApp.">
+                                Hey
                                 there! I am using WhatsApp.</p>
                         </div>
                     </div>
@@ -985,7 +993,8 @@
                             <h4 title="Adebisi" aria-label="Adebisi">Adebisi</h4>
                         </div>
                         <div class="message">
-                            <p title="Hey there! I am using WhatsApp." aria-label="Hey there! I am using WhatsApp.">Hey
+                            <p title="Hey there! I am using WhatsApp." aria-label="Hey there! I am using WhatsApp.">
+                                Hey
                                 there! I am using WhatsApp.</p>
                         </div>
                     </div>
@@ -1003,7 +1012,8 @@
                             <h4>Lina</h4>
                         </div>
                         <div class="message">
-                            <p title="Hey there! I am using WhatsApp." aria-label="Hey there! I am using WhatsApp.">Hey
+                            <p title="Hey there! I am using WhatsApp." aria-label="Hey there! I am using WhatsApp.">
+                                Hey
                                 there! I am using WhatsApp.</p>
                         </div>
                     </div>
@@ -1021,7 +1031,8 @@
                             <h4 title="Alihu" aria-label="Alihu">Alihu</h4>
                         </div>
                         <div class="message">
-                            <p title="Hey there! I am using WhatsApp." aria-label="Hey there! I am using WhatsApp.">Hey
+                            <p title="Hey there! I am using WhatsApp." aria-label="Hey there! I am using WhatsApp.">
+                                Hey
                                 there! I am using WhatsApp.</p>
                         </div>
                     </div>
@@ -1039,7 +1050,8 @@
                             <h4 title="Adejoke" aria-label="Adejoke">Adejoke</h4>
                         </div>
                         <div class="message">
-                            <p title="Hey there! I am using WhatsApp." aria-label="Hey there! I am using WhatsApp.">Hey
+                            <p title="Hey there! I am using WhatsApp." aria-label="Hey there! I am using WhatsApp.">
+                                Hey
                                 there! I am using WhatsApp.</p>
                         </div>
                     </div>
@@ -1057,7 +1069,8 @@
                             <h4 title="Adunola" aria-label="Adunola">Adunola</h4>
                         </div>
                         <div class="message">
-                            <p title="Hey there! I am using WhatsApp." aria-label="Hey there! I am using WhatsApp.">Hey
+                            <p title="Hey there! I am using WhatsApp." aria-label="Hey there! I am using WhatsApp.">
+                                Hey
                                 there! I am using WhatsApp.</p>
                         </div>
                     </div>
@@ -1075,7 +1088,8 @@
                             <h4 title="Akolade" aria-label="Akolade">Akolade</h4>
                         </div>
                         <div class="message">
-                            <p title="Hey there! I am using WhatsApp." aria-label="Hey there! I am using WhatsApp.">Hey
+                            <p title="Hey there! I am using WhatsApp." aria-label="Hey there! I am using WhatsApp.">
+                                Hey
                                 there! I am using WhatsApp.</p>
                         </div>
                     </div>
@@ -1093,7 +1107,8 @@
                             <h4 title="Anikaede" aria-label="Anikaede">Anikaede</h4>
                         </div>
                         <div class="message">
-                            <p title="Hey there! I am using WhatsApp." aria-label="Hey there! I am using WhatsApp.">Hey
+                            <p title="Hey there! I am using WhatsApp." aria-label="Hey there! I am using WhatsApp.">
+                                Hey
                                 there! I am using WhatsApp.</p>
                         </div>
                     </div>
@@ -1203,7 +1218,8 @@
                             <h4 title="Adeboye" aria-label="Adeboye">Adeboye</h4>
                         </div>
                         <div class="message">
-                            <p title="Hey there! I am using WhatsApp." aria-label="Hey there! I am using WhatsApp.">Hey
+                            <p title="Hey there! I am using WhatsApp." aria-label="Hey there! I am using WhatsApp.">
+                                Hey
                                 there! I am using WhatsApp.</p>
                         </div>
                     </div>
@@ -1238,7 +1254,8 @@
                             <h4 title="Abdul F5" aria-label="Abdul F5">Abdul F5</h4>
                         </div>
                         <div class="message">
-                            <p title="Hey there! I am using WhatsApp." aria-label="Hey there! I am using WhatsApp.">Hey
+                            <p title="Hey there! I am using WhatsApp." aria-label="Hey there! I am using WhatsApp.">
+                                Hey
                                 there! I am using WhatsApp.</p>
                         </div>
                     </div>
@@ -1256,7 +1273,8 @@
                             <h4 title="Ade" aria-label="Ade">Ade</h4>
                         </div>
                         <div class="message">
-                            <p title="Hey there! I am using WhatsApp." aria-label="Hey there! I am using WhatsApp.">Hey
+                            <p title="Hey there! I am using WhatsApp." aria-label="Hey there! I am using WhatsApp.">
+                                Hey
                                 there! I am using WhatsApp.</p>
                         </div>
                     </div>
@@ -1274,7 +1292,8 @@
                             <h4 title="Adanma" aria-label="Adanma">Adanma</h4>
                         </div>
                         <div class="message">
-                            <p title="Hey there! I am using WhatsApp." aria-label="Hey there! I am using WhatsApp.">Hey
+                            <p title="Hey there! I am using WhatsApp." aria-label="Hey there! I am using WhatsApp.">
+                                Hey
                                 there! I am using WhatsApp.</p>
                         </div>
                     </div>
@@ -1309,7 +1328,8 @@
                             <h4 title="Alha" aria-label="Alha">Alha</h4>
                         </div>
                         <div class="message">
-                            <p title="Hey there! I am using WhatsApp." aria-label="Hey there! I am using WhatsApp.">Hey
+                            <p title="Hey there! I am using WhatsApp." aria-label="Hey there! I am using WhatsApp.">
+                                Hey
                                 there! I am using WhatsApp.</p>
                         </div>
                     </div>
@@ -1327,7 +1347,8 @@
                             <h4 title="Adeboye" aria-label="Adeboye">Adeboye</h4>
                         </div>
                         <div class="message">
-                            <p title="Hey there! I am using WhatsApp." aria-label="Hey there! I am using WhatsApp.">Hey
+                            <p title="Hey there! I am using WhatsApp." aria-label="Hey there! I am using WhatsApp.">
+                                Hey
                                 there! I am using WhatsApp.</p>
                         </div>
                     </div>
@@ -1345,7 +1366,8 @@
                             <h4 title=r" aria-label=r"r</h4>
                         </div>
                         <div class="message">
-                            <p title="Hey there! I am using WhatsApp." aria-label="Hey there! I am using WhatsApp.">Hey
+                            <p title="Hey there! I am using WhatsApp." aria-label="Hey there! I am using WhatsApp.">
+                                Hey
                                 there! I am using WhatsApp.</p>
                         </div>
                     </div>
@@ -1363,7 +1385,8 @@
                             <h4 title="Adebisi" aria-label="Adebisi">Adebisi</h4>
                         </div>
                         <div class="message">
-                            <p title="Hey there! I am using WhatsApp." aria-label="Hey there! I am using WhatsApp.">Hey
+                            <p title="Hey there! I am using WhatsApp." aria-label="Hey there! I am using WhatsApp.">
+                                Hey
                                 there! I am using WhatsApp.</p>
                         </div>
                     </div>
@@ -1381,7 +1404,8 @@
                             <h4 title=" aria-label=">/h4>
                         </div>
                         <div class="message">
-                            <p title="Hey there! I am using WhatsApp." aria-label="Hey there! I am using WhatsApp.">Hey
+                            <p title="Hey there! I am using WhatsApp." aria-label="Hey there! I am using WhatsApp.">
+                                Hey
                                 there! I am using WhatsApp.</p>
                         </div>
                     </div>
@@ -1399,7 +1423,8 @@
                             <h4 title="Alihu" aria-label="Alihu">Alihu</h4>
                         </div>
                         <div class="message">
-                            <p title="Hey there! I am using WhatsApp." aria-label="Hey there! I am using WhatsApp.">Hey
+                            <p title="Hey there! I am using WhatsApp." aria-label="Hey there! I am using WhatsApp.">
+                                Hey
                                 there! I am using WhatsApp.</p>
                         </div>
                     </div>
@@ -1417,7 +1442,8 @@
                             <h4 title="Adejoke" aria-label="Adejoke">Adejoke</h4>
                         </div>
                         <div class="message">
-                            <p title="Hey there! I am using WhatsApp." aria-label="Hey there! I am using WhatsApp.">Hey
+                            <p title="Hey there! I am using WhatsApp." aria-label="Hey there! I am using WhatsApp.">
+                                Hey
                                 there! I am using WhatsApp.</p>
                         </div>
                     </div>
@@ -1435,7 +1461,8 @@
                             <h4 title="Adunola" aria-label="Adunola">Adunola</h4>
                         </div>
                         <div class="message">
-                            <p title="Hey there! I am using WhatsApp." aria-label="Hey there! I am using WhatsApp.">Hey
+                            <p title="Hey there! I am using WhatsApp." aria-label="Hey there! I am using WhatsApp.">
+                                Hey
                                 there! I am using WhatsApp.</p>
                         </div>
                     </div>
@@ -1453,7 +1480,8 @@
                             <h4 title="Akolade" aria-label="Akolade">Akolade</h4>
                         </div>
                         <div class="message">
-                            <p title="Hey there! I am using WhatsApp." aria-label="Hey there! I am using WhatsApp.">Hey
+                            <p title="Hey there! I am using WhatsApp." aria-label="Hey there! I am using WhatsApp.">
+                                Hey
                                 there! I am using WhatsApp.</p>
                         </div>
                     </div>
@@ -1471,7 +1499,8 @@
                             <h4 title="Anikaede" aria-label="Anikaede">Anikaede</h4>
                         </div>
                         <div class="message">
-                            <p title="Hey there! I am using WhatsApp." aria-label="Hey there! I am using WhatsApp.">Hey
+                            <p title="Hey there! I am using WhatsApp." aria-label="Hey there! I am using WhatsApp.">
+                                Hey
                                 there! I am using WhatsApp.</p>
                         </div>
                     </div>
@@ -1782,7 +1811,8 @@
 
                 <div class="warning">
                     <div class="warn-text">
-                        <h4>This is not your username or pin. This name will be visible to your WhatsApp contacts.</h4>
+                        <h4>This is not your username or pin. This name will be visible to your WhatsApp contacts.
+                        </h4>
                     </div>
                 </div>
 
@@ -1957,7 +1987,8 @@
                             <div class="text-inner">
                                 <label class="form-check-label" for="CheckRead">
                                     <h4>Read Receipts</h4>
-                                    <p>If turned off, you won't send or receive Read receipts. Read receipts are always
+                                    <p>If turned off, you won't send or receive Read receipts. Read receipts are
+                                        always
                                         sent for group chats.</p>
                                 </label>
                             </div>
@@ -2047,7 +2078,8 @@
                     <!-- Text -->
                     <div class="h-text">
                         <div class="titlePro">
-                            <p>If you don't share your Last Seen, you won't be able to see other people's Last Seen</p>
+                            <p>If you don't share your Last Seen, you won't be able to see other people's Last Seen
+                            </p>
                         </div>
 
                         <div class="head">
@@ -2536,7 +2568,8 @@
                     <div class="h-text">
                         <div class="text-yur">
                             <h3>Your chats and calls are private</h3>
-                            <p>End-to-end encryption keeps your personal messages and calls between you and the people
+                            <p>End-to-end encryption keeps your personal messages and calls between you and the
+                                people
                                 you choose. Not even WhatsApp can read or listen to them. This includes your:
                             </p>
                             <ul>
@@ -2621,8 +2654,10 @@
                                 <label class="form-check-label" for="show">
                                     <h4>Show security notifications on this computer</h4>
                                 </label>
-                                <p>Get notified when your security code changes for a contact's <br> phone. If you have
-                                    multiple devices, this setting must be <br> enabled on each device where you want to
+                                <p>Get notified when your security code changes for a contact's <br> phone. If you
+                                    have
+                                    multiple devices, this setting must be <br> enabled on each device where you
+                                    want to
                                     get notifications.
                                 </p>
                                 <a href="">Learn more</a>
@@ -2801,7 +2836,8 @@
                     <!-- Text -->
                     <div class="h-text">
                         <div class="text-yur">
-                            <p>Create a report of your WhatsApp account information and settings, which you can access
+                            <p>Create a report of your WhatsApp account information and settings, which you can
+                                access
                                 or port to another app. This
                                 report does not include your messages.</p>
                             <a href="">Learn more</a>
@@ -2943,7 +2979,8 @@
                     <!-- Text -->
                     <div class="R-text">
                         <div class="head">
-                            <h4 title="Terms and Privacy Policy" aria-label="Terms and Privacy Policy">Terms and Privacy
+                            <h4 title="Terms and Privacy Policy" aria-label="Terms and Privacy Policy">Terms and
+                                Privacy
                                 Policy</h4>
                         </div>
                     </div>
@@ -3495,8 +3532,8 @@
 
         </div>
 
-        <div class="" style="flex: 70%; display: flex;" id="right">
-            <div class="rightSide" id="rightSide">
+        <div class="Right-Container" style="flex: 70%; display: flex;" id="right">
+            <div class="rightSide" style="display: none;" id="rightSide">
                 <div class="header">
                     <div class="imgText" role="button" onclick="openChatAbout()">
                         <div class="userImg">
@@ -3516,7 +3553,7 @@
                         </button>
 
                         <div class="dropdown-icon">
-                            <button class="pressed icons pP" onclick="myDrop()">
+                            <button class="pressed icons pP" id="dropDown" onclick="myDrop()">
                                 <svg viewBox="0 0 24 24" width="24" height="24" class="">
                                     <path fill="currentColor"
                                         d="M12 7a2 2 0 1 0-.001-4.001A2 2 0 0 0 12 7zm0 2a2 2 0 1 0-.001 3.999A2 2 0 0 0 12 9zm0 6a2 2 0 1 0-.001 3.999A2 2 0 0 0 12 15z">
@@ -3526,11 +3563,14 @@
                             <ul class="drop" id="drop">
                                 <li class="listItem" role="button" onclick="openChatAbout()">Contact info</li>
                                 <li class="listItem" role="button">Select messages</li>
-                                <li class="listItem" role="button">Close chat</li>
-                                <li class="listItem" role="button">Mute notifications</li>
+                                <li class="listItem" role="button" onclick="closeRightSide()">Close chat</li>
+                                <li class="listItem" role="button" data-bs-toggle="modal" data-bs-target="#mute-modal">
+                                    Mute notifications</li>
                                 <li class="listItem" role="button">Disappearing messages</li>
-                                <li class="listItem" role="button">Clear messages</li>
-                                <li class="listItem" role="button">Delete chat</li>
+                                <li class="listItem" role="button" data-bs-toggle="modal" data-bs-target="#clear-modal">
+                                    Clear messages</li>
+                                <li class="listItem" role="button" data-bs-toggle="modal"
+                                    data-bs-target="#delete-modal">Delete chat</li>
                             </ul>
                         </div>
                     </div>
@@ -3768,7 +3808,7 @@
                         </span>
                     </buttton>
 
-                    <buttton role="button" class="icons Marg" onclick="myFunction()">
+                    <buttton role="button" class="icons Marg" id="chat-popup">
                         <span class="">
                             <svg viewBox="0 0 24 24" width="24" height="24" class="">
                                 <path fill="currentColor"
@@ -3943,6 +3983,79 @@
                         </span>
                     </button>
                 </div>
+            </div>
+
+            <div class="Intro-Left" id="Intro-Left">
+                <div class="intro">
+                    <div class="intro-svg">
+                        <span class="IVxyB">
+                            <svg width="360" viewBox="0 0 303 172" fill="none" class="">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M229.565 160.229c32.647-10.984 57.366-41.988 53.825-86.81-5.381-68.1-71.025-84.993-111.918-64.932C115.998 35.7 108.972 40.16 69.239 40.16c-29.594 0-59.726 14.254-63.492 52.791-2.73 27.933 8.252 52.315 48.89 64.764 73.962 22.657 143.38 13.128 174.928 2.513Z"
+                                    fill="var(--intro-svg1)">
+                                </path>
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M131.589 68.942h.01c6.261 0 11.336-5.263 11.336-11.756S137.86 45.43 131.599 45.43c-5.081 0-9.381 3.466-10.822 8.242a7.302 7.302 0 0 0-2.404-.405c-4.174 0-7.558 3.51-7.558 7.838s3.384 7.837 7.558 7.837h13.216ZM105.682 128.716c3.504 0 6.344-2.808 6.344-6.27 0-3.463-2.84-6.27-6.344-6.27-1.156 0-2.24.305-3.173.839v-.056c0-6.492-5.326-11.756-11.896-11.756-5.29 0-9.775 3.413-11.32 8.132a8.025 8.025 0 0 0-2.163-.294c-4.38 0-7.93 3.509-7.93 7.837 0 4.329 3.55 7.838 7.93 7.838h28.552Z"
+                                    fill="var(--intro-svg2)" fill-opacity="var(--intro-opacity)">
+                                </path>
+                                <rect x=".445" y=".55" width="50.58" height="100.068" rx="7.5"
+                                    transform="rotate(6 -391.775 121.507) skewX(.036)" fill="#42CBA5" stroke="#316474">
+                                </rect>
+                                <rect x=".445" y=".55" width="50.403" height="99.722" rx="7.5"
+                                    transform="rotate(6 -356.664 123.217) skewX(.036)" fill="var(--intro-svg3)"
+                                    stroke="#316474">
+                                </rect>
+                                <path
+                                    d="m57.16 51.735-8.568 82.024a5.495 5.495 0 0 1-6.042 4.895l-32.97-3.465a5.504 5.504 0 0 1-4.897-6.045l8.569-82.024a5.496 5.496 0 0 1 6.041-4.895l5.259.553 22.452 2.36 5.259.552a5.504 5.504 0 0 1 4.898 6.045Z"
+                                    fill="var(--intro-svg4)" stroke="#316474">
+                                </path>
+                                <path
+                                    d="M26.2 102.937c.863.082 1.732.182 2.602.273.238-2.178.469-4.366.69-6.546l-2.61-.274c-.238 2.178-.477 4.365-.681 6.547Zm-2.73-9.608 2.27-1.833 1.837 2.264 1.135-.917-1.838-2.266 2.27-1.833-.92-1.133-2.269 1.834-1.837-2.264-1.136.916 1.839 2.265-2.27 1.835.92 1.132Zm-.816 5.286c-.128 1.3-.265 2.6-.41 3.899.877.109 1.748.183 2.626.284.146-1.31.275-2.614.413-3.925-.878-.092-1.753-.218-2.629-.258Zm16.848-8.837c-.506 4.801-1.019 9.593-1.516 14.396.88.083 1.748.192 2.628.267.496-4.794 1-9.578 1.513-14.37-.864-.143-1.747-.192-2.625-.293Zm-4.264 2.668c-.389 3.772-.803 7.541-1.183 11.314.87.091 1.74.174 2.601.273.447-3.912.826-7.84 1.255-11.755-.855-.15-1.731-.181-2.589-.306-.04.156-.069.314-.084.474Zm-4.132 1.736c-.043.159-.06.329-.077.49-.297 2.896-.617 5.78-.905 8.676l2.61.274c.124-1.02.214-2.035.33-3.055.197-2.036.455-4.075.627-6.115-.863-.08-1.724-.17-2.585-.27Z"
+                                    fill="#316474">
+                                </path>
+                                <path
+                                    d="M17.892 48.489a1.652 1.652 0 0 0 1.468 1.803 1.65 1.65 0 0 0 1.82-1.459 1.652 1.652 0 0 0-1.468-1.803 1.65 1.65 0 0 0-1.82 1.459ZM231.807 136.678l-33.863 2.362c-.294.02-.54-.02-.695-.08a.472.472 0 0 1-.089-.042l-.704-10.042a.61.61 0 0 1 .082-.054c.145-.081.383-.154.677-.175l33.863-2.362c.294-.02.54.02.695.08.041.016.069.03.088.042l.705 10.042a.61.61 0 0 1-.082.054 1.678 1.678 0 0 1-.677.175Z"
+                                    fill="#fff" stroke="#316474">
+                                </path>
+                                <path
+                                    d="m283.734 125.679-138.87 9.684c-2.87.2-5.371-1.963-5.571-4.823l-6.234-88.905c-.201-2.86 1.972-5.35 4.844-5.55l138.87-9.684c2.874-.2 5.371 1.963 5.572 4.823l6.233 88.905c.201 2.86-1.971 5.349-4.844 5.55Z"
+                                    fill="#EEFAF6">
+                                </path>
+                                <path
+                                    d="M144.864 135.363c-2.87.2-5.371-1.963-5.571-4.823l-6.234-88.905c-.201-2.86 1.972-5.35 4.844-5.55l138.87-9.684c2.874-.2 5.371 1.963 5.572 4.823l6.233 88.905c.201 2.86-1.971 5.349-4.844 5.55"
+                                    stroke="#316474">
+                                </path>
+                                <path
+                                    d="m278.565 121.405-129.885 9.058c-2.424.169-4.506-1.602-4.668-3.913l-5.669-80.855c-.162-2.31 1.651-4.354 4.076-4.523l129.885-9.058c2.427-.169 4.506 1.603 4.668 3.913l5.669 80.855c.162 2.311-1.649 4.354-4.076 4.523Z"
+                                    fill="var(--intro-svg5)" stroke="#316474">
+                                </path>
+                                <path
+                                    d="m230.198 129.97 68.493-4.777.42 5.996c.055.781-.098 1.478-.363 1.972-.27.5-.611.726-.923.748l-165.031 11.509c-.312.022-.681-.155-1.017-.613-.332-.452-.581-1.121-.636-1.902l-.42-5.996 68.494-4.776c.261.79.652 1.483 1.142 1.998.572.6 1.308.986 2.125.929l24.889-1.736c.817-.057 1.491-.54 1.974-1.214.413-.577.705-1.318.853-2.138Z"
+                                    fill="#42CBA5" stroke="#316474">
+                                </path>
+                                <path
+                                    d="m230.367 129.051 69.908-4.876.258 3.676a1.51 1.51 0 0 1-1.403 1.61l-168.272 11.735a1.51 1.51 0 0 1-1.613-1.399l-.258-3.676 69.909-4.876a3.323 3.323 0 0 0 3.188 1.806l25.378-1.77a3.32 3.32 0 0 0 2.905-2.23Z"
+                                    fill="#EEFAF6" stroke="#316474">
+                                </path>
+                                <circle transform="rotate(-3.989 1304.861 -2982.552) skewX(.021)" fill="#42CBA5"
+                                    stroke="#316474" r="15.997">
+                                </circle>
+                                <path
+                                    d="m208.184 87.11-3.407-2.75-.001-.002a1.952 1.952 0 0 0-2.715.25 1.89 1.89 0 0 0 .249 2.692l.002.001 5.077 4.11v.001a1.95 1.95 0 0 0 2.853-.433l8.041-12.209a1.892 1.892 0 0 0-.573-2.643 1.95 1.95 0 0 0-2.667.567l-6.859 10.415Z"
+                                    fill="#fff" stroke="#316474">
+                                </path>
+                            </svg>
+                        </span>
+                    </div>
+                    <div class="intro-sub">
+                        <h1 class="intro-text">Whatsapp Web Clone</h1>
+                        <span class="intro-span">Send and receive messages without keeping your phone online.
+                            <br>
+                            Use WhatsApp on up to 4 linked devices and 1 phone at the same time.
+                        </span>
+                    </div>
+                </div>
+
             </div>
 
             <div class="ChatAbout" id="ChatAbout">
@@ -4158,6 +4271,92 @@
                 </div>
             </div>
 
+            <div class="modal fade" id="mute-modal" data-bs-backdrop="static" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <h5 class="m-title">Mute "Shayan" for...</h5>
+                        <ul>
+                            <li>
+                                <div class="m-list">
+                                    <label class="form-check-label" for="8-hours">
+                                        <input class="form-check-input" type="radio" name="groupsRadios" value=""
+                                            id="8-hours" checked>
+                                        <h4>8 Hours</h4>
+                                    </label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="m-list">
+                                    <label class="form-check-label" for="week">
+                                        <input class="form-check-input" type="radio" name="groupsRadios" value=""
+                                            id="week">
+                                        <h4>1 Week</h4>
+                                    </label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="m-list">
+                                    <label class="form-check-label" for="always">
+                                        <input class="form-check-input" type="radio" name="groupsRadios" value=""
+                                            id="always">
+                                        <h4>Always</h4>
+                                    </label>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <div class="m-btn">
+                            <button type="button" class="btn1" data-bs-dismiss="modal">Cancel</button>
+                            <button type="button" class="btn2" data-bs-dismiss="modal">Mute notification</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="clear-modal" data-bs-backdrop="static" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <h5 class="m-title">Clear this chat</h5>
+                        <p class="modal-text">Messages will only be removed from this device and your devices on the
+                            newer versions of WhatsApp.
+                        </p>
+                        <ul class="checkbox">
+                            <li>
+                                <div class="m-list">
+                                    <label class="form-check-label" for="keep-starred-message">
+                                        <input class="form-check-input" type="checkbox" name="groupsRadios" value=""
+                                            id="keep-starred-message">
+                                        <h4>Keep Starred Message</h4>
+                                    </label>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="m-btn">
+                            <button type="button" class="btn1" data-bs-dismiss="modal">Cancel</button>
+                            <button type="button" class="btn2" data-bs-dismiss="modal">Clear Chat</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="delete-modal" data-bs-backdrop="static" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <h5 class="m-title">Delete this chat</h5>
+                        <p class="modal-text v2">Messages will only be removed from this device and your devices on the
+                            newer versions of WhatsApp.
+                        </p>
+                        <div class="m-btn">
+                            <button type="button" class="btn1" data-bs-dismiss="modal">Cancel</button>
+                            <button type="button" class="btn2" data-bs-dismiss="modal">Delete Chat</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <div class="search-message" id="search-message">
                 <!-- Header -->
                 <div class="header-Chat">
@@ -4213,6 +4412,7 @@
                     </div>
                 </div>
             </div>
+
         </div>
     </div>
 

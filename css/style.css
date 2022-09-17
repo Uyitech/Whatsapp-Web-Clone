@@ -64,6 +64,18 @@
     --danger: #f15c6d;
     --status-text: #8696a0;
     --status-right-text: #9494a1;
+
+    --intro-bg: #222e35;
+    --intro-border: #008069;
+    --intro-svg1: #364147;
+    --intro-svg2: #f1f1f2;
+    --intro-opacity: .38;
+    --intro-svg3: #EEFAF6;
+    --intro-svg4: #DFF3ED;
+    --intro-svg5: #DFF3ED;
+    --intro-text: rgba(233, 237, 239, 0.88);
+    --intro-sub-text: #8696a0;
+
 }
 
 .light-theme {
@@ -120,13 +132,24 @@
     --danger: #ea0038;
     --status-text: gainsboro;
     --status-right-text: #9494a1;
+
+    --intro-bg: #f0f2f5;
+    --intro-border: #25d366;
+    --intro-svg1: #DAF7F3;
+    --intro-svg2: #fff;
+    --intro-opacity: none;
+    --intro-svg3: #fff;
+    --intro-svg4: #eefefa;
+    --intro-svg5: #eefaf6;
+    --intro-text: #41525d;
+    --intro-sub-text: #667781;
 }
 
 .body {
     display: flex;
-    justify-content: center;
-    align-items: center;
     min-height: 100vh;
+    align-items: center;
+    justify-content: center;
     background: var(--appBackground);
 }
 
@@ -154,7 +177,7 @@
     display: none;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 650px) {
     .media {
         display: block;
     }
@@ -178,16 +201,22 @@ body .container {
     border-right: 1px solid var(--border-right);
 }
 
+@media screen and (max-width: 1000px) {
+    .container .leftSide {
+        flex: 0 0 45%;
+    }
+}
+
+@media screen and (max-width: 748px) {
+    body .container {
+        min-width: 748px;
+        width: 100%;
+    }
+}
+
 .container .rightSide {
     position: relative;
     flex: 40%;
-    background-color: var(--right-side);
-}
-
-.container .ChatAbout {
-    position: relative;
-    display: none;
-    flex: 30%;
     background-color: var(--right-side);
 }
 
