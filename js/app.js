@@ -100,7 +100,6 @@ function closeForm() {
 }
 
 
-
 function openRightSide() {
     document.getElementById("rightSide").style.display = "flex";
     document.getElementById("Intro-Left").style.display = "none";
@@ -356,5 +355,3 @@ function closeStatus() {
     document.getElementById("status").style.display = "none";
     document.getElementById("rightStatus").style.display = "none";
 }
-
-
