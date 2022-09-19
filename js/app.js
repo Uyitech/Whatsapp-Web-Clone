@@ -49,6 +49,25 @@ $(document).click(function () {
 });
 
 
+// Emoji 
+$(document).ready(function () {
+    $("#emoji-icon").click(function () {
+        $("#emoji-wrap").addClass("emojis__wrapper--active");
+        $(".hidden").show();
+    });
+    $("#emoji-remove-icon").click(function () {
+        $("#emoji-wrap").removeClass("emojis__wrapper--active");
+        $(".hidden").hide();
+    });
+});
+
+
+$(document).ready(function () {
+    $("#closeChat").click(function () {
+        $(".chat-list").removeClass("active");
+    });
+});
+
 const moon = document.getElementById("moon")
 
 moon.onclick = function () {
@@ -59,7 +78,6 @@ moon.onclick = function () {
         moon.src = "images/Sun-1.png";
     }
 }
-
 
 const select = document.querySelectorAll('.chat-list')
 
@@ -84,7 +102,7 @@ function closeForm() {
 
 
 function openRightSide() {
-    document.getElementById("rightSide").style.display = "block";
+    document.getElementById("rightSide").style.display = "flex";
     document.getElementById("Intro-Left").style.display = "none";
 
 }
