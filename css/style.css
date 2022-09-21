@@ -589,6 +589,14 @@ body .container {
     background: var(--listItemHover);
 }
 
+.chatBox {
+    position: relative;
+    width: 100%;
+    flex: 1 1;
+    padding: 30px 6% 1pc;
+    overflow-y: auto;
+}
+
 .chatBox .chat__date-wrapper {
     text-align: center;
     margin: 10px 0 14px;
@@ -620,14 +628,6 @@ body .container {
     color: var(--chat-encryption);
     margin-right: 5px;
     margin-bottom: 3px;
-}
-
-.chatBox {
-    position: relative;
-    width: 100%;
-    height: calc(100% - 120px);
-    padding: 30px 6% 1pc;
-    overflow-y: auto;
 }
 
 button {

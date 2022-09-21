@@ -1,8 +1,18 @@
 .container .status {
     position: relative;
     margin-left: 100px;
+    overflow: hidden;
     flex: 30%;
     background: var(--header-bg);
+}
+
+@media only screen and (max-width: 1440px) {
+    .container .status {
+        margin-left: 0;
+    }
+    .container .rightStatus {
+        margin-right: 0;
+    }
 }
 
 .status {
@@ -162,13 +172,19 @@
     margin-bottom: 0rem;
 }
 
-
 /* Right Side */
 .container .rightStatus {
     position: relative;
     margin-right: 100px;
+    overflow: hidden;
     flex: 70%;
     background: none;
+}
+
+@media only screen and (max-width: 1440px) {
+    .container .rightStatus {
+        margin-right: 0;
+    }
 }
 
 .rightStatus {
